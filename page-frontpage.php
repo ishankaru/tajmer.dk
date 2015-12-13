@@ -11,46 +11,54 @@
 
  <?php include 'includes/section-header.php';?>
 
-	<section class="module module-slideshow">
+ 	<section class="module module-subnav">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-
+				<div class="col-md-5">
+					<form role="search" method="get" action="<?php echo home_url( '/' ); ?>">
+						<input type="search" placeholder="Søg blandt vores artister..." value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+					</form>
+				</div>
+				<div class="col-md-7 text-right">
+					<span>Ring til os eller <a href="#" title="#">send en forespørgsel</a> på en af vores artister <a href="#" title="#">+45 46 15 37 00</a></span>
 				</div>
 			</div>
 		</div>
 	</section>
+
+
+ 	<?php include 'includes/section-slideshow.php';?>
 
 	<section class="module module-boxes">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="row xs-gutter">
-						<div class="col-md-3">
+						<div class="col-sm-6 col-md-3">
 							<a href="#" title="#">
-								<img src="http://placehold.it/150x150" alt="#">
-								<h2>Book en komiker</h2>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-one.png" alt="#">
+								<h2>Book en <strong>komiker</strong></h2>
 								<p>Hos Tajmer Booking & Management har vi nogle af Danmarks bedste og mest talentfulde komikere. </p>
 							</a>
 						</div>
-						<div class="col-md-3">
+						<div class="col-sm-6 col-md-3">
 							<a href="#" title="#">
-								<img src="http://placehold.it/150x150" alt="#">
-								<h2>Book en komiker</h2>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-one.png" alt="#">
+								<h2>Book en <strong>foredragsholder</strong></h2>
+								<p>Vi har håndplukket en lang række mennesker, der kan noget helt særligt med ord.</p>
+							</a>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<a href="#" title="#">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-one.png" alt="#">
+								<h2>Book en <strong>konferencier</strong></h2>
 								<p>Hos Tajmer Booking & Management har vi nogle af Danmarks bedste og mest talentfulde komikere. </p>
 							</a>
 						</div>
-						<div class="col-md-3">
+						<div class="col-sm-6 col-md-3">
 							<a href="#" title="#">
-								<img src="http://placehold.it/150x150" alt="#">
-								<h2>Book en komiker</h2>
-								<p>Hos Tajmer Booking & Management har vi nogle af Danmarks bedste og mest talentfulde komikere. </p>
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a href="#" title="#">
-								<img src="http://placehold.it/150x150" alt="#">
-								<h2>Book en komiker</h2>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-one.png" alt="#">
+								<h2>Book en <strong>koncertnavn</strong></h2>
 								<p>Hos Tajmer Booking & Management har vi nogle af Danmarks bedste og mest talentfulde komikere. </p>
 							</a>
 						</div>												
@@ -65,7 +73,9 @@
 			<div class="row">
 				<div class="col-md-12">
 					<p class="h3">Send en uforpligtende forespørgsel eller ring og få en snak på 4615 3700</p>
-					<?php gravity_form( 2, false, false, false, '', false, 10 ); ?>
+					<div class="form">
+						<?php gravity_form( 2, false, false, false, '', false, 10 ); ?>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -75,8 +85,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2>Comedy kalenderen</h2>
-					<p>Her kan du følge med i artister når de bevæger sig rundt omkring i landet</p>
+					<h2 class="h1">Comedy kalenderen</h2>
+					<p class="lead">Her kan du følge med i artister når de bevæger sig rundt omkring i landet</p>
 					<?php include 'includes/section-calendar.php';?>
 					<a href="#" title="#">Se den fulde comedy kalender</a>
 				</div>
@@ -136,7 +146,9 @@
 			<div class="row">
 				<div class="col-md-12">
 					<p class="h3">Send en uforpligtende forespørgsel eller ring og få en snak på 4615 3700</p>
-					<?php gravity_form( 2, false, false, false, '', false, 20 ); ?>
+					<div class="form">
+						<?php gravity_form( 2, false, false, false, '', false, 20 ); ?>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -224,7 +236,9 @@
 			<div class="row">
 				<div class="col-md-12">
 					<p class="h3">Send en uforpligtende forespørgsel eller ring og få en snak på 4615 3700</p>
-					<?php gravity_form( 2, false, false, false, '', false, 30 ); ?>
+					<div class="form">
+						<?php gravity_form( 2, false, false, false, '', false, 30 ); ?>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -234,20 +248,24 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<a href="#" title="#">Stand-Up, Comedy</a> /
-					<a href="#" title="#">Klassisk/Kirkekoncert</a> /
-					<a href="#" title="#">Book</a> /
-					<a href="#" title="#">Underholdning</a> /
-					<a href="#" title="#">Eksklusive artister</a> /
-					<a href="#" title="#">Bands</a> /
-					<a href="#" title="#">DJs</a> /
-					<a href="#" title="#">Entertainment/Musical</a> /
-					<a href="#" title="#">Foredrag</a> /
-					<a href="#" title="#">Jazz/Lounge</a> /
-					<a href="#" title="#">Koncertnavne</a> /
-					<a href="#" title="#">Konferenciers/Værter</a> /
-					<a href="#" title="#">Sangere/Solister</a> /
-					<a href="#" title="#">Børneunderholdning</a>				
+					<?php 
+			          $args = array( 'hide_empty' => 0 );
+			          $terms = get_terms( 'type', $args );
+			          if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
+			            $count = count( $terms ); 
+			            $i = 0;
+			            $term_list = '';
+			              foreach ( $terms as $term ) {
+			                $i++;
+			                $term_list .= '<a href="' . get_term_link( $term ) . '" title="Se alle artister i kategorien ' . $term->name . '">' . $term->name . '</a>  /  ';
+			                if ( $count != $i ) {
+			                } else {
+			                  $term_list .= '';
+			                } 
+			              }
+			            echo $term_list;
+			          }
+			        ?>			
 				</div>
 			</div>
 		</div>

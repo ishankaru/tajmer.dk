@@ -24,7 +24,6 @@
 
 					<?php if ( function_exists('yoast_breadcrumb') ) {yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
 
-					<?php edit_post_link('Rediger side', '<span>', '</span>'); ?>
 					<h1><?php the_title(); ?></h1>
 
 				    <?php $cats = get_the_terms(get_the_ID(), 'type'); foreach($cats as $c) { ?> 
@@ -32,10 +31,13 @@
 				    <?php } ?>
 
 				   <?php the_content(); ?>
+				   <?php edit_post_link('Rediger indhold', '<span>', '</span>'); ?>
 
 			    </div>
 			    <div class="col-md-3">
-			    	<?php gravity_form( 1, false, false, false, '', false ); ?>
+			    	<div class="form">
+			    		<?php gravity_form( 1, false, false, false, '', false ); ?>
+			    	</div>
 			    	
 			    </div>
 			</div>

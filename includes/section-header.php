@@ -9,16 +9,22 @@
  */
 ?>
 
-<header>
-	<nav>
-		<img src="<?php the_field('hlogo',options); ?>">
-	</nav>
-	<div class="subnav">
-		<div class="pull-left">
-			<?php include 'section-searchform.php';?>
-		</div>
-		<div class="pull-right">
-			Ring til os eller send en forespørgsel på en af vores artister +45 46 15 37 00
-		</div>
-	</div>
+<header class="cd-main-header">
+	<a class="cd-logo" href="<?php echo get_home_url(); ?>/" title="Tajmer Booking &amp; Management">
+		<img src="<?php the_field('hlogo',options); ?>" alt="Tajmer Booking &amp; Management">
+	</a>
+	<ul class="cd-header-buttons">
+		<li>
+			<a class="cd-search-trigger" title="Søg blandt vores artister">
+				<span></span>
+			</a>
+		</li>
+		<li>
+			<a class="cd-nav-trigger" title="Åben menu">
+				<span></span>
+			</a>
+		</li>
+	</ul> 
 </header>
+
+<main class="cd-main-content">

@@ -13,6 +13,9 @@
 
  	<?php global $post; $terms = get_the_terms($post->id, 'type'); ?>
 
+  <?php include 'includes/section-topbar.php';?>
+  <?php include 'includes/section-slideshow.php';?>
+
 	<section class="module module-artists">
 		<div class="container">
 			<div class="row">
