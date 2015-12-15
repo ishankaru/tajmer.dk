@@ -11,22 +11,6 @@
 
  <?php include 'includes/section-header.php';?>
 
- 	<section class="module module-subnav">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-5">
-					<form role="search" method="get" action="<?php echo home_url( '/' ); ?>">
-						<input type="search" placeholder="Søg blandt vores artister..." value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
-					</form>
-				</div>
-				<div class="col-md-7 text-right">
-					<span>Ring til os eller <a href="#" title="#">send en forespørgsel</a> på en af vores artister <a href="#" title="#">+45 46 15 37 00</a></span>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
  	<?php include 'includes/section-slideshow.php';?>
 
 	<section class="module module-boxes">
@@ -58,7 +42,7 @@
 						<div class="col-sm-6 col-md-3">
 							<a href="#" title="#">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-one.png" alt="#">
-								<h2>Book en <strong>koncertnavn</strong></h2>
+								<h2>Book et <strong>koncertnavn</strong></h2>
 								<p>Hos Tajmer Booking & Management har vi nogle af Danmarks bedste og mest talentfulde komikere. </p>
 							</a>
 						</div>												
@@ -88,7 +72,7 @@
 					<h2 class="h1">Comedy kalenderen</h2>
 					<p class="lead">Her kan du følge med i artister når de bevæger sig rundt omkring i landet</p>
 					<?php include 'includes/section-calendar.php';?>
-					<a href="#" title="#">Se den fulde comedy kalender</a>
+					<a href="#" title="#" class="lead more">Se den fulde comedy kalender <i class="fa fa-caret-right"></i></a>
 				</div>
 			</div>
 		</div>
@@ -98,7 +82,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<h2>Aktuelle shows</h2>
+					<h2 class="h1">Aktuelle shows</h2>
 					<div class="row">
 						<div class="col-md-4">
 							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
@@ -118,7 +102,7 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<h2 class="text-right">On Demand</h2>
+					<h2 class="h1 text-right">On Demand</h2>
 					<div class="row">
 						<div class="col-md-4">
 							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>

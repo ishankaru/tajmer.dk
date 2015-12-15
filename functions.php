@@ -349,4 +349,16 @@ function remove_dashboard_widgets() {
     unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_comments']);
 }
 
+
+function searchfilter($query) {
+
+    if ($query->is_search && !is_admin() ) {
+        $query->set('post_type',array('artists'));
+    }
+
+return $query;
+}
+
+add_filter('pre_get_posts','searchfilter');
+
 ?>

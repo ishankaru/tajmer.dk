@@ -13,8 +13,20 @@
 
  	<?php global $post; $terms = get_the_terms($post->id, 'type'); ?>
 
-  <?php include 'includes/section-topbar.php';?>
   <?php include 'includes/section-slideshow.php';?>
+
+  <section class="module module-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="h3">Send en uforpligtende forespørgsel eller ring og få en snak på 4615 3700</p>
+          <div class="form">
+            <?php gravity_form( 2, false, false, false, '', false, 10 ); ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 	<section class="module module-artists">
 		<div class="container">
@@ -29,7 +41,11 @@
 					<?php while (have_posts()) : the_post(); { ?>
 						<article class="item col-xs-6 col-sm-4 col-md-3 col-lg-2 <?php $cats = get_the_terms(get_the_ID(), 'category'); foreach($cats as $c) {echo $c->slug.' ';} ?>">
 							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-								<img src="http://placehold.it/275x200" alt="<?php the_title(); ?>" class="img-responsive">
+								<?php if( get_field('artist_thumbnail') ): ?>
+                  <div class="thumbnail" style="background-image:url('<?php the_field('artist_thumbnail'); ?>')"></div>
+                <?php else: ?>
+                  <div class="thumbnail" style="background-image:url('http://placehold.it/275x200');"></div>
+                <?php endif; ?>
 								<h2 class="h5"><?php the_title(); ?></h2>
 							</a>
 						</article>

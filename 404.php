@@ -11,20 +11,15 @@
 
  	<?php include 'includes/section-header.php'; ?>
 
-		<div class="module">
-			<div class="row">
-				<div class="col-md-7">
-					<h1>Fejl 404: Siden blev ikke fundet</h1>
-					<p class="lead">Den side, du leder efter, er ikke tilgængelig af én af følgende årsager:</p>
-					<ul>
-						<li>Linket til denne side er muligvis forkert eller forældet.</li>
-						<li>Du har muligvis føjet en side til dine foretrukne sider, og siden er senere blevet flyttet.</li>
-					</ul> 
-					<a href="<?php echo get_home_url(); ?>" title="Tilbage til startsiden" class="btn btn-default">Gå tilbage til startsiden</a>
-
+		<section class="module module-404">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<?php the_field('page_content', options); ?> 
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	
 	<?php include 'includes/section-footer.php'; ?>
 

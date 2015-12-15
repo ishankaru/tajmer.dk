@@ -1,0 +1,1 @@
+<section class="module module-hero" style="background-image:url('http://localhost/root/tajmer.dk/wp-content/uploads/2015/12/tajmer-gruppe-top-1920x780.jpg');"></section>	

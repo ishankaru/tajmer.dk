@@ -44,7 +44,11 @@
 							<?php while (have_posts()) : the_post(); { ?>
 								<article class="item col-xs-6 col-sm-4 col-md-3 col-lg-2 <?php $cats = get_the_terms(get_the_ID(), 'type'); foreach($cats as $c) {echo $c->slug.' ';} ?>">
 									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-										<img src="http://placehold.it/275x200" alt="<?php the_title(); ?>" class="img-responsive">
+										<?php if( get_field('artist_thumbnail') ): ?>
+											<div class="thumbnail" style="background-image:url('<?php the_field('artist_thumbnail'); ?>')"></div>
+										<?php else: ?>
+											<div class="thumbnail" style="background-image:url('http://placehold.it/275x200');"></div>
+										<?php endif; ?>
 										<h2 class="h5"><?php the_title(); ?></h2>
 									</a>
 								</article>

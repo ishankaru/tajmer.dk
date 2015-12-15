@@ -9,20 +9,18 @@
  */
  get_header(); ?>
 
-	<?php include 'includes/section-header.php';?>
-	<?php include 'includes/section-hero.php';?>
+ <?php include 'includes/section-header.php';?>
  
 	<section class="module module-standard">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-offset-2 col-md-8">
+				<div class="col-md-12">
 					<?php the_content(); ?>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<?php include 'includes/section-process.php';?>
-	<?php include 'includes/section-footer.php'; ?>
+ <?php include 'includes/section-footer.php'; ?>
 
 <?php get_footer(); ?>
