@@ -1,1 +1,10 @@
-<section class="module module-hero" style="background-image:url('http://localhost/root/tajmer.dk/wp-content/uploads/2015/12/tajmer-gruppe-top-1920x780.jpg');"></section>	
+<?php if( get_field('hero_image') ): ?>
+	<section class="module module-hero" style="background-image:url('<?php the_field('hero_image');?>');">
+	  	<?php if( get_field('artist_title') ): ?>
+		  	<figcaption>
+		  		<span class="artist"><?php the_field('artist_title');?></span>
+		  		<span class="categories"><?php the_field('artist_subtitle');?></span>
+		  	</figcaption>
+		<?php endif; ?>
+	</section>	
+<?php endif; ?>

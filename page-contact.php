@@ -1,6 +1,6 @@
 <?php
 /**
- * Description: Standard Page
+* Template Name: Template: Contact
  *
  * @package Tajmer Booking & Management
  * @subpackage tajmer.dk

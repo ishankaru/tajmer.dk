@@ -72,7 +72,7 @@
 					<h2 class="h1">Comedy kalenderen</h2>
 					<p class="lead">Her kan du følge med i artister når de bevæger sig rundt omkring i landet</p>
 					<?php include 'includes/section-calendar.php';?>
-					<a href="#" title="#" class="lead more">Se den fulde comedy kalender <i class="fa fa-caret-right"></i></a>
+					<a href="#" title="#" class="lead more">Se den fulde comedy kalender</a>
 				</div>
 			</div>
 		</div>
