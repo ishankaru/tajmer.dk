@@ -24,9 +24,9 @@
 					<?php endif; ?>
 
 					<?php if( get_field('book_as') ): ?>
-						<ul>
+						<ul class="book-as">
 							<?php while ( have_rows('book_as') ) : the_row(); ?>
-								<li><?php the_sub_field('booking_type'); ?></li>
+								<li><i class="fa fa-check"></i><?php the_sub_field('booking_type'); ?></li>
 							<?php endwhile; ?>
 						</ul>
 					<?php endif; ?>
@@ -42,9 +42,15 @@
 					<?php include 'includes/section-breadcrumbs.php';?>
 					<h1><?php the_title(); ?></h1>
 				    
-				    <?php $cats = get_the_terms(get_the_ID(), 'type'); foreach($cats as $c) { ?> 
-				   		<a href="<?php echo get_home_url(); ?>/kategorier/<?php echo $c->slug; ?>" title="Se alle artister i kategorien <?php echo $c->name; ?>"><?php echo $c->name; ?></a>
-				    <?php } ?>
+				    <div class="categories">
+				    	<?php $cats = get_the_terms(get_the_ID(), 'type'); foreach($cats as $c) { ?> 
+				   			<a href="<?php echo get_home_url(); ?>/kategorier/<?php echo $c->slug; ?>" class="category" title="Se alle artister i kategorien <?php echo $c->name; ?>"><?php echo $c->name; ?></a>
+				    	<?php } ?>
+				    </div>
+
+				    <?php if( get_field('intro') ): ?>
+				    	<p class="lead"><?php the_field('intro'); ?></p>
+				    <?php endif; ?>
 
 				   <?php the_content(); edit_post_link('Rediger artist', '<p>', '</p>'); ?>
 			    </article>
@@ -56,7 +62,8 @@
 			    </aside>
 			</div>
 
-			<?php if( get_field('artist_calendar') ): ?>
+
+			<?php if( get_field('artist_calendar') ): ?>									
 				<div class="row">
 					<div class="col-md-12">
 						<h2>Kalender</h2>
@@ -66,7 +73,7 @@
 							<tbody>
 								<?php while ( have_rows('artist_calendar') ) : the_row(); ?>
 						    	<tr>
-									<td><img src="<?php the_sub_field('thumbnail'); ?>" alt="<?php the_sub_field('title'); ?>"></td>
+									<td><img src="<?php the_field('artist_calendar_image'); ?>" alt="<?php the_sub_field('title'); ?>"></td>
 									<td><?php the_sub_field('date'); ?></td>
 									<td><?php the_sub_field('title'); ?></td>
 									<td><?php the_sub_field('location'); ?>, <?php the_sub_field('city'); ?></td>
@@ -77,14 +84,18 @@
 							</tbody>
 						</table>
 					</div>
-				</div>
-			<?php endif; ?>
-
-			<?php include 'includes/section-related-artists.php';?>
+					<div class="col-md-12">
+						<a href="#" class="lead more">Se den fulde kalender her</a>
+					</div>
+				</div>					
+					
+	<?php endif; ?>
 			
 		</div>
 	</section>
-	
+
+
+	<?php include 'includes/section-related-artists.php';?>	
 	<?php include 'includes/section-process.php';?>
 	<?php include 'includes/section-footer.php'; ?>
 

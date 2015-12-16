@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Template: Contact
+ * Description: Single Campaign
  *
  * @package Tajmer Booking & Management
  * @subpackage tajmer.dk
@@ -10,17 +10,17 @@
  get_header(); ?>
 
  <?php include 'includes/section-header.php';?>
- 
-	<section class="module module-standard">
+	
+	<section class="module module-campaign" style="background-image: url('<?php the_field('background_image'); ?>');">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<?php the_content(); edit_post_link('Rediger side', '<p>', '</p>'); ?>
+				<div class="col-md-6">
+					<?php the_content(); edit_post_link('Rediger kampagne', '<p>', '</p>'); ?>
 				</div>
 			</div>
 		</div>
 	</section>
 
- <?php include 'includes/section-footer.php'; ?>
+	<?php include 'includes/section-footer.php'; ?>
 
 <?php get_footer(); ?>

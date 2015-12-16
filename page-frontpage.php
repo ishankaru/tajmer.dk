@@ -18,34 +18,15 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="row xs-gutter">
-						<div class="col-sm-6 col-md-3">
-							<a href="#" title="#">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-one.png" alt="#">
-								<h2>Book en <strong>komiker</strong></h2>
-								<p>Hos Tajmer Booking & Management har vi nogle af Danmarks bedste og mest talentfulde komikere. </p>
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-3">
-							<a href="#" title="#">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-one.png" alt="#">
-								<h2>Book en <strong>foredragsholder</strong></h2>
-								<p>Vi har håndplukket en lang række mennesker, der kan noget helt særligt med ord.</p>
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-3">
-							<a href="#" title="#">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-one.png" alt="#">
-								<h2>Book en <strong>konferencier</strong></h2>
-								<p>Hos Tajmer Booking & Management har vi nogle af Danmarks bedste og mest talentfulde komikere. </p>
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-3">
-							<a href="#" title="#">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-one.png" alt="#">
-								<h2>Book et <strong>koncertnavn</strong></h2>
-								<p>Hos Tajmer Booking & Management har vi nogle af Danmarks bedste og mest talentfulde komikere. </p>
-							</a>
-						</div>												
+					<?php if( get_field('primary_boxes') ): while ( have_rows('primary_boxes') ) : the_row(); ?>
+							<div class="col-sm-6 col-md-3">
+								<a href="<?php the_sub_field('url'); ?>" title="<?php the_sub_field('title'); ?>">
+									<img src="<?php the_sub_field('icon'); ?>" alt="<?php the_sub_field('title'); ?>">
+									<h2><?php the_sub_field('title'); ?></h2>
+									<p><?php the_sub_field('description'); ?></p>
+								</a>
+							</div>
+					<?php endwhile; endif; ?>											
 					</div>
 				</div>
 			</div>
@@ -56,7 +37,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<p class="h3">Send en uforpligtende forespørgsel eller ring og få en snak på 4615 3700</p>
+					<p class="h3"><?php the_field('request_title', options); ?></p>
 					<div class="form">
 						<?php gravity_form( 2, false, false, false, '', false, 10 ); ?>
 					</div>
@@ -69,10 +50,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="h1">Comedy kalenderen</h2>
-					<p class="lead">Her kan du følge med i artister når de bevæger sig rundt omkring i landet</p>
+					<h2 class="h1"><img src="http://localhost/root/tajmer.dk/wp-content/uploads/2015/12/primary-icon.png" class="img-icon" alt="#"> <?php the_field('calendar_title'); ?></h2>
+					<p class="lead"><?php the_field('calender_intro'); ?></p>
 					<?php include 'includes/section-calendar.php';?>
-					<a href="#" title="#" class="lead more">Se den fulde comedy kalender</a>
+					<a href="<?php the_field('calendar_url'); ?>" title="<?php the_field('calender_subtitle'); ?>" class="lead more"><?php the_field('calender_subtitle'); ?></a>
+					<?php wp_reset_query(); ?>
 				</div>
 			</div>
 		</div>
@@ -82,7 +64,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<h2 class="h1">Aktuelle shows</h2>
+					<h2 class="h1"><img src="http://localhost/root/tajmer.dk/wp-content/uploads/2015/12/primary-icon.png" class="img-icon" alt="#"> <?php the_field('shows_title'); ?></h2>
 					<div class="row">
 						<div class="col-md-4">
 							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
@@ -102,7 +84,7 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<h2 class="h1 text-right">On Demand</h2>
+					<h2 class="h1 text-right"><?php the_field('on_demand_title'); ?> <img src="http://localhost/root/tajmer.dk/wp-content/uploads/2015/12/primary-icon.png" class="img-icon" alt="#"></h2>
 					<div class="row">
 						<div class="col-md-4">
 							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
@@ -129,7 +111,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<p class="h3">Send en uforpligtende forespørgsel eller ring og få en snak på 4615 3700</p>
+					<p class="h3"><?php the_field('request_title', options); ?></p>
 					<div class="form">
 						<?php gravity_form( 2, false, false, false, '', false, 20 ); ?>
 					</div>
@@ -141,85 +123,29 @@
 	<section class="module module-information">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
-					<a href="#" title="#"><img src="http://placehold.it/150x150" alt="#" class="img-responsive"></a>
-					<a href="#" title="#"><h2>Konferenciers / Værter</h2></a>
-					<p>Rollen som konferencier / vært kræver et særligt talent: Konferencieren er den person, der binder en begivenhed sammen – det være sig en festaften, en konference, en festivalscene eller noget helt fjerde.</p>
-					<a href="#" title="#">Læs mere</a>
-				</div>
-				<div class="col-md-3">
-					<a href="#" title="#"><img src="http://placehold.it/150x150" alt="#" class="img-responsive"></a>
-					<a href="#" title="#"><h2>Konferenciers / Værter</h2></a>
-					<p>Rollen som konferencier / vært kræver et særligt talent: Konferencieren er den person, der binder en begivenhed sammen – det være sig en festaften, en konference, en festivalscene eller noget helt fjerde.</p>
-					<a href="#" title="#">Læs mere</a>
-				</div>
-				<div class="col-md-3">
-					<a href="#" title="#"><img src="http://placehold.it/150x150" alt="#" class="img-responsive"></a>
-					<a href="#" title="#"><h2>Konferenciers / Værter</h2></a>
-					<p>Rollen som konferencier / vært kræver et særligt talent: Konferencieren er den person, der binder en begivenhed sammen – det være sig en festaften, en konference, en festivalscene eller noget helt fjerde.</p>
-					<a href="#" title="#">Læs mere</a>
-				</div>
-				<div class="col-md-3">
-					<a href="#" title="#"><img src="http://placehold.it/150x150" alt="#" class="img-responsive"></a>
-					<a href="#" title="#"><h2>Konferenciers / Værter</h2></a>
-					<p>Rollen som konferencier / vært kræver et særligt talent: Konferencieren er den person, der binder en begivenhed sammen – det være sig en festaften, en konference, en festivalscene eller noget helt fjerde.</p>
-					<a href="#" title="#">Læs mere</a>
-				</div>													
+				<?php if( get_field('secondary_boxes') ): while ( have_rows('secondary_boxes') ) : the_row(); ?>
+					<div class="col-md-3">
+						<a href="<?php the_sub_field('url'); ?>" title="<?php the_sub_field('title'); ?>">
+							<img src="<?php the_sub_field('image'); ?>" alt="<?php the_sub_field('title'); ?>" class="img-responsive">
+						</a>
+						<a href="<?php the_sub_field('url'); ?>" title="<?php the_sub_field('title'); ?>">
+							<h2><?php the_sub_field('title'); ?></h2>
+						</a>
+						<p><?php the_sub_field('description'); ?></p>
+						<a href="<?php the_sub_field('url'); ?>" title="<?php the_sub_field('title'); ?>">Læs mere</a>
+					</div>
+				<?php endwhile; endif; ?>											
 			</div>
 		</div>
 	</section>
 
-
-	<section class="module module-process">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<h3>Referencer</h3>
-					<div class="row">
-						<div class="col-md-3">
-							<img src="http://placehold.it/150x50" alt="#" class="img-responsive">
-						</div>
-						<div class="col-md-3">
-							<img src="http://placehold.it/150x50" alt="#" class="img-responsive">
-						</div>
-						<div class="col-md-3">
-							<img src="http://placehold.it/150x50" alt="#" class="img-responsive">
-						</div>
-						<div class="col-md-3">
-							<img src="http://placehold.it/150x50" alt="#" class="img-responsive">
-						</div>
-						<div class="col-md-3">
-							<img src="http://placehold.it/150x50" alt="#" class="img-responsive">
-						</div>
-						<div class="col-md-3">
-							<img src="http://placehold.it/150x50" alt="#" class="img-responsive">
-						</div>
-						<div class="col-md-3">
-							<img src="http://placehold.it/150x50" alt="#" class="img-responsive">
-						</div>
-						<div class="col-md-3">
-							<img src="http://placehold.it/150x50" alt="#" class="img-responsive">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<h3>Sådan foregår en forespørgsel og booking hos Tajmer</h3>
-					<ul>
-						<li>Mei suavitate cotidieque an, diceret dissentiet at sea. Ei nemore omnium dissentiunt  Mei suavitate cotidieque an</li>
-						<li>Mei suavitate cotidieque an, diceret dissentiet at sea. Ei nemore omnium dissentiunt  Mei suavitate cotidieque an</li>
-						<li>Mei suavitate cotidieque an, diceret dissentiet at sea. Ei nemore omnium dissentiunt  Mei suavitate cotidieque an</li>
-						<li>Mei suavitate cotidieque an, diceret dissentiet at sea. Ei nemore omnium dissentiunt  Mei suavitate cotidieque an</li>
-					</ul>
-				</div>													
-			</div>
-		</div>
-	</section>	
-
+	<?php include 'includes/section-process.php';?>
+		
 	<section class="module module-contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<p class="h3">Send en uforpligtende forespørgsel eller ring og få en snak på 4615 3700</p>
+					<p class="h3"><?php the_field('request_title', options); ?></p>
 					<div class="form">
 						<?php gravity_form( 2, false, false, false, '', false, 30 ); ?>
 					</div>
@@ -270,6 +196,7 @@
 			</div>
 		</div>
 	</section>
+
 	<?php include 'includes/section-footer.php';?>
 
 <?php get_footer(); ?>

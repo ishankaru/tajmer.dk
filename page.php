@@ -15,8 +15,8 @@
 	<section class="module module-standard">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-offset-2 col-md-8">
-					<?php the_content(); ?>
+				<div class="col-md-8">
+					<?php the_content(); edit_post_link('Rediger artist', '<p>', '</p>'); ?>
 				</div>
 			</div>
 		</div>

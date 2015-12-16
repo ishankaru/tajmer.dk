@@ -29,7 +29,7 @@
 
 <main class="cd-main-content">
 
- 	<section class="module module-subnav">
+ 	<section class="module module-subnav hidden-xs hidden-sm">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-5">
@@ -39,7 +39,7 @@
 					</form>
 				</div>
 				<div class="col-md-7 text-right">
-					<span>Ring til os eller <a href="http://localhost/root/tajmer.dk/forespoergsel/" title="#">send en forespørgsel</a> på en af vores artister <a href="#" title="#">+45 46 15 37 00</a></span>
+					<span>Ring til os eller <a href="http://localhost/root/tajmer.dk/forespoergsel/" title="#">send en forespørgsel</a> på en af vores artister <a href="#" title="#"> <i class="fa fa-phone"></i> +45 46 15 37 00</a></span>
 				</div>
 			</div>
 		</div>

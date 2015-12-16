@@ -24,7 +24,7 @@
 			    <tr>
 			        <td>
 			        	<a href="<?php echo $calinfo[url]; ?>" title="<?php echo $calinfo[title]; ?>">
-			        		<img src="<?php echo $calinfo[thumbnail]; ?>" alt="<?php echo $calinfo[title]; ?>">
+			        		<img src="<?php the_field('artist_calendar_image'); ?>" alt="<?php echo $calinfo[title]; ?>">
 			        	</a>
 			        	<small>
 			        		<?php edit_post_link('Rediger event', '', ''); ?>

@@ -175,13 +175,29 @@
 		// custom post type options
 			array(
 				'labels' => array(
-					'name' => __( 'Artists' ),
+					'name' => __( 'Artister' ),
 					'singular_name' => __( 'Artist' ),
 					'parent_item_colon' => ''
 				),
 				'public' => true,
 				'has_archive' => true,
 				'rewrite' => array('slug' => 'artister'),
+				'hierarchical' => true,
+				'supports' => array('title', 'editor', 'author', 'page-attributes', 'thumbnail', 'excerpt', 'custom-fields', 'revisions', 'comments'),
+			)
+		);
+
+		register_post_type( 'campaigns',
+		// custom post type options
+			array(
+				'labels' => array(
+					'name' => __( 'Kampagner' ),
+					'singular_name' => __( 'kampagne' ),
+					'parent_item_colon' => ''
+				),
+				'public' => true,
+				'has_archive' => false,
+				'rewrite' => array('slug' => 'kampagner'),
 				'hierarchical' => true,
 				'supports' => array('title', 'editor', 'author', 'page-attributes', 'thumbnail', 'excerpt', 'custom-fields', 'revisions', 'comments'),
 			)
@@ -361,4 +377,10 @@ return $query;
 
 add_filter('pre_get_posts','searchfilter');
 
+
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
 ?>

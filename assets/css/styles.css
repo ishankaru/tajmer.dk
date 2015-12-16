@@ -72,6 +72,24 @@ a:focus {
     border-radius: 0;
 }
 
+
+.btn-info,
+.btn-info:active,
+.btn-info:focus,
+.btn-info:hover {
+    color: #fff!important;
+    background-color: #000000!important;
+    border-color: #000000!important;
+    box-shadow: 0px!important;
+}
+
+.btn-info.is-checked {
+    color: #000!important;
+    background-color: #E1CB94!important;
+    border-color: #E1CB94!important;
+}
+
+
 .gform_wrapper ul {
   padding-left: 0;
   list-style: none; }
@@ -366,6 +384,10 @@ table small {
   margin-top: 1em;
 }
 
+.module-boxes a img {
+  width: 4em;
+}
+
 .module-boxes a:hover {
   opacity: 0.8;
   transition: 0.2s ease-in;
@@ -460,11 +482,10 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
-/* -------------------------------- 
+/**************************************/
+/**********  Main components  *********/ 
+/**************************************/
 
-Main components 
-
--------------------------------- */
 .cd-main-content, .cd-main-header {
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
@@ -1623,6 +1644,14 @@ body { font-family: sans-serif; }
 .gallery {
 }
 
+.module.module-related .gallery-cell {
+  width: 18%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  padding: 0.5em 1em;
+  height: auto;
+  display: block;
+}
 .gallery-nav .gallery-cell {
   width: 12%;
   -webkit-filter: grayscale(100%);
@@ -1727,6 +1756,17 @@ font-weight: 500;
 text-decoration: underline;
 }
 
+.module.module-subnav i.fa-phone {
+    background: #E1CB94;
+    border-radius: 10em;
+    padding: 0.8em 0.35em 0.73em 0.35em;
+    color: black;
+    font-size: 1.25em;
+    margin: 0 0.25em 0 0.25em;
+    line-height: 0;
+    display: inline-block;
+}
+
 .module.module-hero figcaption,
 .gallery-main figcaption {
   position:absolute;
@@ -1767,7 +1807,19 @@ text-decoration: underline;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.client {
+    display: block;
+    padding: 0;
+    margin-bottom: 0;
+    line-height: 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    padding-bottom: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom:1em;
+}
 
 .module.module-hero {
   height:550px;
@@ -1817,4 +1869,100 @@ footer a {
 aside .portrait,
 aside .embed-responsive {
   margin-bottom:1em;
+}
+
+.module.module-artists aside ul.book-as  {
+  padding:0;
+}
+
+
+.module.module-artists aside .book-as li {
+  
+display: block;
+  
+padding: 1em;
+  
+border: 1px solid #efefef;
+  
+margin-bottom: 0.5em;
+  
+line-height: 0;
+}
+.module.module-artists aside .book-as li i {
+
+font-size: 1.5em;
+
+margin-right: 11px;
+
+color: #E1CB94;
+}
+
+.img-icon {
+  width: 45px;
+  margin-top: -8px;
+}
+
+/**************************************/
+/***********  PROCESS LIST  ***********/ 
+/**************************************/
+
+.module.module-process ul {
+  counter-reset: section;  
+}
+
+.module.module-process .fa {
+  background: #E1CB94;
+  font-size: 2.5em;
+  color: white;
+  border-radius: 10em;
+  padding: 0.6em;
+  left: -1em;
+}
+
+.module.module-process .fa:after {
+  counter-increment: section;
+  content: counters(section,".") " ";
+  position: absolute;
+  top: -0.25em;
+  right: -0.25em;
+  background: #E1CB94;
+  border-radius: 5em;
+  font-size: 0.5em;
+  color: black;
+  padding: 0.3em 0.5em;
+}
+
+.module.module-process li span {
+  padding: 1.5em 5em;
+  display: block;
+  margin-top: 0.75em;
+}
+
+
+#breadcrumbs {
+    color: #000000;
+    margin-bottom: 1em;
+}
+#breadcrumbs span {}
+#breadcrumbs span a {
+    color: #000000;
+}
+
+#breadcrumbs .breadcrumb_last {color:#acacac;}
+
+.module-artists .categories {margin-bottom:1em;}
+.module-artists a.category:after {content:',';}
+.module-artists a.category:last-child:after {content:'';}
+.module-artists a.category {
+  font-size:1.25em;
+  color:inherit;
+  font-weight: bold;
+}
+
+.module.module-campaign {
+  padding: 5em 0;
+  color:white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
