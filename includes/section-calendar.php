@@ -20,15 +20,12 @@
 <div class="table-responsive">
 	<table class="table table-striped">
 		<tbody>
-			<?php while (have_posts()) : the_post(); $caldata = get_field('artist_calendar'); if ($caldata) { $i = 0; foreach ( $caldata as $calinfo ): if (++$i == 8) /* Limit view to 8 */ break;?>
+			<?php while (have_posts()) : the_post(); $caldata = get_field('artist_calendar'); if ($caldata) { $i = 0; foreach ( $caldata as $calinfo ): if (++$i == 11) /* Limit view to 8 */ break;?>
 			    <tr>
 			        <td>
 			        	<a href="<?php echo $calinfo[url]; ?>" title="<?php echo $calinfo[title]; ?>">
 			        		<img src="<?php the_field('artist_calendar_image'); ?>" alt="<?php echo $calinfo[title]; ?>">
 			        	</a>
-			        	<small>
-			        		<?php edit_post_link('Rediger event', '', ''); ?>
-			        	</small>
 			        </td>
 			        <td>
 			        	<?php 
@@ -42,9 +39,6 @@
 			        </td>
 			        <td>
 			        	<?php echo $calinfo[location]; ?>, <?php echo $calinfo[city]; ?>
-			        </td>
-			        <td>
-			        	Fra kr. <?php echo $calinfo[price]; ?>,-
 			        </td>		        
 					<td>
 						<a href="<?php echo $calinfo[url]; ?>" title="<?php echo $calinfo[title]; ?>" class="btn btn-block btn-success">

@@ -60,66 +60,6 @@
 		</div>
 	</section>
 
-	<section class="module module-products">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<h2 class="h1"><img src="http://localhost/root/tajmer.dk/wp-content/uploads/2015/12/primary-icon.png" class="img-icon" alt="#"> <?php the_field('shows_title'); ?></h2>
-					<div class="row">
-						<div class="col-md-4">
-							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
-							<a href="#" title="#">Se Tourplan</a>
-							<a href="#" title="#">Køb billetter</a>
-						</div>
-						<div class="col-md-4">
-							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
-							<a href="#" title="#">Se Tourplan</a>
-							<a href="#" title="#">Køb billetter</a>
-						</div>
-						<div class="col-md-4">
-							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
-							<a href="#" title="#">Se Tourplan</a>
-							<a href="#" title="#">Køb billetter</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<h2 class="h1 text-right"><?php the_field('on_demand_title'); ?> <img src="http://localhost/root/tajmer.dk/wp-content/uploads/2015/12/primary-icon.png" class="img-icon" alt="#"></h2>
-					<div class="row">
-						<div class="col-md-4">
-							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
-							<a href="#" title="#">Se Tourplan</a>
-							<a href="#" title="#">Køb billetter</a>
-						</div>
-						<div class="col-md-4">
-							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
-							<a href="#" title="#">Se Tourplan</a>
-							<a href="#" title="#">Køb billetter</a>
-						</div>
-						<div class="col-md-4">
-							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
-							<a href="#" title="#">Se Tourplan</a>
-							<a href="#" title="#">Køb billetter</a>
-						</div>
-					</div>
-				</div>				
-			</div>
-		</div>
-	</section>
-
-	<section class="module module-contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<p class="h3"><?php the_field('request_title', options); ?></p>
-					<div class="form">
-						<?php gravity_form( 2, false, false, false, '', false, 20 ); ?>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
 	<section class="module module-information">
 		<div class="container">
 			<div class="row">
@@ -186,12 +126,28 @@
 			<div class="row">
 				<div class="col-md-6">
 					<h2>Facebook</h2>
+					<div class="fb-page" 
+						 data-href="https://www.facebook.com/TajmerBooking/"
+						 data-tabs="timeline, messages, events"
+						 data-width="500"
+						 data-height="400"
+						 data-small-header="false"
+						 data-adapt-container-width="true"
+						 data-hide-cover="false" 
+						 data-show-facepile="true">
+						 <div class="fb-xfbml-parse-ignore">
+						 	<blockquote cite="https://www.facebook.com/TajmerBooking/">
+						 		<a href="https://www.facebook.com/TajmerBooking/">Tajmer Booking &amp; Management</a>
+						 	</blockquote>
+						 </div>
+					</div>
 				</div>
 				<div class="col-md-6">
-					<h2>Om Tajmer</h2>
-					<img src="http://placehold.it/150x150" alt="#" class="img-responsive">
-					<p class="lead">I mere end 40 år har Tajmer Booking & Management markeret sig som landets største og mest eksklusive bureau indenfor dette område.</p>
-					<p class="lead">Med mange af landets populæreste kunstnere i vores management kan vi garantere vores kunder den hurtigste og mest effektive betjening, som desuden hviler på professionel ekspertise og erfaring.</p>
+					<h2><?php the_field('about_section'); ?></h2>
+					<img src="<?php the_field('about_image'); ?>" alt="#" class="img-responsive">
+					<div class="lead">
+						<?php the_field('about_description'); ?>
+					</div>
 				</div>				
 			</div>
 		</div>

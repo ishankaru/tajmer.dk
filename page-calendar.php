@@ -16,10 +16,7 @@
 			<div class="row">
 				<div class="col-md-12">
 
-					<h2>Comedy kalenderen</h2>
-					<p>Her kan du følge med i artister når de bevæger sig rundt omkring i landet</p>
-					<?php include 'includes/section-calendar.php';?>
-							
+					<?php include 'includes/section-calendar.php';?>						
 
 				</div>
 			</div>

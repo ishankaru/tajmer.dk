@@ -9,8 +9,8 @@
  */
  get_header(); ?>
 
- <?php include 'includes/section-header.php';?>
- <?php include 'includes/section-hero.php';?>
+ 	<?php include 'includes/section-header.php';?>
+ 	<?php include 'includes/section-hero.php';?>
 	
 	<section class="module module-artists">
 		<div class="container">
@@ -52,7 +52,11 @@
 				    	<p class="lead"><?php the_field('intro'); ?></p>
 				    <?php endif; ?>
 
-				   <?php the_content(); edit_post_link('Rediger artist', '<p>', '</p>'); ?>
+				    <div class="main-content">
+				    	<?php the_content(); ?>
+				    </div>
+				    <?php edit_post_link('Rediger artist', '<p>', '</p>'); ?>
+
 			    </article>
 
 			    <aside class="col-md-3">
@@ -61,41 +65,18 @@
 			    	</div>
 			    </aside>
 			</div>
-
-
-			<?php if( get_field('artist_calendar') ): ?>									
-				<div class="row">
-					<div class="col-md-12">
-						<h2>Kalender</h2>
-					</div>
-					<div class="col-md-12">
-						<table class="table table-striped">
-							<tbody>
-								<?php while ( have_rows('artist_calendar') ) : the_row(); ?>
-						    	<tr>
-									<td><img src="<?php the_field('artist_calendar_image'); ?>" alt="<?php the_sub_field('title'); ?>"></td>
-									<td><?php the_sub_field('date'); ?></td>
-									<td><?php the_sub_field('title'); ?></td>
-									<td><?php the_sub_field('location'); ?>, <?php the_sub_field('city'); ?></td>
-									<td><?php the_sub_field('price'); ?></td>
-									<td><a href="<?php the_sub_field('url'); ?>" title="<?php the_sub_field('title'); ?>" class="btn btn-block btn-success"><?php the_sub_field('button_text'); ?></a></td>
-								</tr>
-							<?php endwhile; ?>
-							</tbody>
-						</table>
-					</div>
-					<div class="col-md-12">
-						<a href="#" class="lead more">Se den fulde kalender her</a>
-					</div>
-				</div>					
-					
-	<?php endif; ?>
-			
 		</div>
 	</section>
 
+	<section class="module module-calendar">
+		<div class="container">
+			<div class="row">
+				<?php include 'includes/section-calendar-single.php';?>
+			</div>
+		</div>
+	</section>
 
-	<?php include 'includes/section-related-artists.php';?>	
+	<?php include 'includes/section-related.php';?>	
 	<?php include 'includes/section-process.php';?>
 	<?php include 'includes/section-footer.php'; ?>
 

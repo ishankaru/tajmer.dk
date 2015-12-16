@@ -16,7 +16,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
-					<?php the_content(); edit_post_link('Rediger artist', '<p>', '</p>'); ?>
+					<?php the_content(); edit_post_link('Rediger side', '<p>', '</p>'); ?>
 				</div>
 			</div>
 		</div>

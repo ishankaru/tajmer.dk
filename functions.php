@@ -28,6 +28,7 @@
 	           #toplevel_page_wppusher,
 	           #toplevel_page_wpseo_dashboard,
 	           #toplevel_page_edit-post_type-acf,
+	           #menu-appearance,
 	           #toplevel_page_w3tc_dashboard {display:none!important;}
 	        </style>
 	    <?php }
