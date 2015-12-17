@@ -1817,6 +1817,9 @@ text-decoration: underline;
     padding-bottom: 80%;
     background-size: cover;
     background-repeat: no-repeat;
+    -webkit-filter: grayscale(1);
+    filter: url(filters.svg#grayscale);
+    filter: gray;
 }
 .client {
     display: block;
@@ -2097,4 +2100,4 @@ text-align: left!important;
 }
 
 
-article.item a {color:black;}
+article.item a {color: #060606;margin-bottom: 1.5em;display: block;text-align: right;}
