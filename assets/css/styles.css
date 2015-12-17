@@ -1784,7 +1784,7 @@ text-decoration: underline;
   text-align: right;
 }  
 
-.module.module-hero .dark figcaption span{
+.module.module-hero.dark figcaption span{
   color:black!important;
   display: block;
   text-align: right;
