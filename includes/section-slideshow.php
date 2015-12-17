@@ -1,3 +1,13 @@
+<?php 
+/**
+ * Description: Slideshow
+ *
+ * @package Mikkel Tschentscher
+ * @subpackage mikkeltschentscher.dk
+ * @since Version 2.0
+ * @author Mikkel Tschentscher
+ */
+?> 
 
 <?php if( get_field('slideshow') ): ?> 
 	<section class="module module-slideshow">

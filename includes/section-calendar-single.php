@@ -1,3 +1,15 @@
+<?php 
+/**
+ * Description: Calendar for single-artists.php
+ *
+ * @package Mikkel Tschentscher
+ * @subpackage mikkeltschentscher.dk
+ * @since Version 2.0
+ * @author Mikkel Tschentscher
+ */
+?> 
+
+
 <?php if( get_field('artist_calendar') ): ?>									
 				<div class="row">
 					<div class="col-md-12">

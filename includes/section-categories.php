@@ -1,3 +1,14 @@
+<?php 
+/**
+ * Description: Display All Custom Taxanomy terms
+ *
+ * @package Mikkel Tschentscher
+ * @subpackage mikkeltschentscher.dk
+ * @since Version 2.0
+ * @author Mikkel Tschentscher
+ */
+?> 
+
 	<section class="module module-categories">
 		<div class="container">
 			<div class="row">

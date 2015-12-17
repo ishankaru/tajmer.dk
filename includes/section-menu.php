@@ -1,3 +1,15 @@
+<?php 
+/**
+ * Description: Global Menu
+ *
+ * @package Mikkel Tschentscher
+ * @subpackage mikkeltschentscher.dk
+ * @since Version 2.0
+ * @author Mikkel Tschentscher
+ */
+?> 
+
+
 <div class="cd-overlay"></div>
 
 	<nav class="cd-nav">
