@@ -18,7 +18,7 @@
 
 				<aside class="col-md-3">
 					<a href="#" class="btn btn-info">Se alle artister</a>
-					
+
 					<?php if( get_field('artist_portraits') ): while ( have_rows('artist_portraits') ) : the_row(); ?>
 						<img src="<?php the_sub_field('image'); ?>" alt="<?php the_title(); ?>" class="portrait img-responsive">
 					<?php endwhile; else: ?>
@@ -67,6 +67,7 @@
 			    		<?php gravity_form( 1, false, false, false, '', false ); ?>
 			    	</div>
 			    	<a href="#" class="btn btn-info">Se alle artister</a>
+			    	<a href="#" class="btn btn-info">Tilmeld nyhedsbrev</a>
 			    </aside>
 			</div>
 		</div>
