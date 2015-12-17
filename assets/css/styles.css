@@ -2095,3 +2095,6 @@ display: inline-block;
 
 text-align: left!important;
 }
+
+
+article.item a {color:black;}
