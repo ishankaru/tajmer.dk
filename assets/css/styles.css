@@ -201,7 +201,8 @@ textarea.ginput_container input, textarea.ginput_container select, textarea.ginp
 .gform_button:hover, .gform_button:focus, .gform_button:active, .gform_button.active, .open .dropdown-toggle.gform_button {
   color: #000;
   background-color: #E1CB94;
-  border-color: #E1CB94 }
+  border-color: #E1CB94;
+opacity:0.75;}
 
 .gform_button:active, .gform_button.active, .open .dropdown-toggle.gform_button {
   background-image: none; }
