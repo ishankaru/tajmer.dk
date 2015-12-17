@@ -2005,12 +2005,12 @@ color: #E1CB94;
 .btn-icon {
     font-size: 1.25em;
     margin-bottom: 0.75em;
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.2s ease-in;
 }
 .btn-icon i {
-    color:red;
+    color: #E1CB94;
 }
 .btn-icon:hover {
   opacity:0.8;
-  transition: opacity 0.3s ease-in;
+  transition: opacity 0.2s ease-in;
 }
