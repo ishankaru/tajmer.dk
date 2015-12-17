@@ -14,124 +14,124 @@
 
 	<nav class="cd-nav">
 		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
-			<li><a href="http://localhost/root/tajmer.dk/">Forside</a></li>
+			<li><a href="<?php echo get_home_url(); ?>/">Forside</a></li>
 			<li>
-				<a href="http://localhost/root/tajmer.dk/artister/">Artister</a>
+				<a href="<?php echo get_home_url(); ?>/artister/">Artister</a>
 				<ul class="cd-secondary-nav is-hidden">
 					<li class="go-back"><a href="#0">Menu</a></li>
 					<li class="see-all"><a href="#0">Se alle artister</a></li>
 					<li class="has-children">
-						<a href="#0">Accessories</a>
+						<a href="#0">Parent Menu Item</a>
 						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Clothing</a></li>
-							<li class="see-all"><a href="#0">All Accessories</a></li>
-							<li><a href="#0">Glasses</a></li>
-							<li><a href="#0">Gloves</a></li>
-							<li><a href="#0">Jewellery</a></li>
-							<li><a href="#0">Scarves</a></li>
-							<li><a href="#0">Wallets</a></li>
-							<li><a href="#0">Watches</a></li>
+							<li class="go-back"><a href="#0">Menu Item</a></li>
+							<li class="see-all"><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
 						</ul>
 					</li>
 					<li class="has-children">
-						<a href="#0">Bottoms</a>
+						<a href="#0">Menu Item</a>
 						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Clothing</a></li>
-							<li class="see-all"><a href="#0">All Bottoms</a></li>
-							<li><a href="#0">Casual Trousers</a></li>
-							<li><a href="#0">Leggings</a></li>
-							<li><a href="#0">Shorts</a></li>
+							<li class="go-back"><a href="#0">Menu Item</a></li>
+							<li class="see-all"><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
 						</ul>
 					</li>
 					<li class="has-children">
-						<a href="#0">Jackets</a>
+						<a href="#0">Menu Item</a>
 						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Clothing</a></li>
-							<li class="see-all"><a href="#0">All Jackets</a></li>
-							<li><a href="#0">Blazers</a></li>
-							<li><a href="#0">Bomber jackets</a></li>
-							<li><a href="#0">Denim Jackets</a></li>
-							<li><a href="#0">Duffle Coats</a></li>
-							<li><a href="#0">Leather Jackets</a></li>
-							<li><a href="#0">Parkas</a></li>
+							<li class="go-back"><a href="#0">Menu Item</a></li>
+							<li class="see-all"><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
 						</ul>
 					</li>
 					<li class="has-children">
-						<a href="#0">Tops</a>
+						<a href="#0">Menu Item</a>
 						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Clothing</a></li>
-							<li class="see-all"><a href="#0">All Tops</a></li>
-							<li><a href="#0">Cardigans</a></li>
-							<li><a href="#0">Coats</a></li>
-							<li><a href="#0">Hoodies &amp; Sweatshirts</a></li>
-							<li><a href="#0">Jumpers</a></li>
-							<li><a href="#0">Polo Shirts</a></li>
-							<li><a href="#0">Shirts</a></li>
-							<li><a href="#0">Vests</a></li>
+							<li class="go-back"><a href="#0">Menu Item</a></li>
+							<li class="see-all"><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
 						</ul>
 					</li>
 				</ul>
 			</li>
-			<li><a href="http://localhost/root/tajmer.dk/forespoergsel/">Booking</a></li>
-			<li><a href="http://localhost/root/tajmer.dk/comedy-kalender/">Comedykalender</a></li>
+			<li><a href="<?php echo get_home_url(); ?>/forespoergsel/">Booking</a></li>
+			<li><a href="<?php echo get_home_url(); ?>/comedy-kalender/">Comedykalender</a></li>
 			<li class="has-children">
 				<a href="#0">Om Tajmer</a>
-				<ul class="cd-secondary-nav is-hidden">
+								<ul class="cd-secondary-nav is-hidden">
 					<li class="go-back"><a href="#0">Menu</a></li>
-					<li class="see-all"><a href="#0">All Clothing</a></li>
+					<li class="see-all"><a href="#0">Se alle artister</a></li>
 					<li class="has-children">
-						<a href="#0">Accessories</a>
+						<a href="#0">Parent Menu Item</a>
 						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Clothing</a></li>
-							<li class="see-all"><a href="#0">All Accessories</a></li>
-							<li><a href="#0">Glasses</a></li>
-							<li><a href="#0">Gloves</a></li>
-							<li><a href="#0">Jewellery</a></li>
-							<li><a href="#0">Scarves</a></li>
-							<li><a href="#0">Wallets</a></li>
-							<li><a href="#0">Watches</a></li>
+							<li class="go-back"><a href="#0">Menu Item</a></li>
+							<li class="see-all"><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
 						</ul>
 					</li>
 					<li class="has-children">
-						<a href="#0">Bottoms</a>
+						<a href="#0">Menu Item</a>
 						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Clothing</a></li>
-							<li class="see-all"><a href="#0">All Bottoms</a></li>
-							<li><a href="#0">Casual Trousers</a></li>
-							<li><a href="#0">Leggings</a></li>
-							<li><a href="#0">Shorts</a></li>
+							<li class="go-back"><a href="#0">Menu Item</a></li>
+							<li class="see-all"><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
 						</ul>
 					</li>
 					<li class="has-children">
-						<a href="#0">Jackets</a>
+						<a href="#0">Menu Item</a>
 						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Clothing</a></li>
-							<li class="see-all"><a href="#0">All Jackets</a></li>
-							<li><a href="#0">Blazers</a></li>
-							<li><a href="#0">Bomber jackets</a></li>
-							<li><a href="#0">Denim Jackets</a></li>
-							<li><a href="#0">Duffle Coats</a></li>
-							<li><a href="#0">Leather Jackets</a></li>
-							<li><a href="#0">Parkas</a></li>
+							<li class="go-back"><a href="#0">Menu Item</a></li>
+							<li class="see-all"><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
 						</ul>
 					</li>
 					<li class="has-children">
-						<a href="#0">Tops</a>
+						<a href="#0">Menu Item</a>
 						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Clothing</a></li>
-							<li class="see-all"><a href="#0">All Tops</a></li>
-							<li><a href="#0">Cardigans</a></li>
-							<li><a href="#0">Coats</a></li>
-							<li><a href="#0">Hoodies &amp; Sweatshirts</a></li>
-							<li><a href="#0">Jumpers</a></li>
-							<li><a href="#0">Polo Shirts</a></li>
-							<li><a href="#0">Shirts</a></li>
-							<li><a href="#0">Vests</a></li>
+							<li class="go-back"><a href="#0">Menu Item</a></li>
+							<li class="see-all"><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Menu Item</a></li>
 						</ul>
 					</li>
 				</ul>
 			</li>
-			<li><a href="http://localhost/root/tajmer.dk/kontakt/">Kontakt</a></li>
+			<li><a href="<?php echo get_home_url(); ?>/kontakt/">Kontakt</a></li>
 		</ul>
 	</nav>
 
