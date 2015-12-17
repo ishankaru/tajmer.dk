@@ -367,7 +367,7 @@ table small {
   display: block;
 }
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
-    padding: 8px;
+    padding: 6px 8px;
     line-height: 1.42857143;
     vertical-align: middle;
     border-top: none;
@@ -424,8 +424,8 @@ footer {
 }
 
 table img {
-  width: 3em;
-  height: 3em;
+  width: 36px;
+  height: 36px;
 }
 
 

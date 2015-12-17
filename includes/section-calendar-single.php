@@ -16,7 +16,7 @@
 						<h2>Kalender</h2>
 					</div>
 					<div class="col-md-12">
-						<table class="table table-striped">
+						<table class="table table-striped table-hover">
 							<tbody>
 								<?php while ( have_rows('artist_calendar') ) : the_row(); ?>
 						    	<tr>
