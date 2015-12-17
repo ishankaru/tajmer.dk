@@ -22,7 +22,7 @@
 					<li class="go-back"><a href="#0">Menu</a></li>
 					<li class="see-all"><a href="/artister/">Se alle artister</a></li>
 					<li class="has-children">
-						<a href="#0">Underholdning</a>
+						<a href="/kategorier/stand-up/" class="h3">Underholdning</a>
 						<ul class="is-hidden">
 							<li class="go-back"><a href="#0">Menu Item</a></li>
 							<li class="see-all"><a href="#0">Menu Item</a></li>
@@ -33,7 +33,7 @@
 						</ul>
 					</li>
 					<li class="has-children">
-						<a href="#0">Musik</a>
+						<a href="/kategorier/koncertnavne/" class="h3">Musik</a>
 						<ul class="is-hidden">
 							<li class="go-back"><a href="#0">Menu Item</a></li>
 							<li class="see-all"><a href="#0">Menu Item</a></li>
