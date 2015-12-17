@@ -54,7 +54,7 @@
 					    <?php if( get_field('intro') ): ?>
 					    	<p class="lead"><?php the_field('intro'); ?></p>
 					    <?php endif; ?>
-					    
+
 				    	<?php the_content(); ?>
 				    </div>
 				    <?php edit_post_link('Rediger artist', '<p>', '</p>'); ?>
@@ -73,7 +73,7 @@
 		</div>
 	</section>
 
-	<section class="module module-calendar">
+	<section class="module module-calendar single-calendar">
 		<div class="container">
 			<div class="row">
 				<?php include 'includes/section-calendar-single.php';?>
