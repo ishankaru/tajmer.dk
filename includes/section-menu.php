@@ -20,7 +20,7 @@
 				<a href="#0">Find artist</a>
 					<ul class="cd-secondary-nav is-hidden">
 					<li class="go-back"><a href="#0">Menu</a></li>
-					<li class="see-all"><a href="#0">Se alle artister</a></li>
+					<li class="see-all"><a href="/artister/">Se alle artister</a></li>
 					<li class="has-children">
 						<a href="#0">Parent Menu Item</a>
 						<ul class="is-hidden">
