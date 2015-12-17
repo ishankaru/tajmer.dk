@@ -22,30 +22,31 @@
 					<li class="go-back"><a href="#0">Menu</a></li>
 					<li class="see-all"><a href="/artister/">Se alle artister</a></li>
 					<li class="has-children">
-						<a href="#0">Parent Menu Item</a>
+						<a href="#0">Underholdning</a>
 						<ul class="is-hidden">
 							<li class="go-back"><a href="#0">Menu Item</a></li>
 							<li class="see-all"><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Stand-up / Comedy</a></li>
+							<li><a href="#0">Foredragsholder</a></li>
+							<li><a href="#0">Konferencier / værter</a></li>
+							<li><a href="#0">Entertainment / Musical</a></li>
 						</ul>
 					</li>
 					<li class="has-children">
-						<a href="#0">Menu Item</a>
+						<a href="#0">Musik</a>
 						<ul class="is-hidden">
 							<li class="go-back"><a href="#0">Menu Item</a></li>
 							<li class="see-all"><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
+							<li><a href="#0">Solister</a></li>
+							<li><a href="#0">Koncertnavne</a></li>
+							<li><a href="#0">Bands</a></li>
+							<li><a href="#0">DJs</a></li>
+							<li><a href="#0">Jazz/Lounge</a></li>
+							<li><a href="#0">Kirkekoncert</a></li>
 						</ul>
 					</li>
 					<li class="has-children">
-						<a href="#0">Menu Item</a>
+						<a href="#0"></a>
 						<ul class="is-hidden">
 							<li class="go-back"><a href="#0">Menu Item</a></li>
 							<li class="see-all"><a href="#0">Menu Item</a></li>
