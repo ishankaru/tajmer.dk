@@ -27,12 +27,12 @@
 			        		<img src="<?php the_field('artist_calendar_image'); ?>" alt="<?php echo $calinfo[title]; ?>">
 			        	</a>
 			        </td>
-			        <td>
-			        	<?php 
+			        <td>Dato felt redigeres
+			        	<!-- <?php 
 			        		$date_ymd = $calinfo[date]; 
 			        		$date = DateTime::createFromFormat('Ymd', $date_ymd); 
 			        		echo $date->format('d. M Y'); 
-			        	?>
+			        	?> -->
 			        </td>
 			        <td>
 			        	<?php echo $calinfo[title]; ?>
