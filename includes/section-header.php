@@ -35,7 +35,7 @@
 				<div class="col-md-4 col-lg-5">
 					<form role="search" method="get" action="<?php echo home_url( '/' ); ?>">
 						<label><i class="fa fa-search"></i></label>
-						<input type="search" placeholder="Søg blandt vores artister..." value="" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+						<input type="search" placeholder="Søg artist..." value="" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
 					</form>
 				</div>
 				<div class="col-md-8 col-lg-7 text-right">
