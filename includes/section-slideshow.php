@@ -17,7 +17,7 @@
 			  		<figure>
 			  			<img class="gallery-cell-image" title="<?php the_sub_field('slide_title'); ?>" src="<?php the_sub_field('primary_image'); ?>" />
 			  		</figure>
-			  		<figcaption>
+			  		<figcaption class="<?php if( get_field('colorscheme') ) { ?>dark<?php } ?>">
 			  			<?php if( get_sub_field('slide_title') ): ?>
 			  				<span class="artist"><?php the_sub_field('slide_title'); ?></span>
 			  			<?php endif; ?>

@@ -2101,3 +2101,9 @@ text-align: left!important;
 
 
 article.item a {color: #060606;margin-bottom: 1.5em;display: block;text-align: right;}
+
+
+
+.gallery-main figcaption.dark span {
+    color: black;
+}
