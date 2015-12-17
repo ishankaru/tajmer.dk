@@ -17,6 +17,8 @@
 			<div class="row">
 
 				<aside class="col-md-3">
+					<a href="#" class="btn btn-info">Se alle artister</a>
+					
 					<?php if( get_field('artist_portraits') ): while ( have_rows('artist_portraits') ) : the_row(); ?>
 						<img src="<?php the_sub_field('image'); ?>" alt="<?php the_title(); ?>" class="portrait img-responsive">
 					<?php endwhile; else: ?>
@@ -61,8 +63,10 @@
 
 			    <aside class="col-md-3">
 			    	<div class="form">
+			    		<a href="#" title="#"> <i class="fa fa-phone"></i> +45 46 15 37 00</a>
 			    		<?php gravity_form( 1, false, false, false, '', false ); ?>
 			    	</div>
+			    	<a href="#" class="btn btn-info">Se alle artister</a>
 			    </aside>
 			</div>
 		</div>
