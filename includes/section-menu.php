@@ -16,8 +16,9 @@
 		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
 			<li><a href="<?php echo get_home_url(); ?>/">Forside</a></li>
 			<li>
-				<a href="<?php echo get_home_url(); ?>/artister/">Artister</a>
-				<ul class="cd-secondary-nav is-hidden">
+			<li class="has-children">
+				<a href="#0">Find artist</a>
+					<ul class="cd-secondary-nav is-hidden">
 					<li class="go-back"><a href="#0">Menu</a></li>
 					<li class="see-all"><a href="#0">Se alle artister</a></li>
 					<li class="has-children">
@@ -72,65 +73,9 @@
 					</li>
 				</ul>
 			</li>
+			<li><a href="<?php echo get_home_url(); ?>/om-tajmer/">Om Tajmer</a></li>
 			<li><a href="<?php echo get_home_url(); ?>/forespoergsel/">Booking</a></li>
 			<li><a href="<?php echo get_home_url(); ?>/comedy-kalender/">Comedykalender</a></li>
-			<li class="has-children">
-				<a href="#0">Om Tajmer</a>
-								<ul class="cd-secondary-nav is-hidden">
-					<li class="go-back"><a href="#0">Menu</a></li>
-					<li class="see-all"><a href="#0">Se alle artister</a></li>
-					<li class="has-children">
-						<a href="#0">Parent Menu Item</a>
-						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Menu Item</a></li>
-							<li class="see-all"><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-						</ul>
-					</li>
-					<li class="has-children">
-						<a href="#0">Menu Item</a>
-						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Menu Item</a></li>
-							<li class="see-all"><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-						</ul>
-					</li>
-					<li class="has-children">
-						<a href="#0">Menu Item</a>
-						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Menu Item</a></li>
-							<li class="see-all"><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-						</ul>
-					</li>
-					<li class="has-children">
-						<a href="#0">Menu Item</a>
-						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Menu Item</a></li>
-							<li class="see-all"><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-						</ul>
-					</li>
-				</ul>
-			</li>
 			<li><a href="<?php echo get_home_url(); ?>/kontakt/">Kontakt</a></li>
 		</ul>
 	</nav>
