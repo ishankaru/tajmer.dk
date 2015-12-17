@@ -1994,14 +1994,15 @@ padding-top: 3em;
 }
 
 .content_toggle {
-  display: block;
   text-align: center;
-  padding: 1em;
+  padding: 0.89em;
   border:1px solid #efefef;
   cursor: pointer;
   color:black;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+  background: #FCFCFC;
+  display: block;
 }
 .content_toggle:hover {
   color:black;
