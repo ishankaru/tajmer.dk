@@ -41,20 +41,20 @@
 				</aside>
 
 				<article class="main col-md-6">
-					<?php include 'includes/section-breadcrumbs.php';?>
-					<h1><?php the_title(); ?></h1>
-				    
-				    <div class="categories">
-				    	<?php $cats = get_the_terms(get_the_ID(), 'type'); foreach($cats as $c) { ?> 
-				   			<a href="<?php echo get_home_url(); ?>/kategorier/<?php echo $c->slug; ?>" class="category" title="Se alle artister i kategorien <?php echo $c->name; ?>"><?php echo $c->name; ?></a>
-				    	<?php } ?>
-				    </div>
+					<div class="main-content">
+						<?php include 'includes/section-breadcrumbs.php';?>
+						<h1><?php the_title(); ?></h1>
+					    
+					    <div class="categories">
+					    	<?php $cats = get_the_terms(get_the_ID(), 'type'); foreach($cats as $c) { ?> 
+					   			<a href="<?php echo get_home_url(); ?>/kategorier/<?php echo $c->slug; ?>" class="category" title="Se alle artister i kategorien <?php echo $c->name; ?>"><?php echo $c->name; ?></a>
+					    	<?php } ?>
+					    </div>
 
-				    <?php if( get_field('intro') ): ?>
-				    	<p class="lead"><?php the_field('intro'); ?></p>
-				    <?php endif; ?>
-
-				    <div class="main-content">
+					    <?php if( get_field('intro') ): ?>
+					    	<p class="lead"><?php the_field('intro'); ?></p>
+					    <?php endif; ?>
+					    
 				    	<?php the_content(); ?>
 				    </div>
 				    <?php edit_post_link('Rediger artist', '<p>', '</p>'); ?>
@@ -63,7 +63,7 @@
 
 			    <aside class="col-md-3">
 			    	<div class="form">
-			    		<a href="#" title="#"> <i class="fa fa-phone"></i> +45 46 15 37 00</a>
+			    		<a href="#" title="#" class="contact-icon"> <i class="fa fa-phone"></i> +45 46 15 37 00</a>
 			    		<?php gravity_form( 1, false, false, false, '', false ); ?>
 			    	</div>
 			    	<a href="/artister/" class="btn btn-block btn-icon btn-info" title="Se alle artister hos Tajmer.dk"><i class="fa fa-arrow-circle-left"></i> Se alle artister</a>
