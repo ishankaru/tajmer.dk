@@ -2066,3 +2066,7 @@ display: inline-block;
 .contact-icon:hover {
   
 }
+
+label {
+    margin-top: 0.3em;
+}
