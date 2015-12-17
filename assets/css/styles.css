@@ -2002,4 +2002,15 @@ color: #E1CB94;
     padding-top: 2.5em;
 }
 
-.btn-icon {}
+.btn-icon {
+    font-size: 1.25em;
+    margin-bottom: 0.75em;
+    transition: opacity 0.3s ease-in;
+}
+.btn-icon i {
+    color:red;
+}
+.btn-icon:hover {
+  opacity:0.8;
+  transition: opacity 0.3s ease-in;
+}
