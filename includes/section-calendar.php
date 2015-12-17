@@ -8,3 +8,6 @@
  * @author Mikkel Tschentscher
  */
 ?>
+
+
+<p class="alert">Kalender redigeres af Mikkel, og er derfor skjult</p>
