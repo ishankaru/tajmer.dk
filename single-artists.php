@@ -17,7 +17,7 @@
 			<div class="row">
 
 				<aside class="col-md-3">
-					<a href="/artister/" class="btn btn-block btn-info" title="Se alle artister hos Tajmer.dk">Se alle artister</a>
+					<a href="/artister/" class="btn btn-block btn-icon btn-info" title="Se alle artister hos Tajmer.dk"><i class="fa fa-arrow-circle-left"></i> Se alle artister</a>
 
 					<?php if( get_field('artist_portraits') ): while ( have_rows('artist_portraits') ) : the_row(); ?>
 						<img src="<?php the_sub_field('image'); ?>" alt="<?php the_title(); ?>" class="portrait img-responsive">
@@ -66,8 +66,8 @@
 			    		<a href="#" title="#"> <i class="fa fa-phone"></i> +45 46 15 37 00</a>
 			    		<?php gravity_form( 1, false, false, false, '', false ); ?>
 			    	</div>
-			    	<a href="/artister/" class="btn btn-block btn-info" title="Se alle artister hos Tajmer.dk">Se alle artister</a>
-			    	<a href="/nyhedsbrev/" class="btn btn-block btn-info" title="Tilmeld dig Tajmer's nyhedsbrev">Tilmeld nyhedsbrev</a>
+			    	<a href="/artister/" class="btn btn-block btn-icon btn-info" title="Se alle artister hos Tajmer.dk"><i class="fa fa-arrow-circle-left"></i> Se alle artister</a>
+			    	<a href="/nyhedsbrev/" class="btn btn-block btn-icon btn-info" title="Tilmeld dig Tajmer's nyhedsbrev"><i class="fa fa-envelope-o"></i> Tilmeld nyhedsbrev</a>
 			    </aside>
 			</div>
 		</div>
