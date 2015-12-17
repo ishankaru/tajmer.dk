@@ -233,6 +233,7 @@ opacity:0.75;}
 .module.module-artists .form {
   padding: 1.5em;
   color: white;
+  margin-bottom: 1em;
 }
 
 .form:after {
@@ -1992,3 +1993,5 @@ color: #E1CB94;
     padding-bottom: 5em;
     padding-top: 2.5em;
 }
+
+.btn-icon {}
