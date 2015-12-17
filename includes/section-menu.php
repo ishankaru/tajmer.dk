@@ -15,11 +15,11 @@
 	<nav class="cd-nav">
 		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
 			<li><a href="<?php echo get_home_url(); ?>/">Forside</a></li>
-			<li>
+			
 			<li class="has-children">
 				<a href="#0">Find artist</a>
 					<ul class="cd-secondary-nav is-hidden">
-					<li class="go-back"><a href="#0">Menu</a></li>
+					<li class="go-back"><a href="#0">Tilbage</a></li>
 					<li class="see-all"><a href="/artister/">Se alle artister</a></li>
 					<li class="has-children">
 						<a href="/kategorier/stand-up/">Underholdning</a>

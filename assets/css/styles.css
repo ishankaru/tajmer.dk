@@ -802,7 +802,7 @@ input[type="search"]::-webkit-search-results-decoration {
   right: 0;
   height: 100%;
   width: 260px;
-  background: #2e3233;
+  background: #000000;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   z-index: 1;/* Force Hardware Acceleration in WebKit */
@@ -832,7 +832,7 @@ input[type="search"]::-webkit-search-results-decoration {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-bottom: 1px solid #3a3f40;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -867,9 +867,8 @@ input[type="search"]::-webkit-search-results-decoration {
     left: 0;
   }
 }
-.cd-primary-nav .see-all a {
-  /* different style for the See all button on mobile and tablet */
-  color: #69aa6f;
+.cd-primary-nav .see-all a {/* different style for the See all button on mobile and tablet */
+  color: #E1CB94;
 }
 .cd-primary-nav .cd-nav-gallery .cd-nav-item, .cd-primary-nav .cd-nav-icons .cd-nav-item {
   /* items with picture (or icon) and title */
