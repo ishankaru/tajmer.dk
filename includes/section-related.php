@@ -23,7 +23,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="gallery gallery-main js-flickity" data-flickity-options='{ "contain": true, "lazyLoad": 6, "pageDots": false, "wrapAround": true, "prevNextButtons": true}'>
+				<div class="gallery gallery-main js-flickity" data-flickity-options='{ "contain": true, "lazyLoad": 6, "pageDots": true, "wrapAround": true, "prevNextButtons": true}'>
 					<?php $orig_post = $post; global $post; if ( 'artists' == get_post_type() ) {
 						$tags = wp_get_post_terms($post->ID, 'type');
 						if ($tags) { $tag_ids = array();
