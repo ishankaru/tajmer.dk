@@ -199,9 +199,9 @@ textarea.ginput_container input, textarea.ginput_container select, textarea.ginp
   box-shadow: none; }
 
 .gform_button:hover, .gform_button:focus, .gform_button:active, .gform_button.active, .open .dropdown-toggle.gform_button {
-  color: #fff;
-  background-color: #3276b1;
-  border-color: #285e8e; }
+  color: #000;
+  background-color: #E1CB94;
+  border-color: #E1CB94 }
 
 .gform_button:active, .gform_button.active, .open .dropdown-toggle.gform_button {
   background-image: none; }
