@@ -1945,7 +1945,7 @@ color: #E1CB94;
 }
 
 .module.module-process li span {
-  padding: 1.5em 5em;
+  padding: 1.5em 1em 1.5em 5em;
   display: block;
   margin-top: 0.75em;
 }
