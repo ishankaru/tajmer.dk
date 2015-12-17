@@ -1783,6 +1783,13 @@ text-decoration: underline;
   display: block;
   text-align: right;
 }  
+
+.module.module-hero .dark figcaption span{
+  color:black!important;
+  display: block;
+  text-align: right;
+}  
+
 .module.module-hero figcaption .artist,
 .gallery-main figcaption .artist {
   font-size: 5em;
