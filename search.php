@@ -16,7 +16,6 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h1>Søgeresultater</h1>
-						<p class="lead">Din søgning "<?php $allsearch = &new WP_Query("s=$s&showposts=-1"); $key = wp_specialchars($s, 1); $count = $allsearch->post_count; _e(''); echo $key; ?>" gav <?php echo $count . ' '; ?> resultater <?php wp_reset_query(); ?></p>
 						<hr>
 					</div>
 				</div>
