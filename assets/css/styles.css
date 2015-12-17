@@ -1986,6 +1986,12 @@ color: #E1CB94;
   padding-top: 1.75em;
 }
 
+.module.module-process {
+  
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
 .content_toggle {
   display: block;
   text-align: center;
