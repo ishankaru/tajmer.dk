@@ -22,10 +22,10 @@
 					<li class="go-back"><a href="#0">Menu</a></li>
 					<li class="see-all"><a href="/artister/">Se alle artister</a></li>
 					<li class="has-children">
-						<a href="/kategorier/stand-up/" class="h3">Underholdning</a>
+						<a href="/kategorier/stand-up/">Underholdning</a>
 						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Menu Item</a></li>
-							<li class="see-all"><a href="#0">Menu Item</a></li>
+							<li class="go-back"><a href="#0">Tilbage</a></li>
+							<li class="see-all"><a href="/kategorier/stand-up/">Se al underholdning</a></li>
 							<li><a href="/kategorier/stand-up/">Stand-up / Comedy</a></li>
 							<li><a href="/kategorier/foredrag/">Foredragsholder</a></li>
 							<li><a href="/kategorier/konfrenciers-vaerter/">Konferencier / værter</a></li>
@@ -33,10 +33,10 @@
 						</ul>
 					</li>
 					<li class="has-children">
-						<a href="/kategorier/koncertnavne/" class="h3">Musik</a>
+						<a href="/kategorier/koncertnavne/">Musik</a>
 						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Menu Item</a></li>
-							<li class="see-all"><a href="#0">Menu Item</a></li>
+							<li class="go-back"><a href="#0">Tilbage</a></li>
+							<li class="see-all"><a href="/kategorier/koncertnavne/">Se al musik</a></li>
 							<li><a href="/kategorier/sangere-solister/">Solister</a></li>
 							<li><a href="/kategorier/koncertnavne/">Koncertnavne</a></li>
 							<li><a href="/kategorier/bands/">Bands</a></li>
@@ -46,9 +46,9 @@
 						</ul>
 					</li>
 					<li class="has-children">
-						<a href="#0"></a>
+						<a href="#0">Parent Menu Item</a>
 						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Menu Item</a></li>
+							<li class="go-back"><a href="#0">Tilbage</a></li>
 							<li class="see-all"><a href="#0">Menu Item</a></li>
 							<li><a href="#0">Menu Item</a></li>
 							<li><a href="#0">Menu Item</a></li>
@@ -59,7 +59,7 @@
 						</ul>
 					</li>
 					<li class="has-children">
-						<a href="#0">Menu Item</a>
+						<a href="#0">Parent Menu Item</a>
 						<ul class="is-hidden">
 							<li class="go-back"><a href="#0">Menu Item</a></li>
 							<li class="see-all"><a href="#0">Menu Item</a></li>
