@@ -43,23 +43,12 @@
 				</div>
 				<div class="col-md-3">
 					<p class="h3"><?php the_field('col-four-title', options); ?></p>
-					<!-- BEGIN: Ubivox HTML-formular  -->
 					<form action="https://tajmer-booking.clients.ubivox.com/handlers/post/" method="post">
-					 
-					  <input type="hidden" name="action" value="subscribe" />
-					  <input type="hidden" name="lists" value="32526" />
-					 
-					  <p>
-					    <label for="email_address_id">E-mail-adresse</label>
+					  	<input type="hidden" name="action" value="subscribe" />
+					  	<input type="hidden" name="lists" value="32526" />
 					    <input type="text" name="email_address" id="email_address_id" />
-					  </p>
-					 
-					  <p>
 					    <input type="submit" value="Tilmeld" />
-					  </p>
-					 
 					</form>
-					<!-- END: Ubivox HTML-formular  -->
 				</div>
 			</div>
 		</div>
