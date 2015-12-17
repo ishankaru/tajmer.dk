@@ -72,15 +72,15 @@
 			</div>
 		</div>
 	</section>
-
-	<section class="module module-calendar single-calendar">
-		<div class="container">
-			<div class="row">
-				<?php include 'includes/section-calendar-single.php';?>
+	<?php if( get_field('artist_calendar') ): ?>	
+		<section class="module module-calendar single-calendar">
+			<div class="container">
+				<div class="row">
+					<?php include 'includes/section-calendar-single.php';?>
+				</div>
 			</div>
-		</div>
-	</section>
-
+		</section>
+	<?php endif; ?>	
 	<?php include 'includes/section-related.php';?>	
 	<?php include 'includes/section-process.php';?>
 	<?php include 'includes/section-footer.php'; ?>

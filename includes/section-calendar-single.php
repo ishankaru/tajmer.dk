@@ -10,7 +10,7 @@
 ?> 
 
 
-<?php if( get_field('artist_calendar') ): ?>									
+								
 				<div class="row">
 					<div class="col-md-12">
 						<h2>Kalender</h2>
@@ -45,4 +45,4 @@
 						</div>
 					</div>
 				</div>
-			<?php endif; ?>		
+				
