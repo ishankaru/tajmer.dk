@@ -2070,3 +2070,13 @@ display: inline-block;
 label {
     margin-top: 0.3em;
 }
+
+
+.form small {
+  line-height: 1.5em;
+    font-size: 0.8em!important;
+    display: inline-block;
+    margin-top: 0.5em;
+    color: rgba(255, 255, 255, 0.65);
+}
+}
