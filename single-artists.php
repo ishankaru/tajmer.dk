@@ -40,7 +40,7 @@
 					<?php endwhile; endif; ?>
 				</aside>
 
-				<article class="col-md-6">
+				<article class="main col-md-6">
 					<?php include 'includes/section-breadcrumbs.php';?>
 					<h1><?php the_title(); ?></h1>
 				    

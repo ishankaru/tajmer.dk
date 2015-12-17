@@ -2024,3 +2024,8 @@ padding-top: 3em;
   opacity:0.8;
   transition: opacity 0.2s ease-in;
 }
+
+
+.module.module-artists article.main {
+  padding:0 1em;
+}
