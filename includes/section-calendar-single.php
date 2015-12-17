@@ -44,8 +44,5 @@
 							</table>
 						</div>
 					</div>
-					<div class="col-md-12">
-						<a href="#" class="lead more">Se den fulde kalender her</a>
-					</div>
 				</div>
 			<?php endif; ?>		
