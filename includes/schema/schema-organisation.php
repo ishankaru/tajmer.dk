@@ -1,3 +1,14 @@
+<?php 
+/**
+ * Description: Global Schema Markup for Organisation
+ *
+ * @package Mikkel Tschentscher
+ * @subpackage mikkeltschentscher.dk
+ * @since Version 2.0
+ * @author Mikkel Tschentscher
+ */
+?> 
+
 <script type="application/ld+json">
 	{ "@context": "http://schema.org",
 	  "@type" : "Organization",
