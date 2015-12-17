@@ -17,7 +17,8 @@
     ));  
 ?>
 
-<div class="table-responsive">
+OBS! Kalender redigeres af Mikkel lige nu (Derfor vises den ikke)
+<!-- <div class="table-responsive">
 	<table class="table table-striped">
 		<tbody>
 			<?php while (have_posts()) : the_post(); $caldata = get_field('artist_calendar'); if ($caldata) { $i = 0; foreach ( $caldata as $calinfo ): if (++$i == 11) /* Limit view to 8 */ break;?>
@@ -28,11 +29,11 @@
 			        	</a>
 			        </td>
 			        <td>Dato felt redigeres
-			        	<!-- <?php 
+			        	<?php 
 			        		$date_ymd = $calinfo[date]; 
 			        		$date = DateTime::createFromFormat('Ymd', $date_ymd); 
 			        		echo $date->format('d. M Y'); 
-			        	?> -->
+			        	?>
 			        </td>
 			        <td>
 			        	<?php echo $calinfo[title]; ?>
@@ -49,4 +50,4 @@
 		    <?php endforeach; } endwhile;?>
 		</tbody>
 	</table>
-</div>
+</div>-->
