@@ -17,16 +17,12 @@
 				<div class="col-md-12">
 
 					<?php // Get all posts from Custom Post Type, sort by attribute
-					
-					$upcoming_items_args = array( 
-		'post_type' => 'artists',
-		'orderby' => 'meta_value',
-		'order' => 'ASC',
-		'meta_key' => 'location',
-		'numberposts' => -1,
-		'meta_query' => array (
-			array( 'key' => 'location', 'compare' => '=', 'value' => '*a*' )));
-query_posts( $upcoming_items_args);
+						query_posts(array(
+						    'post_type' => 'artists',
+						    'posts_per_page' => -1,
+						    'orderby' => 'menu_order',
+						    'order' => 'ASC'
+						));
 					?>
 
 					<div class="row">
