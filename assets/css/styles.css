@@ -1997,7 +1997,7 @@ padding-bottom: 3em;
 padding-top: 3em;
 }
 .content_toggle::before {
-  
+
 }
 .content_toggle {
   text-align: center;
@@ -2111,3 +2111,24 @@ article.item a {color: #060606;margin-bottom: 1.5em;display: block;text-align: r
 .gallery-main figcaption.dark span {
     color: black;
 }
+
+
+
+.module.module-information {
+
+}
+.module.module-information img {
+  
+}
+.module.module-information h2 {
+  
+}
+
+.module.module-information a {
+  
+}
+
+
+.module.module-about {}
+.module.module-about img {}
+.module.module-about h2 {}
