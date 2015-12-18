@@ -49,6 +49,7 @@
 													<?php 
 														$dateformatstring = "d. F Y";
 														$unixtimestamp = strtotime(get_sub_field('date'));
+														echo 	$unixtimestamp;
 														echo date_i18n($dateformatstring, $unixtimestamp);
 													?>
 
