@@ -15,7 +15,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-
+<?php $sortedArray = array(); ?>
 					<?php // Get all posts from Custom Post Type, sort by attribute
 						query_posts(array(
 						    'post_type' => 'artists',
@@ -37,7 +37,7 @@
 										<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 											<?php while ( have_rows('artist_calendar') ) : the_row(); ?>
 
-											
+									<?php	$sortedArray[] = strtotime(get_sub_field('date')); ?>	
 
 									    	<tr>
 												<td>
@@ -76,6 +76,7 @@
 										<?php endwhile; endif; ?>
 									</tbody>
 								</table>
+							<?php var_dump($sortedArray);
 							</div>
 						</div>
 					</div>						
