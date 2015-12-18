@@ -26,8 +26,11 @@
 					?>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 											<?php while ( have_rows('artist_calendar') ) : the_row(); ?>
-
-									<?php	$sortedArray[strtotime(get_sub_field('date'))] = array(get_field('artist_calendar_image'),get_sub_field('title'),get_sub_field('location'),get_sub_field('city'),get_sub_field('url'),get_sub_field('button_text')); ?>	
+<?php $eventdate = new DateTime(get_sub_field('date'));
+												$now = new DateTime();
+												if($eventdate > $now) {
+												   	$sortedArray[strtotime(get_sub_field('date'))] = array(get_field('artist_calendar_image'),get_sub_field('title'),get_sub_field('location'),get_sub_field('city'),get_sub_field('url'),get_sub_field('button_text'));
+											?>
 		<?php endwhile; ?>
 										<?php endwhile;  endif; ?>	
 
