@@ -24,7 +24,7 @@
 						    'order' => 'ASC'
 						));
 					?>
-					
+
 					<div class="row">
 						<div class="col-md-12">
 							<div class="table-responsive">
@@ -39,7 +39,7 @@
 													<?php endif; ?>
 												</td>
 												<td>
-													<?php the_sub_field('date'); ?>
+													<?php $date = DateTime::createFromFormat('Ymd', get_sub_field('date')); echo $date->format('d-m-Y'); ?>
 												</td>
 												<td>
 													<?php the_sub_field('title'); ?>
