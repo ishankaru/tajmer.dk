@@ -52,22 +52,15 @@
 												<td>
 													<?php 
 														$dateformatstring = "d. F Y";
-														$unixtimestamp = $k;
+														$unixtimestamp = $k
 														echo 	$unixtimestamp;
 														echo date_i18n($dateformatstring, $unixtimestamp);
 													?>
 
-														<?php $eventdate = new DateTime($k);
-												$now = new DateTime();
-												if($eventdate < $now) {
-												    echo 'date is in the past';
-												}
-												if($eventdate > $now) {
-												    echo 'date is in the future';
-												} ?>
+														
 												</td>
 												<td>
-													<?php echo $v[1]; edit_post_link(' - Rediger event', '', ''); ?>
+													<?php echo $v[1] edit_post_link(' - Rediger event', '', ''); ?>
 												</td>
 												<td>
 													<?php echo $v[2] ?>, <?php echo $v[3]; ?>
