@@ -39,7 +39,11 @@
 													<?php endif; ?>
 												</td>
 												<td>
-													<?php $date = DateTime::createFromFormat('Ymd', get_sub_field('date')); echo $date->format('d-m-Y'); ?>
+													<?php 
+														$dateformatstring = "d. F Y";
+														$unixtimestamp = strtotime(get_sub_field('date'));
+														echo date_i18n($dateformatstring, $unixtimestamp);
+													?>
 												</td>
 												<td>
 													<?php the_sub_field('title'); ?>
