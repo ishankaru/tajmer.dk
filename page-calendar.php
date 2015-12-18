@@ -34,6 +34,8 @@ $args = array(
 
 $query = new WP_Query( $args ); ?>
 
+<?php var_dump($query); ?>
+
 					<div class="row">
 						<div class="col-md-12">
 
