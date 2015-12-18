@@ -27,7 +27,7 @@ $args = array(
 
 $query = new WP_Query( $args ); ?>
 
-<?php var_dump($query); ?>
+<?php var_dump($query->the_post()); ?>
 
 					<div class="row">
 						<div class="col-md-12">
