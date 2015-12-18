@@ -32,7 +32,7 @@
 									$eventdate = new DateTime(get_sub_field('date'));
 									$now = new DateTime();
 									if($eventdate > $now) {
-										$calendar[strtotime($eventdate)] = array(
+										$calendar[strtotime(get_sub_field('date'))] = array(
 											get_sub_field('title'),
 											get_sub_field('location'),
 											get_sub_field('city'),
