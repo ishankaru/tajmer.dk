@@ -40,13 +40,11 @@
 <div class="row">
 	<?php ksort($calendar); ?>								
 	<div class="col-md-12">
-		<h1>Comedy Calender</h1>
-		<p>Text goes here</p>
-		<hr>
+		
 		<div class="table-responsive">
 			<table class="table table-striped table-hover">
 				<tbody>
-					<?php foreach($calendar as $k => $v): ?>
+					<?php $i = 0; foreach($calendar as $k => $v): $i++; ?>
 					    <tr>
 							<td>
 								<img src="<?php the_field('artist_calendar_image'); ?>" alt="<?php echo $v[0] ?>">
@@ -68,7 +66,7 @@
 								<a href="<?php echo $v[3]; ?>" title="<?php  echo $v[0];; ?>" class="btn btn-block btn-success"><?php  echo $v[4]; ?></a>
 							</td>
 						</tr>
-					<?php endforeach;?>
+					<?php if($i==10) break; endforeach;?>
 				</tbody>
 			</table>
 		</div>
