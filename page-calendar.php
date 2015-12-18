@@ -16,31 +16,35 @@
 			<div class="row">
 				<div class="col-md-12">
 					
-					<?php 	$sortedArray = array(); // Get all posts from Custom Post Type, sort by attribute
+					<?php 	
+
+						$calendar = array(); 
+
 						query_posts(array(
 						    'post_type' => 'artists',
 						    'posts_per_page' => -1
 						));
-					?>
 					
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						<?php 	while ( have_rows('artist_calendar') ) : the_row(); 
-							$eventdate = new DateTime(get_sub_field('date'));
-							$now = new DateTime();
-							if($eventdate > $now) {
-								$sortedArray[strtotime($eventdate)] = array(
-									get_field('artist_calendar_image'),
-									get_sub_field('title'),
-									get_sub_field('location'),
-									get_sub_field('city'),
-									get_sub_field('url'),
-									get_sub_field('button_text'));
-							}
-						endwhile; ?>
-					<?php endwhile;  endif; ?>	
+						if (have_posts()) : 
+						 	while (have_posts()) : the_post(); 
+								while ( have_rows('artist_calendar') ) : the_row(); 
+									$eventdate = new DateTime(get_sub_field('date'));
+									$now = new DateTime();
+									if($eventdate > $now) {
+										$calendar[strtotime($eventdate)] = array(
+											get_sub_field('title'),
+											get_sub_field('location'),
+											get_sub_field('city'),
+											get_sub_field('url'),
+											get_sub_field('button_text'));
+									}
+								endwhile; 
+							endwhile; 
+						endif;
+					?>	
 		
 					<div class="row">
-						<?php ksort($sortedArray); ?>								
+						<?php ksort($calendar); ?>								
 						<div class="col-md-12">
 							<h1>Comedy Calender</h1>
 							<p>Text goes here</p>
@@ -48,10 +52,10 @@
 							<div class="table-responsive">
 								<table class="table table-striped table-hover">
 									<tbody>
-										<?php foreach($sortedArray as $k => $v): ?>
+										<?php foreach($calendar as $k => $v): ?>
 										    	<tr>
 												<td>
-													<img src="<?php echo $v[0] ?>" alt="<?php echo $v[1] ?>">
+													<img src="<?php the_field('artist_calendar_image'); ?>" alt="<?php echo $v[1] ?>">
 												</td>
 												<td>
 													<?php 
