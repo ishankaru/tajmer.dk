@@ -43,9 +43,9 @@
 				<table class="table table-striped table-hover">
 					<tbody>
 						<?php foreach(array_slice($calendar, 0, 3) as $k => $v): ?>
-						    	<tr>
+						     <tr>
 								<td>
-									<img src="<?php the_field('artist_calendar_image'); ?>" alt="<?php echo $v[1] ?>">
+									<img src="<?php the_field('artist_calendar_image'); ?>" alt="<?php echo $v[0] ?>">
 								</td>
 								<td>
 									<?php 
@@ -55,13 +55,13 @@
 									?>
 								</td>
 								<td>
-									<?php echo $v[1]; edit_post_link(' - Rediger event', '', ''); ?>
+									<?php echo $v[0]; edit_post_link(' - Rediger event', '', ''); ?>
 								</td>
 								<td>
-									<?php echo $v[2] ?>, <?php echo $v[3]; ?>
+									<?php echo $v[1] ?>, <?php echo $v[2]; ?>
 								</td>
 								<td>
-									<a href="<?php echo $v[4]; ?>" title="<?php  echo $v[1];; ?>" class="btn btn-block btn-success"><?php  echo $v[5]; ?></a>
+									<a href="<?php echo $v[3]; ?>" title="<?php  echo $v[0];; ?>" class="btn btn-block btn-success"><?php  echo $v[4]; ?></a>
 								</td>
 							</tr>
 						<?php endforeach;?>
