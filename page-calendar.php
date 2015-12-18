@@ -53,7 +53,7 @@
 													<?php 
 														$dateformatstring = "d. F Y";
 														$unixtimestamp = $k;
-														echo 	$unixtimestamp;
+													
 														echo date_i18n($dateformatstring, $unixtimestamp);
 													?>
 
