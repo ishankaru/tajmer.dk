@@ -1,6 +1,6 @@
 <?php 
 /**
- * Description: Inlined styles for better performance
+ * Description: All CSS files
  *
  * @package Mikkel Tschentscher
  * @subpackage mikkeltschentscher.dk
@@ -9,4 +9,6 @@
  */
 ?> 
 
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/styles.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/tajmer.css">

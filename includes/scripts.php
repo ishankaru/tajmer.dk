@@ -1,6 +1,6 @@
 <?php 
 /**
- * Description: Scripts
+ * Description: All Scripts
  *
  * @package Mikkel Tschentscher
  * @subpackage mikkeltschentscher.dk
