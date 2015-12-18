@@ -37,7 +37,7 @@
 										<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 											<?php while ( have_rows('artist_calendar') ) : the_row(); ?>
 
-									<?php	$sortedArray[] = strtotime(get_sub_field('date')); ?>	
+									<?php	$sortedArray[strtotime(get_sub_field('date'))] = array(the_field('artist_calendar_image'),the_sub_field('title'),the_sub_field('location'),the_sub_field('city'),the_sub_field('url')); ?>	
 
 									    	<tr>
 												<td>
@@ -66,7 +66,7 @@
 													<?php the_sub_field('title'); edit_post_link(' - Rediger event', '', ''); ?>
 												</td>
 												<td>
-													<?php the_sub_field('location'); ?>, <?php the_sub_field('city'); ?>
+													<?php the_sub_field('title') ?>, <?php the_sub_field('city'); ?>
 												</td>
 												<td>
 													<a href="<?php the_sub_field('url'); ?>" title="<?php the_sub_field('title'); ?>" class="btn btn-block btn-success"><?php the_sub_field('button_text'); ?></a>
