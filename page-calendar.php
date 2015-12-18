@@ -30,12 +30,12 @@
 												$now = new DateTime();
 												if($eventdate > $now) {
 												   	$sortedArray[strtotime(get_sub_field('date'))] = array(get_field('artist_calendar_image'),get_sub_field('title'),get_sub_field('location'),get_sub_field('city'),get_sub_field('url'),get_sub_field('button_text'));
-											?>
+										}	?>
 		<?php endwhile; ?>
 										<?php endwhile;  endif; ?>	
-
-<?php ksort($sortedArray); ?>										
+		
 					<div class="row">
+<?php ksort($sortedArray); ?>								
 						<div class="col-md-12">
 
 							<h1>Comedy Calender</h1>
