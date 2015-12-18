@@ -20,9 +20,6 @@ $args = array(
     'post_type' => 'artists',
     'post_status' => 'publish',
     'posts_per_page' => '-1',
-    'meta_key' => 'date',
-    'orderby' => 'meta_value',
-    'order' => 'ASC',
     );
 
 $query = new WP_Query( $args ); ?>
