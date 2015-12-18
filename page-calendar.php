@@ -36,6 +36,9 @@
 									<tbody>
 										<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 											<?php while ( have_rows('artist_calendar') ) : the_row(); ?>
+
+											
+
 									    	<tr>
 												<td>
 													<?php if( get_field('artist_calendar_image') ): ?>
@@ -48,6 +51,17 @@
 														$unixtimestamp = strtotime(get_sub_field('date'));
 														echo date_i18n($dateformatstring, $unixtimestamp);
 													?>
+
+														<?php $eventdate = new DateTime(get_sub_field('date'));
+												$now = new DateTime();
+
+												if($eventdate < $now) {
+												    echo 'date is in the past';
+												}
+
+												if($eventdate > $now) {
+												    echo 'date is in the future';
+												} ?>
 												</td>
 												<td>
 													<?php the_sub_field('title'); edit_post_link(' - Rediger event', '', ''); ?>
