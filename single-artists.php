@@ -50,14 +50,14 @@
 					   			<a href="<?php echo get_home_url(); ?>/kategorier/<?php echo $c->slug; ?>" class="category" title="Se alle artister i kategorien <?php echo $c->name; ?>"><?php echo $c->name; ?></a>
 					    	<?php } ?>
 					    </div>
-
+					    <?php edit_post_link('Rediger artist', '<p>', '</p>'); ?>
 					    <?php if( get_field('intro') ): ?>
 					    	<p class="lead"><?php the_field('intro'); ?></p>
 					    <?php endif; ?>
-
+					    
 				    	<?php the_content(); ?>
 				    </div>
-				    <?php edit_post_link('Rediger artist', '<p>', '</p>'); ?>
+				    
 
 			    </article>
 
