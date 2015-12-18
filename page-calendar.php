@@ -35,7 +35,7 @@ $args = array (
 );
 					
 					
-					/ Get all posts from Custom Post Type, sort by attribute
+					// Get all posts from Custom Post Type, sort by attribute
 						query_posts($args);
 					?>
 
