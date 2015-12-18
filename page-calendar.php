@@ -29,7 +29,9 @@
 
 									<?php	$sortedArray[strtotime(get_sub_field('date'))] = array(get_field('artist_calendar_image'),get_sub_field('title'),get_sub_field('location'),get_sub_field('city'),get_sub_field('url'),get_sub_field('button_text')); ?>	
 		<?php endwhile; ?>
-										<?php endwhile;  endif; ?>				
+										<?php endwhile;  endif; ?>	
+
+<?php ksort($sortedArray); ?>										
 					<div class="row">
 						<div class="col-md-12">
 
@@ -39,25 +41,23 @@
 							<div class="table-responsive">
 								<table class="table table-striped table-hover">
 									<tbody>
-										<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-											<?php while ( have_rows('artist_calendar') ) : the_row(); ?>
-
+										<?php foreach($sortedArray as $k => $v): ?>
 
 									    	<tr>
 												<td>
-													<?php if( get_field('artist_calendar_image') ): ?>
-														<img src="<?php the_field('artist_calendar_image'); ?>" alt="<?php the_sub_field('title'); ?>">
-													<?php endif; ?>
+													
+														<img src="<?php echo $v[0] ?>" alt="<?php echo $v[1] ?>">
+												
 												</td>
 												<td>
 													<?php 
 														$dateformatstring = "d. F Y";
-														$unixtimestamp = strtotime(get_sub_field('date'));
+														$unixtimestamp = $k
 														echo 	$unixtimestamp;
 														echo date_i18n($dateformatstring, $unixtimestamp);
 													?>
 
-														<?php $eventdate = new DateTime(get_sub_field('date'));
+														<?php $eventdate = new DateTime($k);
 												$now = new DateTime();
 												if($eventdate < $now) {
 												    echo 'date is in the past';
@@ -67,21 +67,20 @@
 												} ?>
 												</td>
 												<td>
-													<?php the_sub_field('title'); edit_post_link(' - Rediger event', '', ''); ?>
+													<?php echo $v[1] edit_post_link(' - Rediger event', '', ''); ?>
 												</td>
 												<td>
-													<?php the_sub_field('title') ?>, <?php the_sub_field('city'); ?>
+													<?php echo $v[2] ?>, <?php echo $v[3]; ?>
 												</td>
 												<td>
-													<a href="<?php the_sub_field('url'); ?>" title="<?php the_sub_field('title'); ?>" class="btn btn-block btn-success"><?php the_sub_field('button_text'); ?></a>
+													<a href="<?php echo $v[4]; ?>" title="<?php  echo $v[1];; ?>" class="btn btn-block btn-success"><?php  echo $v[5]; ?></a>
 												</td>
 											</tr>
-											<?php endwhile; ?>
-										<?php endwhile; endif; ?>
+										<?php endforeach;?>
 									</tbody>
 								</table>
 								
-							<?php var_dump($sortedArray)?>
+							
 							</div>
 						</div>
 					</div>						
