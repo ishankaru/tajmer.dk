@@ -17,16 +17,13 @@
 				<div class="col-md-12">
 
 					<?php // Get all posts from Custom Post Type, sort by attribute
-					$today = date('Ymd');
+					
 					$upcoming_items_args = array( 
 		'post_type' => 'artists',
 		'orderby' => 'meta_value',
 		'order' => 'ASC',
 		'meta_key' => 'date',
-		'numberposts' => -1,
-		'meta_query' => array (
-			array( 'key' => 'date', 'compare' => '>', 'value' => $today )
-                 ));
+		'numberposts' => -1);
 query_posts( $upcoming_items_args);
 					?>
 
