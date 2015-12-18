@@ -15,13 +15,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-
 					<?php // Get all posts from Custom Post Type, sort by attribute
 						query_posts(array(
 						    'post_type' => 'artists',
 						    'posts_per_page' => -1,
-						    'orderby' => 'menu_order',
-						    'order' => 'ASC'
+						    'meta_key'			=> 'start_date',
+	                                            'orderby'			=> 'meta_value_num',
+	                                            'order'		        => 'ASC'
 						));
 					?>
 
