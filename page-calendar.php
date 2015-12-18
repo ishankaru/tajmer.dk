@@ -17,7 +17,7 @@
 
 $query = new WP_Query( $args );
 if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
-   the_field('date');// whatever you want to use from $post
+   the_sub_field('location');// whatever you want to use from $post
 endwhile; endif;
 ?>
 <?php include 'includes/section-footer.php';?>
