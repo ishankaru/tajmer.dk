@@ -19,9 +19,7 @@
 					<?php 	$sortedArray = array(); // Get all posts from Custom Post Type, sort by attribute
 						query_posts(array(
 						    'post_type' => 'artists',
-						    'posts_per_page' => -1,
-						    'orderby' => 'menu_order',
-						    'order' => 'ASC'
+						    'posts_per_page' => -1
 						));
 					?>
 					
@@ -30,7 +28,13 @@
 							$eventdate = new DateTime(get_sub_field('date'));
 							$now = new DateTime();
 							if($eventdate > $now) {
-								$sortedArray[strtotime(get_sub_field('date'))] = array(get_field('artist_calendar_image'),get_sub_field('title'),get_sub_field('location'),get_sub_field('city'),get_sub_field('url'),get_sub_field('button_text'));
+								$sortedArray[strtotime($eventdate)] = array(
+									get_field('artist_calendar_image'),
+									get_sub_field('title'),
+									get_sub_field('location'),
+									get_sub_field('city'),
+									get_sub_field('url'),
+									get_sub_field('button_text'));
 							}
 						endwhile; ?>
 					<?php endwhile;  endif; ?>	
