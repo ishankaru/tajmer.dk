@@ -42,7 +42,7 @@
 			<div class="table-responsive">
 				<table class="table table-striped table-hover">
 					<tbody>
-						<?php foreach($calendar as $k => $v): ?>
+						<?php foreach(array_slice($calendar, 0, 3) as $k => $v): ?>
 						    	<tr>
 								<td>
 									<img src="<?php the_field('artist_calendar_image'); ?>" alt="<?php echo $v[1] ?>">
