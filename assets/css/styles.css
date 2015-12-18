@@ -388,6 +388,7 @@ table small {
 
 .module-boxes a img {
   width: 4em;
+  height: 4em;
 }
 
 .module-boxes a:hover {
@@ -398,7 +399,7 @@ table small {
 
 
 .module-boxes a p {
-  font-size:0.85em;
+  font-size: 0.95em;
 }
 
 footer {
