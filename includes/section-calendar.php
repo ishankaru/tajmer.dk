@@ -32,7 +32,11 @@
 								<?php endif; ?>
 							</td>
 							<td>
-								<?php the_sub_field('date'); ?>
+								<?php 
+									$dateformatstring = "d. F Y";
+									$unixtimestamp = strtotime(get_sub_field('date'));
+									echo date_i18n($dateformatstring, $unixtimestamp);
+								?>
 							</td>
 							<td>
 								<?php the_sub_field('title'); ?>

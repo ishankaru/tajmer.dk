@@ -27,6 +27,10 @@
 
 					<div class="row">
 						<div class="col-md-12">
+
+							<h1>Comedy Calender</h1>
+							<p>Text goes here</p>
+							<hr>
 							<div class="table-responsive">
 								<table class="table table-striped table-hover">
 									<tbody>
