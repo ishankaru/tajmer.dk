@@ -76,7 +76,7 @@
 										<?php endwhile; endif; ?>
 									</tbody>
 								</table>
-								<?php ksort($sortedArray); ?>
+								
 							<?php var_dump($sortedArray)?>
 							</div>
 						</div>
