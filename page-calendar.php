@@ -20,6 +20,9 @@
 					
 					$upcoming_items_args = array( 
 		'post_type' => 'artists',
+		'orderby' => 'meta_value',
+		'order' => 'ASC',
+		'meta_key' => 'location',
 		'numberposts' => -1);
 query_posts( $upcoming_items_args);
 					?>
