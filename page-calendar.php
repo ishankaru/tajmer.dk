@@ -15,18 +15,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-			<?php	$today = current_time('Ymd');
+			<?php	$today = date('Ymd');
 $args = array(
     'post_type' => 'artists',
     'post_status' => 'publish',
     'posts_per_page' => '-1',
-    'meta_query' => array(
-        array(
-            'key' => 'date',
-            'compare' => '>=', // Upcoming Events - Greater than or equal to today
-            'value' => $today,
-        )
-    ),
     'meta_key' => 'date',
     'orderby' => 'meta_value',
     'order' => 'ASC',
