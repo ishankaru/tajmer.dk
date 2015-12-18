@@ -50,7 +50,7 @@
 													?>
 												</td>
 												<td>
-													<?php the_sub_field('title'); edit_post_link('- Rediger event', '', ''); ?>
+													<?php the_sub_field('title'); edit_post_link(' - Rediger event', '', ''); ?>
 												</td>
 												<td>
 													<?php the_sub_field('location'); ?>, <?php the_sub_field('city'); ?>
