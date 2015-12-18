@@ -15,14 +15,28 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<?php // Get all posts from Custom Post Type, sort by attribute
-						query_posts(array(
-						    'post_type' => 'artists',
-						    'posts_per_page' => -1,
-						    'meta_key'			=> 'date',
-	                                            'orderby'			=> 'meta_value_num',
-	                                            'order'		        => 'ASC'
-						));
+					<?php 
+					$today = date('Ymd');
+
+$args = array (
+    'post_type' => 'artists',
+    'meta_query' => array(
+		array(
+	        'key'		=> 'start_date',
+	        'compare'	=> '<=',
+	        'value'		=> $today,
+	    ),
+	     array(
+	        'key'		=> 'end_date',
+	        'compare'	=> '>=',
+	        'value'		=> $today,
+	    )
+    ),
+);
+					
+					
+					/ Get all posts from Custom Post Type, sort by attribute
+						query_posts($args);
 					?>
 
 					<div class="row">
