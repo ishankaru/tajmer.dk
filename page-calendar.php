@@ -19,7 +19,7 @@
 						query_posts(array(
 						    'post_type' => 'artists',
 						    'posts_per_page' => -1,
-						    'meta_key'			=> 'start_date',
+						    'meta_key'			=> 'date',
 	                                            'orderby'			=> 'meta_value_num',
 	                                            'order'		        => 'ASC'
 						));
