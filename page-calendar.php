@@ -23,7 +23,9 @@
 		'orderby' => 'meta_value',
 		'order' => 'ASC',
 		'meta_key' => 'location',
-		'numberposts' => -1);
+		'numberposts' => -1,
+		'meta_query' => array (
+			array( 'key' => 'location', 'compare' => '=', 'value' => '*a*' )));
 query_posts( $upcoming_items_args);
 					?>
 
