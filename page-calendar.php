@@ -15,29 +15,24 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<?php 
-					$today = date('Ymd');
-
-$args = array (
+			<?php	$today = current_time('Ymd');
+$args = array(
     'post_type' => 'artists',
+    'post_status' => 'publish',
+    'posts_per_page' => '-1',
     'meta_query' => array(
-		array(
-	        'key'		=> 'start_date',
-	        'compare'	=> '<=',
-	        'value'		=> $today,
-	    ),
-	     array(
-	        'key'		=> 'end_date',
-	        'compare'	=> '>=',
-	        'value'		=> $today,
-	    )
+        array(
+            'key' => 'date',
+            'compare' => '>=', // Upcoming Events - Greater than or equal to today
+            'value' => $today,
+        )
     ),
-);
-					
-					
-					// Get all posts from Custom Post Type, sort by attribute
-						query_posts($args);
-					?>
+    'meta_key' => 'date',
+    'orderby' => 'meta_value',
+    'order' => 'ASC',
+    );
+
+$query = new WP_Query( $args ); ?>
 
 					<div class="row">
 						<div class="col-md-12">
@@ -48,8 +43,8 @@ $args = array (
 							<div class="table-responsive">
 								<table class="table table-striped table-hover">
 									<tbody>
-										<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-											<?php while ( have_rows('artist_calendar') ) : the_row(); ?>
+										<?php if ($query->have_posts()) : while ($query->have_posts()) : the_post(); ?>
+											<?php while ( $query->have_rows('artist_calendar') ) : $query->the_row(); ?>
 
 											
 
