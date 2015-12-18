@@ -67,7 +67,7 @@
 												} ?>
 												</td>
 												<td>
-													<?php echo $v[1] edit_post_link(' - Rediger event', '', ''); ?>
+													<?php echo $v[1]; edit_post_link(' - Rediger event', '', ''); ?>
 												</td>
 												<td>
 													<?php echo $v[2] ?>, <?php echo $v[3]; ?>
