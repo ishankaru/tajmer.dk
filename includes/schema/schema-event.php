@@ -1,6 +1,7 @@
 <?php 
 /**
- * Description: Schema Markup For Artist Events
+ * Description: Schema markup in JSON+LD format based on documentation from - http://schema.org/Event
+ * Test: Debug output: https://developers.google.com/structured-data/testing-tool/
  *
  * @package Mikkel Tschentscher
  * @subpackage mikkeltschentscher.dk
@@ -19,7 +20,7 @@
         "@context" : "http://schema.org",
         "@type" : "ComedyEvent",
         "name" : "<?php the_sub_field('title'); ?>",
-        "startDate" : "2015-01-25T20:00",
+        "startDate" : "<?php $dateformatstring = "l d F, Y"; $unixtimestamp = strtotime(get_sub_field('date')); echo date_i18n($dateformatstring, $unixtimestamp); ?>T20:00",
         "location": {
           "@type": "Place",
           "address": {
