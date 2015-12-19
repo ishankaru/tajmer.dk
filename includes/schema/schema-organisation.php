@@ -18,7 +18,7 @@
 				 "https://www.linkedin.com/company/tajmer-booking-&-management"],
 	  "contactPoint": {
 		  "@type" : "ContactPoint",
-		  "telephone" : "<?php the_field('telephone', options); ?>",
+		  "telephone" : "+45<?php echo str_replace(' ', '', get_field('telephone', 'option')); ?>",
 		  "contactType" : "sales"
 	  }
 	}
