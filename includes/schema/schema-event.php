@@ -19,7 +19,7 @@
         "@context" : "http://schema.org",
         "@type" : "ComedyEvent",
         "name" : "<?php the_sub_field('title'); ?>",
-        "startDate" : "<?php $dateformatstring = "l d F, Y"; $unixtimestamp = strtotime(get_sub_field('date')); echo date_i18n($dateformatstring, $unixtimestamp); ?>T20:00",
+        "startDate" : "<?php $date = DateTime::createFromFormat('Ymd', get_sub_field('date')); echo $date->format('Y-m-d');?>T20:00",
         "location": {
           "@type": "Place",
           "address": {
