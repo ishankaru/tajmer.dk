@@ -16,17 +16,17 @@
 					<p class="h3"><?php the_field('col-one-title', options); ?></p>
 					<div class="row">
 						<div class="col-md-3">
-							<a href="#" title="#">
-								<img src="<?php the_field('vlogo', options); ?>" alt="#" class="img-responsive">
+							<a href="<?php echo get_home_url(); ?>/" title="Tajmer Booking &amp; Management">
+								<img src="<?php the_field('vlogo', options); ?>" alt="Tajmer Booking &amp; Management" class="img-responsive">
 							</a>
 						</div>
 						<div class="col-md-9">
 							<address>
-								<span><strong>Tajmer Booking &amp; Management</strong></span>
-								<span>Søndre Allé 17</span>
-								<span>DK-4600 Køge</span>
-								<span>Tlf. <a href="#" title="#">+45 46 15 37 00</a></span>
-								<span><a href="#" title="#">tajmer@tajmer.dk</a></span>
+								<span><strong><?php the_field('name', options); ?></strong></span>
+								<span><?php the_field('address', options); ?></span>
+								<span><?php the_field('country', options); ?>-<?php the_field('zipcode', options); ?> <?php the_field('city', options); ?></span>
+								<span>Tlf. <a href="tel:<?php echo str_replace(' ', '', get_field('telephone', 'option')); ?>" title="Ring og book <?php the_title(); ?> på <?php the_field('telephone', options); ?>"> <i class="fa fa-phone"></i> +45 <?php the_field('telephone', options); ?></a></span>
+								<span><a href="mailto:<?php the_field('name', options); ?>" title="Send en mail til os"><?php the_field('name', options); ?></a></span>
 							</address>
 						</div>
 					</div>

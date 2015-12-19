@@ -17,7 +17,6 @@
 				<h2>Tajmer anbefaler også</h2>
 			</div>	
 		</div>
-		</div>
 	</div>
 
 	<div class="container">
@@ -42,8 +41,8 @@
 							    'ignore_sticky_posts'   => 1
 							);
 							$my_query = new wp_query( $args );
-							if( $my_query->have_posts() ) { ?>
-								<?php $i=1; while( $my_query->have_posts() ) {
+							if( $my_query->have_posts() ) { 
+								$i=1; while( $my_query->have_posts() ) {
 								$my_query->the_post(); ?>
 										<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="gallery-cell">
 											<?php if( get_field('artist_thumbnail') ): ?>

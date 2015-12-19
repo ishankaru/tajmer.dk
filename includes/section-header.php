@@ -37,7 +37,7 @@
 				</form>
 			</div>
 			<div class="col-md-8 col-lg-7 text-right">
-				<span>Ring til os eller <a href="<?php echo get_home_url(); ?>/forespoergsel/" title="#">send en forespørgsel</a> på en af vores artister <a href="#" title="#"> <i class="fa fa-phone"></i> +45 46 15 37 00</a></span>
+				<span>Ring til os eller <a href="<?php echo get_home_url(); ?>/forespoergsel/" title="Send en forespørgsel">send en forespørgsel</a> på en af vores artister <a href="tel:<?php echo str_replace(' ', '', get_field('telephone', 'option')); ?>" title="Ring og book <?php the_title(); ?> på <?php the_field('telephone', options); ?>"> <i class="fa fa-phone"></i> +45 <?php the_field('telephone', options); ?></a></span>
 			</div>
 		</div>
 	</div>

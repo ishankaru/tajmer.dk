@@ -87,7 +87,7 @@
 	    <div class="container">
 	      <div class="row">
 	        <div class="col-md-12">
-	          <p class="h3">Send en uforpligtende forespørgsel eller ring og få en snak på 4615 3700</p>
+	          <p class="h3"><?php the_field('request_title', options); ?></p>
 	          <div class="form">
 	            <?php gravity_form( 2, false, false, false, '', false, 10 ); ?>
 	          </div>
