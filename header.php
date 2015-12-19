@@ -16,9 +16,11 @@
 	<link rel="icon" href="http://www.tajmer.dk/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/flickity.min.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/tajmer.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/navigation.min.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/gravityforms.min.css">
+
 
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
