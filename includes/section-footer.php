@@ -29,6 +29,9 @@
 								<span><a href="mailto:<?php the_field('email', options); ?>" title="Send en mail til os"><?php the_field('email', options); ?></a></span>
 							</address>
 						</div>
+						<div class="col-md-12">
+							<a href="https://mikkeltschentscher.dk" title="Webdesign af Mikkel Tschentscher" class="subtle">Web by Mikkel Tschentscher</a>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-3">
