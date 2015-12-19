@@ -16,40 +16,45 @@
 			<div class="row">
 				<div class="col-md-12">
 					
-					<?php 	
-
-						$calendar = array(); 
-
-						query_posts(array(
-						    'post_type' => 'artists',
-						    'posts_per_page' => -1
-						));
-					
-						if (have_posts()) : 
-						 	while (have_posts()) : the_post(); 
-								while ( have_rows('artist_calendar') ) : the_row(); 
-
-									$eventdate = new DateTime(get_sub_field('date'));
-									$now = new DateTime();
-									if($eventdate > $now) {
-										$calendar[strtotime(get_sub_field('date'))] = array(
-											get_sub_field('title'),
-											get_sub_field('location'),
-											get_sub_field('city'),
-											get_sub_field('url'),
-											get_sub_field('button_text'));
-									}
-								endwhile; 
-							endwhile; 
-						endif;
-					?>	
-		
+	
 					<div class="row">
-						<?php ksort($calendar); ?>								
+													
 						<div class="col-md-12">
 							<h1><?php the_field('title'); ?></h1>
 							<p><?php the_field('intro'); ?></p>
+
 							<hr>
+
+							<?php 	
+								wp_reset_query(); 
+								$calendar = array(); 
+
+								query_posts(array(
+								    'post_type' => 'artists',
+								    'posts_per_page' => -1
+								));
+							
+								if (have_posts()) : 
+								 	while (have_posts()) : the_post(); 
+										while ( have_rows('artist_calendar') ) : the_row(); 
+
+											$eventdate = new DateTime(get_sub_field('date'));
+											$now = new DateTime();
+											if($eventdate > $now) {
+												$calendar[strtotime(get_sub_field('date'))] = array(
+													get_sub_field('title'),
+													get_sub_field('location'),
+													get_sub_field('city'),
+													get_sub_field('url'),
+													get_sub_field('button_text'));
+											}
+										endwhile; 
+									endwhile; 
+								endif;
+
+								ksort($calendar); 
+							?>	
+
 							<div class="table-responsive">
 								<table class="table table-striped table-hover">
 									<tbody>
