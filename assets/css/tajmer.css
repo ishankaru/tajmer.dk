@@ -2117,16 +2117,35 @@ article.item a {color: #060606;margin-bottom: 1.5em;display: block;text-align: r
 }
 .module.module-information img {
   
+border-radius: 10em;
+  
+max-width: 170px;
+  
+width: 100%;
+  
+margin: 0 auto;
 }
 .module.module-information h2 {
   
+color: black;
 }
 
 .module.module-information a {
   
+color: black;
 }
 
 
-.module.module-about {}
-.module.module-about img {}
-.module.module-about h2 {}
+.module.module-about {
+    text-align: center;
+}
+.module.module-about img {
+    margin: 0 auto;
+    border-radius: 10em;
+    margin-bottom: 2em;
+}
+.module.module-about h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2em;
+}

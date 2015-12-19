@@ -130,7 +130,7 @@
 						 data-href="https://www.facebook.com/TajmerBooking/"
 						 data-tabs="timeline, messages, events"
 						 data-width="500"
-						 data-height="400"
+						 data-height="450"
 						 data-small-header="false"
 						 data-adapt-container-width="true"
 						 data-hide-cover="false" 
