@@ -84,5 +84,6 @@
 	<?php include 'includes/section-related.php';?>	
 	<?php include 'includes/section-process.php';?>
 	<?php include 'includes/section-footer.php'; ?>
+	<?php include 'includes/schema/schema-event.php'; ?>
 
 <?php get_footer(); ?>
