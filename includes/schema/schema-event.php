@@ -14,7 +14,7 @@
 
   [ 
 
-    <?php while ( have_rows('artist_calendar') ) : the_row(); ?>
+    <?php $last = count(get_field('artist_calendar')); $x=1; while ( have_rows('artist_calendar') ) : the_row(); ?>
       {
         "@context" : "http://schema.org",
         "@type" : "ComedyEvent",
@@ -46,7 +46,8 @@
           "priceCurrency": "DKK",
           "url" : "<?php the_sub_field('url'); ?>"
         }
-      },
+      }
+      <?php if($x==$last) { $lastitem = ''; } else { $lastitem = ','; } echo $lastitem; ?>
     <?php endwhile; ?>
   ]
 
