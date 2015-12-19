@@ -958,7 +958,11 @@ article.item a {
   font-size: 2em;
 }
 
-.subtle, .subtle a{
-    font-size: 0.8em;
-    color: rgba(255, 255, 255, 0.45);
+.subtle {
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.subtle a {
+  color: rgba(255, 255, 255, 0.45);
 }
