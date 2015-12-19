@@ -14,7 +14,7 @@
 
   [ 
 
-    <?php $events = array(); while ( have_rows('artist_calendar') ) : the_row(); ?>
+    <?php while ( have_rows('artist_calendar') ) : the_row(); ?>
       {
         "@context" : "http://schema.org",
         "@type" : "ComedyEvent",
@@ -46,8 +46,8 @@
           "priceCurrency": "DKK",
           "url" : "<?php the_sub_field('url'); ?>"
         }
-      }
-    <?php endwhile; echo implode(', ' , $events); ?>
+      },
+    <?php endwhile; ?>
   ]
 
 </script>
