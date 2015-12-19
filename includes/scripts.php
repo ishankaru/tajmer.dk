@@ -15,7 +15,14 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/isotope.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/flickity.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/readmore.min.js"></script>
-<script type="text/javascript">function downloadJSAtOnload(){var d=document.createElement("script");d.src="<?php echo get_template_directory_uri(); ?>/assets/js/defer.min.js",document.body.appendChild(d)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload;</script>
+
+<script type="text/javascript">
+    function downloadJSAtOnload() {
+        var d = document.createElement("script");
+        d.src = "<?php echo get_template_directory_uri(); ?>/assets/js/defer.min.js", document.body.appendChild(d)
+    }
+    window.addEventListener ? window.addEventListener("load", downloadJSAtOnload, !1) : window.attachEvent ? window.attachEvent("onload", downloadJSAtOnload) : window.onload = downloadJSAtOnload;
+</script>
 
 <script type="text/javascript">
 	var _gaq = _gaq || [];
