@@ -651,7 +651,6 @@ table img {
 
 address span {
   display: block;
-  line-height: 1.6em;
 }
 
 footer img {
@@ -959,4 +958,7 @@ article.item a {
   font-size: 2em;
 }
 
-.subtle {}
+.subtle, .subtle a{
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.45);
+}
