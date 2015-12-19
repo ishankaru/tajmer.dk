@@ -46,9 +46,8 @@
           "priceCurrency": "DKK",
           "url" : "<?php the_sub_field('url'); ?>"
         }
-      }
-      <?php if($x==$last) { $lastitem = ''; } else { $lastitem = ','; } echo $lastitem; ?>
-    <?php endwhile; ?>
+      }<?php if($x==$last) { $lastitem = ''; } else { $lastitem = ','; } echo $lastitem; ?>
+    <?php $x++; endwhile; ?>
   ]
 
 </script>
