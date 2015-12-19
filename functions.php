@@ -15,6 +15,19 @@
 	remove_action( 'wp_head', 'feed_links_extra', 3 );
 	remove_action( 'wp_head', 'feed_links', 2 );
 	
+
+	// Add CSS
+	function add_styles() {
+		wp_register_script('getstyles', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
+		wp_register_script('getstyles', get_template_directory_uri() . '/assets/css/font-awesome.min.css');
+		wp_register_script('getstyles', get_template_directory_uri() . '/assets/css/flickity.min.css');
+		wp_register_script('getstyles', get_template_directory_uri() . '/assets/css/tajmer.min.css');
+		wp_register_script('getstyles', get_template_directory_uri() . '/assets/css/gravityforms.min.css');
+		wp_register_script('getstyles', get_template_directory_uri() . '/assets/css/tajmer.css');
+		wp_enqueue_script('getstyles');
+	}
+
+	add_action( 'wp_enqueue_scripts', 'add_styles' );
 		
 	// Cleans WordPress Backend
 	add_action('admin_head', 'hidemenus');
