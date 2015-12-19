@@ -15,7 +15,7 @@
 	<section class="module module-standard">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-offset-2 col-md-8">
 					<?php the_content(); edit_post_link('Rediger side', '<p>', '</p>'); ?>
 				</div>
 			</div>
