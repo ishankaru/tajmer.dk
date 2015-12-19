@@ -14,21 +14,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-5">
-					<p class="h2">Vi samarbejder med</p>
+					<p class="h2">Referencer</p>
 					<div class="row">
 						<div class="col-md-12">
-							<p class="lead">Officielt booking og management for landets største artister indenfor stand-up comedy, foredrag, shows og konferenciers.</p>
-							<div class="row xs-gutter">
-								<div class="col-md-3"><div class="client" style="background-image:url('http://placehold.it/275x200');"></div></div>
-								<div class="col-md-3"><div class="client" style="background-image:url('http://placehold.it/275x200');"></div></div>
-								<div class="col-md-3"><div class="client" style="background-image:url('http://placehold.it/275x200');"></div></div>
-								<div class="col-md-3"><div class="client" style="background-image:url('http://placehold.it/275x200');"></div></div>
-								<div class="col-md-3"><div class="client" style="background-image:url('http://placehold.it/275x200');"></div></div>
-								<div class="col-md-3"><div class="client" style="background-image:url('http://placehold.it/275x200');"></div></div>
-								<div class="col-md-3"><div class="client" style="background-image:url('http://placehold.it/275x200');"></div></div>
-								<div class="col-md-3"><div class="client" style="background-image:url('http://placehold.it/275x200');"></div></div>
-							</div>
-							<p>Vi ser frem til - i et tæt samarbejde med dig - at planlægge og afvikle jeres næste arrangement. <a href="#">Book jeres underholdning her</a></p>
+							
 						</div>
 					</div>
 				</div>
