@@ -3,8 +3,8 @@
  * Description: Schema markup in JSON+LD format based on documentation from - http://schema.org/Event
  * Test: Debug output: https://developers.google.com/structured-data/testing-tool/
  *
- * @package Mikkel Tschentscher
- * @subpackage mikkeltschentscher.dk
+ * @package Tajmer Booking & Management
+ * @subpackage tajmer.dk
  * @since Version 2.0
  * @author Mikkel Tschentscher
  */
@@ -15,7 +15,6 @@
   [ 
 
     <?php while ( have_rows('artist_calendar') ) : the_row(); ?>
-
       {
         "@context" : "http://schema.org",
         "@type" : "ComedyEvent",
@@ -48,7 +47,6 @@
           "url" : "<?php the_sub_field('url'); ?>"
         }
       },
-
     <?php endwhile; ?>
   ]
 
