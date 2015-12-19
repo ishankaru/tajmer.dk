@@ -20,8 +20,9 @@
 					<div class="row">
 													
 						<div class="col-md-12">
+
 							<h1><?php the_field('title'); ?></h1>
-							<p><?php the_field('intro'); ?></p>
+							<p class="lead"><?php the_field('intro'); ?></p>
 
 							<hr>
 
@@ -84,6 +85,7 @@
 									</tbody>
 								</table>
 							</div>
+							
 						</div>
 					</div>						
 				</div>
