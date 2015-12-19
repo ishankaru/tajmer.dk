@@ -27,10 +27,12 @@
 								<span><?php the_field('zipcode', options); ?> <?php the_field('city', options); ?></span>
 								<span>Tlf. <a href="tel:<?php echo str_replace(' ', '', get_field('telephone', 'option')); ?>" title="Ring og book <?php the_title(); ?> på <?php the_field('telephone', options); ?>">+45 <?php the_field('telephone', options); ?></a></span>
 								<span><a href="mailto:<?php the_field('email', options); ?>" title="Send en mail til os"><?php the_field('email', options); ?></a></span>
+								<span>CVRs: <?php the_field('vat_number', options); ?></span>
 							</address>
 						</div>
-						<div class="col-md-12">
-							<a href="https://mikkeltschentscher.dk" title="Webdesign af Mikkel Tschentscher" class="subtle">Web by Mikkel Tschentscher</a>
+						<div class="col-md-12 subtle">
+							<p>Copyright © <?php echo date("Y"); ?> Tajmer Booking &amp; Management<br>
+							<a href="https://mikkeltschentscher.dk" title="Webdesign af Mikkel Tschentscher">Website af Mikkel Tschentscher</a></p>
 						</div>
 					</div>
 				</div>
