@@ -42,12 +42,12 @@
 				<?php else : ?>
 
 					<div class="row ">
-						<div class="col-md-8">
+						<div class="col-md-12">
 							<h2>Din søgning gav 0 resultater.</h2>
 							<p class="lead">Vær sikker på at du har skrevet artistens navn rigtigt. Hvis det ikke kommer frem, så er du velkommen til at sende os en mail eller ringe til os på <a href="tel:<?php echo str_replace(' ', '', get_field('telephone', 'option')); ?>" title="Kontakt Tajmer på <?php the_field('telephone', options); ?>">+45 <?php the_field('telephone', options); ?></a>. Så finder vi en løsning</p>
 						</div>
 					</div>		
-								
+
 				<?php endif; ?>
 				
 			</div>

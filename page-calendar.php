@@ -47,8 +47,8 @@
 					<div class="row">
 						<?php ksort($calendar); ?>								
 						<div class="col-md-12">
-							<h1>Comedy Calender</h1>
-							<p>Text goes here</p>
+							<h1><?php the_field('title'); ?></h1>
+							<p><?php the_field('intro'); ?></p>
 							<hr>
 							<div class="table-responsive">
 								<table class="table table-striped table-hover">
