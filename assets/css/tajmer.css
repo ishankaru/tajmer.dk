@@ -8,6 +8,12 @@ body {
   font-weight: 300;
 }
 
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
 /* ***************************************************************************
 *********************************** Links ***********************************
 *************************************************************************** */
@@ -44,7 +50,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: inherit;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   line-height: 1.1;
   color: inherit;
@@ -604,11 +610,7 @@ Primary style
 
 -------------------------------- */
 
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-}
+
 
 @media only screen and (max-width: 1169px) {
   body.nav-on-left.overflow-hidden {
@@ -617,7 +619,7 @@ Primary style
 }
 
 input {
-  font-family: sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.6rem;
 }
 
@@ -1896,9 +1898,6 @@ http://flickity.metafizzy.co
   box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-}
 
 .gallery {
 }
