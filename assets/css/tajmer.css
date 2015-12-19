@@ -374,7 +374,7 @@ footer {
 
 .module.module-footer {
   background: black;
-  padding: 5em 0 15em 0;
+  padding: 5em 1em 15em 1em;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -656,6 +656,8 @@ address span {
 footer img {
   width: 100%;
   height: auto;
+  max-width: 100px!important;
+  margin: 0 0 1em 0;
 }
 
 footer a {
