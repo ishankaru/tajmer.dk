@@ -48,6 +48,7 @@
         }
       }<?php if($x==$last) { $lastitem = ''; } else { $lastitem = ','; } echo $lastitem; ?>
     <?php $x++; endwhile; ?>
+    
   ]
 
 </script>

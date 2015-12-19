@@ -84,6 +84,9 @@
 	<?php include 'includes/section-related.php';?>	
 	<?php include 'includes/section-process.php';?>
 	<?php include 'includes/section-footer.php'; ?>
-	<?php include 'includes/schema/schema-event.php'; ?>
 
+	<?php if( get_field('artist_calendar') ): ?>	
+		<?php include 'includes/schema/schema-event.php'; ?>
+	<?php endif; ?>	
+	
 <?php get_footer(); ?>
