@@ -24,9 +24,9 @@
 							<address>
 								<span><strong><?php the_field('name', options); ?></strong></span>
 								<span><?php the_field('address', options); ?></span>
-								<span><?php the_field('country', options); ?>-<?php the_field('zipcode', options); ?> <?php the_field('city', options); ?></span>
-								<span>Tlf. <a href="tel:<?php echo str_replace(' ', '', get_field('telephone', 'option')); ?>" title="Ring og book <?php the_title(); ?> på <?php the_field('telephone', options); ?>"> <i class="fa fa-phone"></i> +45 <?php the_field('telephone', options); ?></a></span>
-								<span><a href="mailto:<?php the_field('name', options); ?>" title="Send en mail til os"><?php the_field('name', options); ?></a></span>
+								<span><?php the_field('zipcode', options); ?> <?php the_field('city', options); ?></span>
+								<span>Tlf. <a href="tel:<?php echo str_replace(' ', '', get_field('telephone', 'option')); ?>" title="Ring og book <?php the_title(); ?> på <?php the_field('telephone', options); ?>">+45 <?php the_field('telephone', options); ?></a></span>
+								<span><a href="mailto:<?php the_field('email', options); ?>" title="Send en mail til os"><?php the_field('email', options); ?></a></span>
 							</address>
 						</div>
 					</div>
