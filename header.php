@@ -13,8 +13,6 @@
 
 	<?php wp_head(); ?>
 
-	<?php include 'includes/styles.php';?>
-
 	<link rel="icon" href="http://www.tajmer.dk/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/font-awesome.min.css">
