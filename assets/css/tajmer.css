@@ -793,9 +793,9 @@ aside .embed-responsive {
 
 .module.module-related {
   border-top: 1px solid #EFEFEF;
-  background: #efefef;
   padding-bottom: 2.5em;
   padding-top: 1.75em;
+  background: #F9F9F9;
 }
 
 .module.module-process {
@@ -814,7 +814,6 @@ aside .embed-responsive {
   color: black;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  background: #FCFCFC;
   display: block;
 }
 
@@ -925,7 +924,9 @@ article.item a {
 
 .module.module-information {
 }
-
+.module.module-artists {
+  padding:2.5em 0;
+}
 .module.module-information img {
   border-radius: 10em;
   max-width: 170px;
