@@ -13,7 +13,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<p class="h3"><?php the_field('col-one-title', options); ?></p>
+					<p class="h3"><?php the_field('col-one-title', options); ?></p><br>
 					<div class="row">
 						<div class="col-md-3">
 							<a href="<?php echo get_home_url(); ?>/" title="Tajmer Booking &amp; Management">
