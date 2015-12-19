@@ -17,17 +17,26 @@
 	
 
 	// Add CSS
-	function add_styles() {
-		wp_register_script('getstyles', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
-		wp_register_script('getstyles', get_template_directory_uri() . '/assets/css/font-awesome.min.css');
-		wp_register_script('getstyles', get_template_directory_uri() . '/assets/css/flickity.min.css');
-		wp_register_script('getstyles', get_template_directory_uri() . '/assets/css/tajmer.min.css');
-		wp_register_script('getstyles', get_template_directory_uri() . '/assets/css/gravityforms.min.css');
-		wp_register_script('getstyles', get_template_directory_uri() . '/assets/css/tajmer.css');
-		wp_enqueue_script('getstyles');
-	}
 
+	function add_styles() {
+
+    	wp_register_style( 'bootstrap',  get_template_directory_uri() .'/assets/css/bootstrap.min.css', array(), null, 'all' );
+	    wp_register_style( 'font-awesome',  get_template_directory_uri() .'/assets/css/font-awesome.min.css', array(), null, 'all' );
+	    wp_register_style( 'flickity', get_template_directory_uri() .'/assets/css/flickity.min.css', array(), null, 'all' );
+		wp_register_style( 'tajmer',  get_template_directory_uri() .'/assets/css/tajmer.css', array(), null, 'all' );
+	    wp_register_style( 'gravityforms',  get_template_directory_uri() .'/assets/css/gravityforms.min.css', array(), null, 'all' );
+	    wp_register_style( 'navigation', get_template_directory_uri() .'/assets/css/navigation.min.css', array(), null, 'all' );	    
+	    
+	    wp_enqueue_style( 'bootstrap' );
+	    wp_enqueue_style( 'font-awesome' );
+	    wp_enqueue_style( 'flickity' );
+	    wp_enqueue_style( 'tajmer' );
+	    wp_enqueue_style( 'gravityforms' );
+	    wp_enqueue_style( 'navigation' );	    
+	}
+	
 	add_action( 'wp_enqueue_scripts', 'add_styles' );
+
 		
 	// Cleans WordPress Backend
 	add_action('admin_head', 'hidemenus');
