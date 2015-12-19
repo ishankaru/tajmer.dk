@@ -125,7 +125,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<h2>Facebook</h2>
+					<h2>Følg Tajmer på Facebook</h2>
 					<div class="fb-page" 
 						 data-href="https://www.facebook.com/TajmerBooking/"
 						 data-tabs="timeline, messages, events"
