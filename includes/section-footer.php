@@ -43,11 +43,14 @@
 				</div>
 				<div class="col-md-3">
 					<p class="h3"><?php the_field('col-four-title', options); ?></p>
-					<form action="https://tajmer-booking.clients.ubivox.com/handlers/post/" method="post">
-					  	<input type="hidden" name="action" value="subscribe" />
-					  	<input type="hidden" name="lists" value="32526" />
-					    <input type="text" name="email_address" id="email_address_id" />
-					    <input type="submit" value="Tilmeld" />
+					<p>Tilmeld dig vores nyhedsbrev</p>
+					<form action="https://tajmer-booking.clients.ubivox.com/handlers/post/" method="post" class="form-inline">
+					  	<div class="form-group">
+					  		<input type="hidden" name="action" value="subscribe" />
+						  	<input type="hidden" name="lists" value="32526" />
+						    <input type="text" name="email_address" class="form-control"  id="email_address_id" />
+						</div>
+					    <input type="submit" value="Send" class="btn btn-success" />
 					</form>
 				</div>
 			</div>
