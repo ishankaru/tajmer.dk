@@ -32,7 +32,7 @@
 						</div>
 						<div class="col-md-12 subtle">
 							<p>Copyright © <?php echo date("Y"); ?> Tajmer Booking &amp; Management<br>
-							<a href="https://mikkeltschentscher.dk" title="Webdesign af Mikkel Tschentscher">Website af Mikkel Tschentscher</a></p>
+							<a href="https://mikkeltschentscher.dk" title="Website udviklet af Mikkel Tschentscher">Website af Mikkel Tschentscher</a></p>
 						</div>
 					</div>
 				</div>
