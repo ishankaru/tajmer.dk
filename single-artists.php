@@ -57,13 +57,11 @@
 					    
 				    	<?php the_content(); ?>
 				    </div>
-				    
-
 			    </article>
 
 			    <aside class="col-md-3">
 			    	<div class="form">
-			    		<a href="tel:<?php echo str_replace(' ', '', get_field('telephone', 'option')); ?>" title="Ring og book <?php the_title(); ?>" class="contact-icon"> <i class="fa fa-phone"></i> +45 <?php the_field('telephone', options); ?></a>
+			    		<a href="tel:<?php echo str_replace(' ', '', get_field('telephone', 'option')); ?>" title="Ring og book <?php the_title(); ?> på <?php the_field('telephone', options); ?>" class="contact-icon"> <i class="fa fa-phone"></i> +45 <?php the_field('telephone', options); ?></a>
 			    		<?php gravity_form( 1, false, false, false, '', false ); ?>
 			    	</div>
 			    	<a href="/artister/" class="btn btn-block btn-icon btn-info" title="Se alle artister hos Tajmer.dk"><i class="fa fa-arrow-circle-left"></i> Se alle artister</a>
@@ -72,6 +70,7 @@
 			</div>
 		</div>
 	</section>
+
 	<?php if( get_field('artist_calendar') ): ?>	
 		<section class="module module-calendar single-calendar">
 			<div class="container">
@@ -81,6 +80,7 @@
 			</div>
 		</section>
 	<?php endif; ?>	
+
 	<?php include 'includes/section-related.php';?>	
 	<?php include 'includes/section-process.php';?>
 	<?php include 'includes/section-footer.php'; ?>
