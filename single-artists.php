@@ -63,7 +63,7 @@
 
 			    <aside class="col-md-3">
 			    	<div class="form">
-			    		<a href="#" title="#" class="contact-icon"> <i class="fa fa-phone"></i> +45 46 15 37 00</a>
+			    		<a href="tel:<?php the_field('telephone', options); ?>" title="Ring og book <?php the_title(); ?>" class="contact-icon"> <i class="fa fa-phone"></i> +45 46 15 37 00</a>
 			    		<?php gravity_form( 1, false, false, false, '', false ); ?>
 			    	</div>
 			    	<a href="/artister/" class="btn btn-block btn-icon btn-info" title="Se alle artister hos Tajmer.dk"><i class="fa fa-arrow-circle-left"></i> Se alle artister</a>

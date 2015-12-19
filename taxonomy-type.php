@@ -23,47 +23,46 @@
 				</div>
 			</div>
 
+			<?php 
+				$cat = get_queried_object();
+				query_posts('post_type=artists&type='.$cat->slug.'&posts_per_page=-1&orderby=menu_order&order=ASC');
+		    ?>
 
-					<?php 
-					$cat = get_queried_object();
-					query_posts('post_type=artists&type='.$cat->slug.'&posts_per_page=-1&orderby=menu_order&order=ASC');
-				    ?>
+		    <div class="row grid">
 
-				    <div class="row grid">
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    <?php if ($post->menu_order > 0) { ?>
+                        <article class="item col-xs-6 col-sm-4 col-md-3 col-lg-2 <?php $cats = get_the_terms(get_the_ID(), 'type'); foreach($cats as $c) {echo $c->slug.' ';} ?>">
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+								<?php if( get_field('artist_thumbnail') ): ?>
+									<div class="thumbnail" style="background-image:url('<?php the_field('artist_thumbnail'); ?>')"></div>
+								<?php else: ?>
+									<div class="thumbnail" style="background-image:url('http://placehold.it/275x200');"></div>
+								<?php endif; ?>
+								<h2 class="h5"><?php the_title(); ?></h2>
+							</a>
+						</article>
+                    <?php } ?>
+                <?php endwhile; ?>
 
-	 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                            <?php if ($post->menu_order > 0) { ?>
-                                <article class="item col-xs-6 col-sm-4 col-md-3 col-lg-2 <?php $cats = get_the_terms(get_the_ID(), 'type'); foreach($cats as $c) {echo $c->slug.' ';} ?>">
-									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-										<?php if( get_field('artist_thumbnail') ): ?>
-											<div class="thumbnail" style="background-image:url('<?php the_field('artist_thumbnail'); ?>')"></div>
-										<?php else: ?>
-											<div class="thumbnail" style="background-image:url('http://placehold.it/275x200');"></div>
-										<?php endif; ?>
-										<h2 class="h5"><?php the_title(); ?></h2>
-									</a>
-								</article>
-                            <?php } ?>
-                        <?php endwhile; ?>
+                <?php while (have_posts()) : the_post(); ?>
+                    <?php if ($post->menu_order < 1) { ?>
+                        <article class="item col-xs-6 col-sm-4 col-md-3 col-lg-2 <?php $cats = get_the_terms(get_the_ID(), 'type'); foreach($cats as $c) {echo $c->slug.' ';} ?>">
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+								<?php if( get_field('artist_thumbnail') ): ?>
+									<div class="thumbnail" style="background-image:url('<?php the_field('artist_thumbnail'); ?>')"></div>
+								<?php else: ?>
+									<div class="thumbnail" style="background-image:url('http://placehold.it/275x200');"></div>
+								<?php endif; ?>
+								<h2 class="h5"><?php the_title(); ?></h2>
+							</a>
+						</article>
+                    <?php } ?>
+                <?php endwhile; endif; ?>
 
-	                    <?php while (have_posts()) : the_post(); ?>
-	                        <?php if ($post->menu_order < 1) { ?>
-	                            <article class="item col-xs-6 col-sm-4 col-md-3 col-lg-2 <?php $cats = get_the_terms(get_the_ID(), 'type'); foreach($cats as $c) {echo $c->slug.' ';} ?>">
-									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-										<?php if( get_field('artist_thumbnail') ): ?>
-											<div class="thumbnail" style="background-image:url('<?php the_field('artist_thumbnail'); ?>')"></div>
-										<?php else: ?>
-											<div class="thumbnail" style="background-image:url('http://placehold.it/275x200');"></div>
-										<?php endif; ?>
-										<h2 class="h5"><?php the_title(); ?></h2>
-									</a>
-								</article>
-	                        <?php } ?>
-	                    <?php endwhile; endif; ?>
+		        <?php wp_reset_query(); ?>
 
-				        <?php wp_reset_query(); ?>
-
-
+			</div>
 		</div>
 	</section>
 
@@ -71,7 +70,7 @@
 	    <div class="container">
 	      <div class="row">
 	        <div class="col-md-12">
-	          <p class="h3">Send en uforpligtende forespørgsel eller ring og få en snak på 4615 3700</p>
+	          <p class="h3"><?php the_field('request_title', options); ?></p>
 	          <div class="form">
 	            <?php gravity_form( 2, false, false, false, '', false, 10 ); ?>
 	          </div>

@@ -1,6 +1,6 @@
 <?php
 /**
- * Description: Posts page
+ * Description: Single Post
  *
  * @package Tajmer Booking & Management
  * @subpackage tajmer.dk
