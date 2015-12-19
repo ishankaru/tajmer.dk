@@ -1,0 +1,217 @@
+/* ***************************************************************************
+******************************** Gravity Forms *******************************
+*************************************************************************** */
+
+.gform_wrapper ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.gform_wrapper li {
+  margin-bottom: 0;
+}
+
+.gform_wrapper form {
+  margin-bottom: 0;
+}
+
+.gform_wrapper .gfield_required {
+  padding-left: 1px;
+  color: #b94a48;
+}
+
+.ginput_container input,
+.ginput_container select,
+.ginput_container textarea {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.ginput_container input:-moz-placeholder,
+.ginput_container select:-moz-placeholder,
+.ginput_container textarea:-moz-placeholder {
+  color: #999;
+}
+
+.ginput_container input::-moz-placeholder,
+.ginput_container select::-moz-placeholder,
+.ginput_container textarea::-moz-placeholder {
+  color: #999;
+}
+
+.ginput_container input:-ms-input-placeholder,
+.ginput_container select:-ms-input-placeholder,
+.ginput_container textarea:-ms-input-placeholder {
+  color: #999;
+}
+
+.ginput_container input::-webkit-input-placeholder,
+.ginput_container select::-webkit-input-placeholder,
+.ginput_container textarea::-webkit-input-placeholder {
+  color: #999;
+}
+
+.ginput_container input:focus,
+.ginput_container select:focus,
+.ginput_container textarea:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.ginput_container input[disabled],
+.ginput_container select[disabled],
+.ginput_container textarea[disabled],
+.ginput_container input[readonly],
+.ginput_container select[readonly],
+.ginput_container textarea[readonly],
+fieldset[disabled] .ginput_container input,
+fieldset[disabled] .ginput_container select,
+fieldset[disabled] .ginput_container textarea {
+  cursor: not-allowed;
+  background-color: #eee;
+}
+
+textarea.ginput_container input,
+textarea.ginput_container select,
+textarea.ginput_container textarea {
+  height: auto;
+}
+
+.ginput_container textarea {
+  height: auto;
+}
+
+.gform_button {
+  display: inline-block;
+  padding: 11px 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #000;
+  background-color: #E1CB94;
+  border-color: #E1CB94;
+  width: 100%;
+}
+
+.gform_button:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.gform_button:hover,
+.gform_button:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.gform_button:active,
+.gform_button.active {
+  outline: 0;
+  background-image: none;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.gform_button.disabled,
+.gform_button[disabled],
+fieldset[disabled] .gform_button {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: .65;
+  filter: alpha(opacity=65);
+  box-shadow: none;
+}
+
+.gform_button:hover,
+.gform_button:focus,
+.gform_button:active,
+.gform_button.active,
+.open .dropdown-toggle.gform_button {
+  color: #000;
+  background-color: #E1CB94;
+  border-color: #E1CB94;
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+}
+
+.gform_button:active,
+.gform_button.active,
+.open .dropdown-toggle.gform_button {
+  background-image: none;
+}
+
+.gform_button.disabled,
+.gform_button[disabled],
+fieldset[disabled] .gform_button,
+.gform_button.disabled:hover,
+.gform_button[disabled]:hover,
+fieldset[disabled] .gform_button:hover,
+.gform_button.disabled:focus,
+.gform_button[disabled]:focus,
+fieldset[disabled] .gform_button:focus,
+.gform_button.disabled:active,
+.gform_button[disabled]:active,
+fieldset[disabled] .gform_button:active,
+.gform_button.disabled.active,
+.gform_button[disabled].active,
+fieldset[disabled] .gform_button.active {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+.gform_wrapper .gfield_error .gfield_label {
+  color: #b94a48;
+}
+
+.gform_wrapper .gfield_error input,
+.gform_wrapper .gfield_error select,
+.gform_wrapper .gfield_error textarea {
+  border-color: #eed3d7;
+  background-color: #f2dede;
+  color: #b94a48;
+}
+
+.gform_wrapper .gfield_error input:focus,
+.gform_wrapper .gfield_error select:focus,
+.gform_wrapper .gfield_error textarea:focus {
+  border-color: #b94a48;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(185, 74, 72, 0.6);
+}
+
+.form {
+  background: black;
+  padding: 0.4em;
+}
+
+.form:after {
+  content: "";
+  display: block;
+  position: relative;
+  clear: both;
+}
