@@ -1,7 +1,7 @@
 <?php 
 /**
  * Description: Schema markup in JSON+LD format based on documentation from - http://schema.org/Event
- * Test: Debug output: https://developers.google.com/structured-data/testing-tool/
+ * Debug output with https://developers.google.com/structured-data/testing-tool/
  *
  * @package Tajmer Booking & Management
  * @subpackage tajmer.dk
