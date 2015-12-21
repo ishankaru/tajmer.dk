@@ -622,6 +622,9 @@ table img {
   -webkit-filter: gray;
   filter: gray;
 }
+article.item a:hover {
+  text-decoration:none;
+}
 
 article.item a:hover .thumbnail {
   -webkit-filter: grayscale(0);
