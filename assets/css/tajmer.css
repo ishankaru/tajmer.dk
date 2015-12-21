@@ -632,6 +632,12 @@ article.item a:hover .thumbnail {
   filter: none; 
 }
 
+.module-related .thumbnail {
+  -webkit-filter: grayscale(0);
+  -webkit-filter: none;
+  filter: none; 
+}
+
 .client {
   display: block;
   padding: 0;
