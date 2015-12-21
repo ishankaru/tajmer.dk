@@ -56,7 +56,7 @@
 
 	<div id="cd-search" class="cd-search">
 		<form role="search" method="get" action="<?php echo home_url( '/' ); ?>">
-			<input type="search" placeholder="Søg artist..." value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+			<input type="search" class="ac-input" placeholder="Søg artist..." value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
 			<div class="ajax-drop"></div>
 		</form>
 	</div>
