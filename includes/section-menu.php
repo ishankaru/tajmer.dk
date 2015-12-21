@@ -45,6 +45,27 @@
 							<li><a href="/kategorier/klassisk_kirkekoncert/">Kirkekoncert</a></li>
 						</ul>
 					</li>
+					
+					<?php $exclusive = get_posts(array(
+						'numberposts'	=> -1,
+						'post_type'	=> 'artists',
+						'meta_key'	=> 'exclusive',
+						'meta_value'	=> '1'
+					)); ?>
+					
+					<?php $the_query = new WP_Query( $exclusive ); ?>
+					<li class="has-children">
+						<a href="/kategorier/koncertnavne/">Musik</a>
+					<?php if( $the_query->have_posts() ): ?>
+						<ul class="is-hidden">
+						<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
+							<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+						<?php endwhile; ?>
+						</ul>
+					<?php endif; ?>
+					</li>
+					<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
+					
 				</ul>
 			</li>
 			<li><a href="<?php echo get_home_url(); ?>/om-tajmer/">Om Tajmer</a></li>
