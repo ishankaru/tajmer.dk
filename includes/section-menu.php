@@ -48,9 +48,13 @@
 					
 					<?php $exclusive = get_posts(array(
 						'numberposts'	=> -1,
-						'post_type'	=> 'artists',
-						'meta_key'	=> 'exclusive',
-						'meta_value'	=> '1'
+						'meta_query' => array(
+							array(
+								'key' => 'exclusive',
+								'value' => '1',
+								'compare' => '=='
+							)
+						)
 					)); ?>
 					
 					<?php $the_query = new WP_Query( $exclusive ); ?>
