@@ -455,9 +455,11 @@ table img {
 }
 
 .gallery-nav .gallery-cell:hover {
-  opacity: 0.75;
-  filter: alpha(opacity=75);
   cursor: pointer;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -webkit-filter: none;
+  filter: none;
 }
 
 .gallery-cell {
