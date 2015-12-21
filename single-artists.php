@@ -40,7 +40,7 @@
 									<a href="#" class="artist_show">
 										<span class="pretitle"><?php the_sub_field('pre_title'); ?></span>
 										<span class="title"><?php the_sub_field('title'); ?></span>
-										Læs mere her
+										Læs mere her <i class="fa fa-chevron-circle-right"></i>
 									</a>
 								</div>
 							<?php endwhile; ?>
