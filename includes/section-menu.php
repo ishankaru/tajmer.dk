@@ -46,7 +46,7 @@
 						</ul>
 					</li>
 					
-				$posts = get_posts(array(
+			<?php 	$posts = get_posts(array(
 	'numberposts'	=> -1,
 	'post_type'		=> 'artists',
 	'meta_query' => array(
