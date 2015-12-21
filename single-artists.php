@@ -40,6 +40,7 @@
 									<a href="#" class="artist_show">
 										<span class="pretitle"><?php the_sub_field('pre_title'); ?></span>
 										<span class="title"><?php the_sub_field('title'); ?></span>
+										Læs mere her
 									</a>
 								</div>
 							<?php endwhile; ?>
