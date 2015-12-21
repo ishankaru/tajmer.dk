@@ -77,8 +77,8 @@
 			<li><a href="<?php echo get_home_url(); ?>/forespoergsel/">Booking</a></li>
 			<li><a href="<?php echo get_home_url(); ?>/comedy-kalender/">Comedykalender</a></li>
 			<li><a href="<?php echo get_home_url(); ?>/kontakt/">Kontakt</a></li>
-			<li><a href="#" title="#" class="menu-icon"><i class="fa fa-facebook"></i></a></li>
-			<li><a href="#" title="#" class="menu-icon"><i class="fa fa-envelope"></i></a></li>
+			<li><a href="https://www.facebook.com/TajmerBooking/?fref=ts" target="_blank" title="#" class="menu-icon"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="/nyhedbrev/" class="menu-icon"><i class="fa fa-envelope"></i></a></li>
 		</ul>
 	</nav>
 
