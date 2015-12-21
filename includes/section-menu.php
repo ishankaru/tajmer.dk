@@ -14,7 +14,6 @@
 
 	<nav class="cd-nav">
 		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
-			<li><a href="<?php echo get_home_url(); ?>/">Forside</a></li>
 			
 			<li class="has-children">
 				<a href="#0">Find artist</a>
