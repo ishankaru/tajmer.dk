@@ -11,12 +11,14 @@
 
  <?php include 'includes/section-header.php';?>
 
-  <section class="module module module-artists">
+  <section class="module module-artists">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
 
-          <h2>Eksklusive artister</h2>
+          <h2><?php the_title();?></h2>
+          <p class="lead"><?php the_content();?></p>
+          <hr>
           
           <?php 	
 						$posts = get_posts(array(
@@ -33,9 +35,9 @@
 					?>
 							
 							
-          <div class="row">
+          <div class="row grid">
             <?php if( $posts ) { foreach( $posts as $post ) { setup_postdata( $post ); ?> 
-                <article class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <article class="item col-xs-6 col-sm-4 col-md-3 col-lg-2">
                   <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                   <?php if( get_field('artist_thumbnail') ): ?>
                     <div class="thumbnail" style="background-image:url('<?php the_field('artist_thumbnail'); ?>')"></div>
