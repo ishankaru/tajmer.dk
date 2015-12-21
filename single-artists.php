@@ -78,8 +78,8 @@
 					<?php while ( have_rows('artist_shows') ) : the_row(); ?>
 						<div class="col-md-3">
 							<a href="#" class="artist_show">
-								<?php the_sub_field('pre_title'); ?>
-								<?php the_sub_field('title'); ?>
+								<span class="pretitle"><?php the_sub_field('pre_title'); ?></span>
+								<span class="title"><?php the_sub_field('title'); ?></span>
 							</a>
 						</div>
 					<?php endwhile; ?>
