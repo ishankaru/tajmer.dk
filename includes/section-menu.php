@@ -55,7 +55,7 @@
 					
 					<?php $the_query = new WP_Query( $exclusive ); ?>
 					<li class="has-children">
-						<a href="/kategorier/koncertnavne/">Musik</a>
+						<a href="#0">Eksklusive artister</a>
 					<?php if( $the_query->have_posts() ): ?>
 						<ul class="is-hidden">
 						<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
