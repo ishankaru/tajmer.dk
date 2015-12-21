@@ -17,7 +17,7 @@
         <div class="col-md-12">
 
           <h2><?php the_title();?></h2>
-          <p class="lead"><?php the_content();?></p>
+          <div class="lead"><?php the_content();?></div>
           <hr>
           
           <?php 	
