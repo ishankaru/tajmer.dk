@@ -46,30 +46,32 @@
 						</ul>
 					</li>
 					
-					<?php $exclusive = get_posts(array(
-						'numberposts'	=> -1,
-						'post_type'	=> 'artists',
-						'meta_query' => array(
-							array(
-								'key' => 'exclusive',
-								'value' => '1',
-								'compare' => '=='
-							)
-						)
-					)); ?>
-					
-					<?php $the_query = new WP_Query( $exclusive ); ?>
-					<li class="has-children">
-						<a href="#0">Eksklusive artister</a>
-					<?php if( $the_query->have_posts() ): ?>
-						<ul class="is-hidden">
-						<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
-							<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-						<?php endwhile; ?>
-						</ul>
-					<?php endif; ?>
-					</li>
-					<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
+				$posts = get_posts(array(
+	'numberposts'	=> -1,
+	'post_type'		=> 'artists',
+	'meta_query' => array(
+		array(
+			'key' => 'exclusive',
+			'value' => '1',
+			'compare' => '=='
+		)
+	)
+));
+
+if( $posts )
+{
+	foreach( $posts as $post )
+	{
+		setup_postdata( $post );
+
+		?> Artist <?php 
+
+	}
+
+	wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
+}
+
+?>
 					
 				</ul>
 			</li>
