@@ -968,3 +968,18 @@ article.item a {
 .subtle a {
   color: rgba(255, 255, 255, 0.45);
 }
+
+
+
+.artist_show {
+      display: block;
+    padding: 3em;
+    border: 1px solid #EFEFEF;
+    text-align: center;
+}
+
+.artist_show .pretitle {
+}
+
+.artist_show .title {
+}
