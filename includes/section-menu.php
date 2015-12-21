@@ -48,6 +48,7 @@
 					
 					<?php $exclusive = get_posts(array(
 						'numberposts'	=> -1,
+						'post_type'	=> 'artists',
 						'meta_query' => array(
 							array(
 								'key' => 'exclusive',
