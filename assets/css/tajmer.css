@@ -623,6 +623,12 @@ table img {
   filter: gray;
 }
 
+article.item a:hover .thumbnail {
+  -webkit-filter: grayscale(0);
+  -webkit-filter: none;
+  filter: none; 
+}
+
 .client {
   display: block;
   padding: 0;
