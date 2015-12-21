@@ -973,14 +973,14 @@ article.item a {
 
 .artist_show {
       display: block;
-    padding: 3em;
-    border: 1px solid #EFEFEF;
-    text-align: center;
+      padding: 1em 1em;
+      background: #FFFFFF;
+      text-align: center;
+      color: #000;
+      border: 1px solid #efefef;
 }
 .artist_show:hover {
 }
-.artist_show .pretitle {
-}
+.artist_show .pretitle {display: block;text-transform: uppercase;font-size: 0.7em;color: #E1CB94;}
 
-.artist_show .title {
-}
+.artist_show .title {font-weight: bold;font-size: 1.15em;}
