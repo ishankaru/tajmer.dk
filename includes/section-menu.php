@@ -18,7 +18,7 @@
 			
 			<li class="has-children">
 				<a href="#0">Find artist</a>
-					<ul class="cd-secondary-nav is-hidden">
+				<ul class="cd-secondary-nav is-hidden">
 					<li class="go-back"><a href="#0">Tilbage</a></li>
 					<li class="see-all"><a href="/artister/">Se alle artister</a></li>
 					<li class="has-children">
@@ -45,34 +45,32 @@
 							<li><a href="/kategorier/klassisk_kirkekoncert/">Kirkekoncert</a></li>
 						</ul>
 					</li>
-					
-			<?php 	$posts = get_posts(array(
-	'numberposts'	=> -1,
-	'post_type'		=> 'artists',
-	'meta_query' => array(
-		array(
-			'key' => 'exclusive',
-			'value' => '1',
-			'compare' => '=='
-		)
-	)
-));
 
-if( $posts )
-{
-	foreach( $posts as $post )
-	{
-		setup_postdata( $post );
+					<?php 	
+						$posts = get_posts(array(
+							'numberposts'	=> -1,
+							'post_type'		=> 'artists',
+							'meta_query' => array(
+								array(
+									'key' => 'exclusive',
+									'value' => '1',
+									'compare' => '=='
+								)
+							)
+						))
+					?>
 
-		?> Artist <?php 
-
-	}
-
-	wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
-}
-
-?>
-					
+					<li class="has-children">
+						<a href="/kategorier/koncertnavne/">Eksklusive artister</a>
+						<ul class="is-hidden">
+							<li class="go-back"><a href="#0">Tilbage</a></li>
+							<li class="see-all"><a href="/kategorier/koncertnavne/">Se al musik</a></li>
+						
+							<?php if( $posts ) { foreach( $posts as $post ) { setup_postdata( $post ); ?> 
+								<li><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></li>
+							<?php } wp_reset_postdata(); } ?>
+						</ul>
+					</li>	
 				</ul>
 			</li>
 			<li><a href="<?php echo get_home_url(); ?>/om-tajmer/">Om Tajmer</a></li>
