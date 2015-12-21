@@ -45,33 +45,6 @@
 							<li><a href="/kategorier/klassisk_kirkekoncert/">Kirkekoncert</a></li>
 						</ul>
 					</li>
-					<li class="has-children">
-						<a href="#0">Parent Menu Item</a>
-						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Tilbage</a></li>
-							<li class="see-all"><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-						</ul>
-					</li>
-					<li class="has-children">
-						<a href="#0">Parent Menu Item</a>
-						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Menu Item</a></li>
-							<li class="see-all"><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-							<li><a href="#0">Menu Item</a></li>
-						</ul>
-					</li>
 				</ul>
 			</li>
 			<li><a href="<?php echo get_home_url(); ?>/om-tajmer/">Om Tajmer</a></li>
