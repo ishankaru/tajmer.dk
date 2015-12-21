@@ -1001,4 +1001,6 @@ article.item a {
 .artist_show .title {font-weight: bold;font-size: 1.45em;display: block;margin-top: 0.25em;margin-bottom: 0.4em;}
 
 
-.menu-icon {}
+.menu-icon {
+    padding: 0!important;
+}
