@@ -70,7 +70,24 @@
 			</div>
 		</div>
 	</section>
-
+	
+	<?php if( get_field('artist_shows') ): ?>
+		<section class="module module-shows">
+			<div class="container">
+				<div class="row">
+					<?php while ( have_rows('artist_shows') ) : the_row(); ?>
+						<div class="col-md-3">
+							<a href="#" class="artist_show">
+								<?php the_sub_field('pre_title'); ?>
+								<?php the_sub_field('title'); ?>
+							</a>
+						</div>
+					<?php endwhile; ?>
+				</div>
+			</div>			
+		</section>
+	<?php endif; ?>	
+	
 	<?php if( get_field('artist_calendar') ): ?>	
 		<section class="module module-calendar single-calendar">
 			<div class="container">
