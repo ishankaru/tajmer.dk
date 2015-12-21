@@ -423,6 +423,7 @@ table img {
   height: auto;
   display: block;
   color:black;
+  text-align: right;
 }
 
 .gallery-nav .gallery-cell {
