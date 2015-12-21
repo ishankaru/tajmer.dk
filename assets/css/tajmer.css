@@ -6,6 +6,7 @@ body {
   background: #393939;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
+  padding-top: 118px;
 }
 
 *,
@@ -507,9 +508,15 @@ table img {
   background: black;
   color: white;
   padding: 0;
-  position: relative;
   overflow: hidden;
-  padding-top: 70px;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  max-width: 1700px;
+  right: 0;
+  margin: 0 auto;
+  z-index: 3;
 }
 
 .module.module-subnav form input {
