@@ -61,10 +61,10 @@
 					?>
 
 					<li class="has-children">
-						<a href="/kategorier/koncertnavne/">Eksklusive artister</a>
+						<a href="/eksklusive-artister/">Eksklusive artister</a>
 						<ul class="is-hidden">
 							<li class="go-back"><a href="#0">Tilbage</a></li>
-							<li class="see-all"><a href="/kategorier/koncertnavne/">Se al musik</a></li>
+							<li class="see-all"><a href="/eksklusive-artister/">Se alle eksklusive artister</a></li>
 						
 							<?php if( $posts ) { foreach( $posts as $post ) { setup_postdata( $post ); ?> 
 								<li><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></li>
