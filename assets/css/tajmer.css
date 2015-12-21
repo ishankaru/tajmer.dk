@@ -977,7 +977,8 @@ article.item a {
     border: 1px solid #EFEFEF;
     text-align: center;
 }
-
+.artist_show:hover {
+}
 .artist_show .pretitle {
 }
 
