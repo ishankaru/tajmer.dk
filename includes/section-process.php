@@ -17,7 +17,7 @@
 					<p class="h2">Referencer</p>
 					<div class="row">
 						<div class="col-md-12">
-							<div class="gallery js-flickity">
+							<div class="gallery js-flickity" data-flickity-options='{ "prevNextButtons": false }'>>
 							  <div class="gallery-cell">1</div>
 							  <div class="gallery-cell">2</div>
 							  <div class="gallery-cell">3</div>
