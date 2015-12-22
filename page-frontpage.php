@@ -64,7 +64,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<h2>Aktuelle shows</h2>
+					<h2><?php the_field('shows_title'); ?></h2>
 					<div class="row">
 						<div class="col-md-4">
 							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
@@ -84,7 +84,7 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<h2 class="text-right">On Demand</h2>
+					<h2 class="text-right"><?php the_field('on_demand_title'); ?></h2>
 					<div class="row">
 						<div class="col-md-4">
 							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
