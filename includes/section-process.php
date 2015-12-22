@@ -15,6 +15,7 @@
 			<div class="row">
 				<div class="col-md-5">
 					<p class="h2">Referencer</p>
+					<hr>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="gallery clients js-flickity" data-flickity-options='{ "prevNextButtons": true, "pageDots": false }'>
@@ -49,6 +50,7 @@
 				</div>
 				<div class="col-md-offset-1 col-md-6">
 					<p class="h2"><?php the_field('process_title', options); ?></p>
+					<hr>
 					<ul class="fa-ul">
 						<li>
 							<i class="fa-li fa fa-envelope-o"></i>
