@@ -14,8 +14,11 @@
 	<section class="module module-standard">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<h1>Under udvikling</h1>
+				<div class="col-md-4">
+					<img src="<?php the_field(cover_image); ?>">
+				</div>
+				<div class="col-md-8">
+					<?php the_content; ?>
 				</div>
 			</div>
 		</div>
