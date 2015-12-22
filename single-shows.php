@@ -14,10 +14,10 @@
 	<section class="module module-standard">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-5">
 					<img src="<?php the_field(cover_image); ?>" title="<?php the_title(); ?>" class="img-responsive">
 				</div>
-				<div class="col-md-8">
+				<div class="col-md-7">
 					<?php include 'includes/section-breadcrumbs.php';?>
 					<?php the_content(); ?>
 					<?php edit_post_link('Rediger show', '<p>', '</p>'); ?>
