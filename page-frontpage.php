@@ -74,8 +74,7 @@
 						<?php 	
 							$posts = get_posts(array(
 								'numberposts'	=> 3,
-								'post_type'		=> 'shows',
-								
+								'post_type'		=> 'shows'
 							))
 						?>
 
