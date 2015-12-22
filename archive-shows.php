@@ -15,7 +15,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1><img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/primary-icon.png" class="img-icon" alt="#"> Shows</h1>
+					<h1><img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/primary-icon.png" class="img-icon" alt="#"> Aktuelle Shows</h1>
 					<div class="row">
 						<?php 	
 							$posts = get_posts(array(
