@@ -64,7 +64,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<h2><?php the_field('shows_title'); ?></h2>
+					<h2><img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/primary-icon.png" class="img-icon" alt="#"> <?php the_field('shows_title'); ?></h2>
 					<div class="row">
 						<div class="col-md-4">
 							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
@@ -84,7 +84,7 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<h2 class="text-right"><?php the_field('on_demand_title'); ?></h2>
+					<h2 class="text-right"><img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/primary-icon.png" class="img-icon" alt="#"> <?php the_field('on_demand_title'); ?></h2>
 					<div class="row">
 						<div class="col-md-4">
 							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
