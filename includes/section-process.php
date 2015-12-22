@@ -20,23 +20,28 @@
 							<div class="gallery clients js-flickity" data-flickity-options='{ "prevNextButtons": false, "pageDots": false }'>
 							  <div class="gallery-cell">
 							  	<img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg">
-								<span>Tajmer Booking & Management</span>							  	
+								<span class="client">Tajmer Booking & Management</span>
+								<span class="testimonial">Ord kan tryllebinde os, gøre os klogere, eftertænksomme eller få os til at grine.</span>
 							  </div>
 							  <div class="gallery-cell">
 							  	<img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg">
-								<span>Tajmer Booking & Management</span>							  	
+								<span class="client">Tajmer Booking & Management</span>
+								<span class="testimonial">Ord kan tryllebinde os, gøre os klogere, eftertænksomme eller få os til at grine.</span>
 							  </div>
 							  <div class="gallery-cell">
 							  	<img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg">
-								<span>Tajmer Booking & Management</span>							  	
+								<span class="client">Tajmer Booking & Management</span>
+								<span class="testimonial">Ord kan tryllebinde os, gøre os klogere, eftertænksomme eller få os til at grine.</span>
 							  </div>
 							  <div class="gallery-cell">
 							  	<img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg">
-								<span>Tajmer Booking & Management</span>							  	
+								<span class="client">Tajmer Booking & Management</span>
+								<span class="testimonial">Ord kan tryllebinde os, gøre os klogere, eftertænksomme eller få os til at grine.</span>
 							  </div>
 							  <div class="gallery-cell">
 							  	<img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg">
-								<span>Tajmer Booking & Management</span>							  	
+								<span class="client">Tajmer Booking & Management</span>
+								<span class="testimonial">Ord kan tryllebinde os, gøre os klogere, eftertænksomme eller få os til at grine.</span>
 							  </div>
 							</div>	
 						</div>
