@@ -1014,17 +1014,28 @@ article.item a {
 
 
 .clients{}
-.clients .gallery-cell  {}
+.clients .gallery-cell  {
+    margin: 2em 0;
+}
 .clients .gallery-cell span {
     text-align: center;
     display: block;
 }
-.clients .gallery-cell span.clientlogo {}
-.clients .gallery-cell span.testimonial {}
+.clients .gallery-cell span.clientlogo {
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.clients .gallery-cell span.testimonial {
+    font-style: italic;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 350px;
+}
 .clients .gallery-cell img {
     width: auto;
     max-height: 150px;
     max-width: 100%;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
 }
