@@ -19,6 +19,7 @@
 				</div>
 				<div class="col-md-8">
 					<?php the_content(); ?>
+					<?php edit_post_link('Rediger show', '<p>', '</p>'); ?>
 				</div>
 			</div>
 		</div>
