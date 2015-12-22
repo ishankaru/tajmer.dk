@@ -18,6 +18,7 @@
 					<img src="<?php the_field(cover_image); ?>" title="<?php the_title(); ?>" class="img-responsive">
 				</div>
 				<div class="col-md-8">
+					<?php include 'includes/section-breadcrumbs.php';?>
 					<?php the_content(); ?>
 					<?php edit_post_link('Rediger show', '<p>', '</p>'); ?>
 				</div>
