@@ -18,11 +18,26 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="gallery clients js-flickity" data-flickity-options='{ "prevNextButtons": false, "pageDots": false }'>
-							  <div class="gallery-cell"><img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg"></div>
-							  <div class="gallery-cell"><img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg"></div>
-							  <div class="gallery-cell"><img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg"></div>
-							  <div class="gallery-cell"><img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg"></div>
-							  <div class="gallery-cell"><img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg"></div>
+							  <div class="gallery-cell">
+							  	<img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg">
+								<span>Tajmer Booking & Management</span>							  	
+							  </div>
+							  <div class="gallery-cell">
+							  	<img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg">
+								<span>Tajmer Booking & Management</span>							  	
+							  </div>
+							  <div class="gallery-cell">
+							  	<img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg">
+								<span>Tajmer Booking & Management</span>							  	
+							  </div>
+							  <div class="gallery-cell">
+							  	<img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg">
+								<span>Tajmer Booking & Management</span>							  	
+							  </div>
+							  <div class="gallery-cell">
+							  	<img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg">
+								<span>Tajmer Booking & Management</span>							  	
+							  </div>
 							</div>	
 						</div>
 					</div>
