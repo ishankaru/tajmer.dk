@@ -60,6 +60,53 @@
 		</div>
 	</section>
 
+	<section class="module module-products">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Aktuelle shows</h2>
+					<div class="row">
+						<div class="col-md-4">
+							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
+							<a href="#" title="#">Se Tourplan</a>
+							<a href="#" title="#">Køb billetter</a>
+						</div>
+						<div class="col-md-4">
+							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
+							<a href="#" title="#">Se Tourplan</a>
+							<a href="#" title="#">Køb billetter</a>
+						</div>
+						<div class="col-md-4">
+							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
+							<a href="#" title="#">Se Tourplan</a>
+							<a href="#" title="#">Køb billetter</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h2 class="text-right">On Demand</h2>
+					<div class="row">
+						<div class="col-md-4">
+							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
+							<a href="#" title="#">Se Tourplan</a>
+							<a href="#" title="#">Køb billetter</a>
+						</div>
+						<div class="col-md-4">
+							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
+							<a href="#" title="#">Se Tourplan</a>
+							<a href="#" title="#">Køb billetter</a>
+						</div>
+						<div class="col-md-4">
+							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
+							<a href="#" title="#">Se Tourplan</a>
+							<a href="#" title="#">Køb billetter</a>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</section>
+	
 	<section class="module module-information">
 		<div class="container">
 			<div class="row">
