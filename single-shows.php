@@ -18,7 +18,7 @@
 					<img src="<?php the_field(cover_image); ?>">
 				</div>
 				<div class="col-md-8">
-					<?php the_content; ?>
+					<?php the_content(); ?>
 				</div>
 			</div>
 		</div>
