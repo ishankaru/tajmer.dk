@@ -70,7 +70,6 @@
 				<div class="col-md-6">
 					<h2><img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/primary-icon.png" class="img-icon" alt="#"> <?php the_field('shows_title'); ?></h2>
 					<div class="row">
-
 						<?php 	
 							$posts = get_posts(array(
 								'numberposts'	=> 3,
@@ -89,21 +88,19 @@
 				<div class="col-md-6">
 					<h2 class="text-right"><?php the_field('on_demand_title'); ?> <img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/primary-icon.png" class="img-icon" alt="#"></h2>
 					<div class="row">
-						<div class="col-md-4">
-							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
-							<a href="#" title="#">Se Tourplan</a>
-							<a href="#" title="#">Køb billetter</a>
-						</div>
-						<div class="col-md-4">
-							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
-							<a href="#" title="#">Se Tourplan</a>
-							<a href="#" title="#">Køb billetter</a>
-						</div>
-						<div class="col-md-4">
-							<a href="#" title="#"><img src="http://placehold.it/250x350" alt="#" class="img-responsive"></a>
-							<a href="#" title="#">Se Tourplan</a>
-							<a href="#" title="#">Køb billetter</a>
-						</div>
+						<?php 	
+							$posts = get_posts(array(
+								'numberposts'	=> 3,
+								'post_type'		=> 'ondemand'
+							))
+						?>
+
+						<?php if( $posts ) { foreach( $posts as $post ) { setup_postdata( $post ); ?> 
+							<div class="col-md-4">
+								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php the_field('cover_image'); ?>" alt="#" class="img-responsive"></a>
+								<a href="<?php the_permalink(); ?>">Se Tourplan</a>
+							</div>
+						<?php } wp_reset_postdata(); } ?>
 					</div>
 				</div>				
 			</div>
