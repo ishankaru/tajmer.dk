@@ -1015,5 +1015,14 @@ article.item a {
 
 .clients{}
 .clients .gallery-cell  {}
-.clients .gallery-cell span {}
-.clients .gallery-cell img {}
+.clients .gallery-cell span {
+    text-align: center;
+    display: block;
+}
+.clients .gallery-cell img {
+    width: auto;
+    max-height: 150px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
