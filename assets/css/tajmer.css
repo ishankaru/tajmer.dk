@@ -1019,6 +1019,8 @@ article.item a {
     text-align: center;
     display: block;
 }
+.clients .gallery-cell span.clientlogo {}
+.clients .gallery-cell span.testimonial {}
 .clients .gallery-cell img {
     width: auto;
     max-height: 150px;
