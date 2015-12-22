@@ -18,11 +18,11 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="gallery clients js-flickity" data-flickity-options='{ "prevNextButtons": false, "pageDots": false }'>
-							  <div class="gallery-cell">1</div>
-							  <div class="gallery-cell">2</div>
-							  <div class="gallery-cell">3</div>
-							  <div class="gallery-cell">4</div>
-							  <div class="gallery-cell">5</div>
+							  <div class="gallery-cell"><img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg"></div>
+							  <div class="gallery-cell"><img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg"></div>
+							  <div class="gallery-cell"><img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg"></div>
+							  <div class="gallery-cell"><img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg"></div>
+							  <div class="gallery-cell"><img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg"></div>
 							</div>	
 						</div>
 					</div>
