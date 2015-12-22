@@ -1011,3 +1011,9 @@ article.item a {
 .menu-icon {
     padding: 0!important;
 }
+
+
+.clients{}
+.clients .gallery-cell  {}
+.clients .gallery-cell span {}
+.clients .gallery-cell img {}
