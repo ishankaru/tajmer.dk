@@ -15,7 +15,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<img src="<?php the_field(cover_image); ?>">
+					<img src="<?php the_field(cover_image); ?>" title="<?php the_title(); ?>" class="img-responsive">
 				</div>
 				<div class="col-md-8">
 					<?php the_content(); ?>
