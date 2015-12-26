@@ -438,18 +438,19 @@ table img {
   filter: grayscale(100%);
   -webkit-filter: gray;
   filter: gray;
-  padding: 0.5em 1em;
   height: auto;
   display: block;
   text-align: right;
+  padding: 0.2em 0.4em;
 }
+
 
 @media (min-width: 450px) {
   .gallery-nav .gallery-cell {width: 25%;} 
 }
 
 @media (min-width: 700px) {
-  .gallery-nav .gallery-cell {width: 20%;} 
+  .gallery-nav .gallery-cell {width: 20%;padding: 0.5em 1em;} 
 }
 
 @media (min-width: 850px) {
