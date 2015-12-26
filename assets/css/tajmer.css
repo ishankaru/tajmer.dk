@@ -613,6 +613,11 @@ table img {
 }
 
 
+
+/* ***************************************************************************
+*********************************** GALLERY **********************************
+*************************************************************************** */
+
 .gallery-main figure {
   display:block;
   padding-bottom: 80%;
@@ -650,6 +655,11 @@ table img {
   background-repeat; no-repeat;
 }
 }
+
+/* ***************************************************************************
+********************* SLIDESHOW FIGURE + CAPTION *****************************
+*************************************************************************** */
+
 .module.module-hero figcaption,
 .gallery-main figcaption {
   position: absolute;
@@ -657,6 +667,7 @@ table img {
   padding-right: 10%;
   top: 50%;
   transform: translateY(-50%);
+  width:80%;
 }
 
 .module.module-hero figcaption span,
@@ -673,23 +684,69 @@ table img {
   text-shadow: 0px 0px 1px white;
 }
 
-.module.module-hero figcaption .artist,
-.gallery-main figcaption .artist {
-  font-size: 5em;
-  line-height: 1em;
-}
-
-.module.module-hero figcaption .categories,
-.gallery-main figcaption .categories {
-  font-size: 2em;
-}
-
 .gallery-main figcaption .btn {
   display: inline-block;
   float: right;
   color: black;
   margin-top: 1em;
+  font-size:1em;
 }
+
+  .module.module-hero figcaption .artist,
+  .gallery-main figcaption .artist {
+    font-size: 2em;
+    line-height: 1em;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+
+  .module.module-hero figcaption .categories,
+  .gallery-main figcaption .categories {
+    font-size: 1em;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+
+
+@media (min-width: 600px) {
+  .module.module-hero figcaption .artist,
+  .gallery-main figcaption .artist {
+    font-size: 2.5em;
+    line-height: 1em;
+  }
+
+  .module.module-hero figcaption .categories,
+  .gallery-main figcaption .categories {
+    font-size: 1.3em;
+  }
+  .gallery-main figcaption .btn {
+  font-size:1.5em;
+}
+}
+
+@media (min-width: 1100px) {
+  .module.module-hero figcaption .artist,
+  .gallery-main figcaption .artist {
+    font-size: 5em;
+    line-height: 1em;
+  }
+
+  .module.module-hero figcaption .categories,
+  .gallery-main figcaption .categories {
+    font-size: 2em;
+  }
+  .gallery-main figcaption .btn {
+  font-size:1.5em;
+}
+}
+
+
+
+/* ***************************************************************************
+************************************* THUMBNAILS *****************************
+*************************************************************************** */
 
 .thumbnail {
   display: block;
@@ -722,6 +779,11 @@ article.item a:hover .thumbnail {
   -webkit-filter: none!important;
   filter: none!important;
 }
+
+
+/* ***************************************************************************
+************************************* MISC *****************************
+*************************************************************************** */
 
 .client {
   display: block;
