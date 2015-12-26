@@ -22,13 +22,22 @@
 
 				<div class="col-md-12 filters">
 					<?php $categories = get_terms('type'); if ($categories) { ?>				     
-						<div id="filters" class="button-group">  
+						<div id="filters" class="hidden-xs button-group">  
 							<button title="Vis alle artister"class="btn btn-sm btn-info is-checked" data-filter="*">Vis alle artister</button>
-					        <?php foreach($categories as $cat) { ?>
-					        	<button title="Vis kun kategorien: <?php echo $cat->name; ?>" class="btn btn-sm btn-info" data-filter=".<?php echo $cat->slug; ?>"><?php echo $cat->name; ?></button>
-					        <?php } ?>
-					    </div>
-				    <?php } ?>
+						        <?php foreach($categories as $cat) { ?>
+						        	<button title="Vis kun kategorien: <?php echo $cat->name; ?>" class="btn btn-sm btn-info" data-filter=".<?php echo $cat->slug; ?>"><?php echo $cat->name; ?></button>
+						        <?php } ?>
+					    	</div>
+				    	<?php } ?>
+				    	
+				    	<?php $categories = get_terms('type'); if ($categories) { ?>				     
+						<select id="filters" class="visible-xs">  
+							<option data-filter="*">Vis alle artister</option>
+						        <?php foreach($categories as $cat) { ?>
+						        	<option data-filter=".<?php echo $cat->slug; ?>"><?php echo $cat->name; ?></option>
+						        <?php } ?>
+					    	</select>
+				    	<?php } ?>
 				    <hr>
 			    </div>
 
