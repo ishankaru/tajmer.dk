@@ -165,7 +165,8 @@ figure.alignnone {
   color: #fff!important;
   background-color: #000000!important;
   border-color: #000000!important;
-  box-shadow: 0px!important;
+  box-shadow: none!important;
+  margin-bottom: 0.3em;
 }
 
 .btn-info.is-checked {
