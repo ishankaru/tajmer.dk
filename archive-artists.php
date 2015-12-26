@@ -8,7 +8,7 @@
  * @author Mikkel Tschentscher
  */
  get_header(); ?>
-
+ 
  <?php include 'includes/section-header.php';?>
 
 	<section class="module module-artists">
