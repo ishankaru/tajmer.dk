@@ -528,6 +528,14 @@ table img {
   filter: alpha(opacity=100);
 }
 
+.gallery-main figure {
+  padding-bottom:30%;
+  background-size:cover;
+  background-position: center center;
+  background-repeat:no-repeat;
+}
+
+
 .module.module-subnav {
   background: black;
   color: white;
