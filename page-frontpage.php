@@ -78,7 +78,7 @@
 						?>
 
 						<?php if( $posts ) { foreach( $posts as $post ) { setup_postdata( $post ); ?> 
-							<div class="col-md-4">
+							<div class="col-sm-4">
 								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php the_field('cover_image'); ?>" alt="#" class="img-responsive"></a>
 								<a href="<?php the_permalink(); ?>">Se Tourplan</a>
 							</div>
