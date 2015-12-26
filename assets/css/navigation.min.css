@@ -77,8 +77,14 @@
 
 .cd-logo {
   position: absolute;
-  top: 12px;
+  top: 8px;
   left: 5%;
+  background: url('http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/tajmer-booking-management-logo.png?566b6f');
+  background-size: contain;
+  display: block;
+  height: 33px;
+  width: 80%;
+  background-repeat: no-repeat;
 }
 
 .cd-logo img {
