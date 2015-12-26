@@ -1045,7 +1045,7 @@ article.item a {
     padding: 0!important;
 }
 @media (min-width: 1170px) {
-  .menu-icon {display:block;}
+  .menu-icon {display: block!important;}
 }
 
 
