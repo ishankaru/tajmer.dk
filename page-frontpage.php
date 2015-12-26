@@ -12,7 +12,7 @@
  <?php include 'includes/section-header.php';?>
 
  	<?php include 'includes/section-slideshow.php';?>
-
+ 
 	<section class="module module-boxes">
 		<div class="container">
 			<div class="row">
