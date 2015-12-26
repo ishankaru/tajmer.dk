@@ -112,7 +112,7 @@
 		<div class="container">
 			<div class="row">
 				<?php if( get_field('secondary_boxes') ): while ( have_rows('secondary_boxes') ) : the_row(); ?>
-					<div class="col-md-3">
+					<div class="col-sm-6 col-md-3">
 						<a href="<?php the_sub_field('url'); ?>" title="<?php the_sub_field('title'); ?>">
 							<img src="<?php the_sub_field('image'); ?>" alt="<?php the_sub_field('title'); ?>" class="img-responsive">
 						</a>
