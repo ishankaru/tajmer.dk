@@ -68,7 +68,7 @@
 							<i class="fa-li fa fa-thumbs-o-up"></i>
 							<span><?php the_field('process_four', options); ?></span>
 						</li>
-					</ul>
+					</ul> 
 				</div>													
 			</div>
 		</div>
