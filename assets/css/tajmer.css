@@ -529,6 +529,7 @@ table img {
 }
 
 .gallery-main figure {
+  display:block;
   padding-bottom:30%;
   background-size:cover;
   background-position: center center;
