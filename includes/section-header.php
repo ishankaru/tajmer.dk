@@ -25,7 +25,7 @@
 	</ul> 
 </header>
 
-<section class="module module-subnav hidden-xs hidden-sm">
+<section class="module module-subnav">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-lg-5">
