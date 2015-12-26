@@ -34,7 +34,7 @@
 						<select id="filters" class="visible-xs form-control filters-select">  
 							<option value="*">Vis alle artister</option>
 						        <?php foreach($categories as $cat) { ?>
-						        	<option data-filter=".<?php echo $cat->slug; ?>"><?php echo $cat->name; ?></option>
+						        	<option value=".<?php echo $cat->slug; ?>"><?php echo $cat->name; ?></option>
 						        <?php } ?>
 					    	</select>
 				    	<?php } ?>
