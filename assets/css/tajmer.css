@@ -1041,7 +1041,7 @@ article.item a {
 
 
 .menu-icon {
-    display:none;
+    display: none!important;
     padding: 0!important;
 }
 @media (min-width: 1170px) {
