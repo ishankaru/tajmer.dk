@@ -13,7 +13,7 @@
 
 	<section class="module module-artists">
 		<div class="container">
-			<div class="row">
+			<div class="row"> 
 
 				<div class="col-md-12">
 					<h1>Book artist indenfor</h1>
