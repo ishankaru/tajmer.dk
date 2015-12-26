@@ -102,6 +102,26 @@
 }
 }
 
+@media (min-width: 1170px) {
+.cd-logo {
+  background: url('http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/tajmer-booking-management-logo.png?566b6f');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25%;
+  top: 22px!important;
+}
+}
+
+@media (min-width: 1270px) {
+.cd-logo {
+  background: url('http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/tajmer-booking-management-logo.png?566b6f');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 33px;
+  width: 80%;
+  top: 17px!important;
+}
+}
 
 .cd-logo img {
   display: block;
