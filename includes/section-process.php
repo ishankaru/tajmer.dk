@@ -13,7 +13,7 @@
 <section class="module module-process">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-5">
+				<div class="col-sm-6 col-md-5">
 					<p class="h2">Referencer</p>
 					<hr>
 					<div class="row">
@@ -48,7 +48,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-offset-1 col-md-6">
+				<div class="col-sm-6 col-md-offset-1 col-md-6">
 					<p class="h2"><?php the_field('process_title', options); ?></p>
 					<hr>
 					<ul class="fa-ul">
