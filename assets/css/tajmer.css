@@ -344,7 +344,7 @@ table small {
   color: white;
   text-align: center;
   display: block;
-  padding: 1.5em 1em 1.5em 1em;
+  padding: 1.5em 0.8em 1.5em 0.8em;
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
   text-decoration: none;
