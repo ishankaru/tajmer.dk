@@ -543,7 +543,7 @@ table img {
   z-index: 3;
   display:none;
 }
-
+.module-subnav .container {width:100%;padding-left:2em;padding-right:2.35em;}
 @media (min-width: 1170px) {
   .module.module-subnav {
     display:block;
