@@ -31,8 +31,8 @@
 				    	<?php } ?>
 				    	
 				    	<?php $categories = get_terms('type'); if ($categories) { ?>				     
-						<select id="filters" class="visible-xs">  
-							<option data-filter="*">Vis alle artister</option>
+						<select id="filters" class="visible-xs filters-select">  
+							<option value="*">Vis alle artister</option>
 						        <?php foreach($categories as $cat) { ?>
 						        	<option data-filter=".<?php echo $cat->slug; ?>"><?php echo $cat->name; ?></option>
 						        <?php } ?>
