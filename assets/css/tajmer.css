@@ -6,7 +6,7 @@ body {
   background: #393939;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
-  padding-top: 0px;
+  padding-top: 50px;
 }
 
 @media (min-width: 1170px) {
