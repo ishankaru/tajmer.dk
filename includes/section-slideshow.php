@@ -14,9 +14,7 @@
 		<div class="gallery gallery-main js-flickity" data-flickity-options='{ "lazyLoad": true, "pageDots": false, "wrapAround": true, "prevNextButtons": false}'>
 		  	<?php while ( have_rows('slideshow') ) : the_row(); ?>
 			  	<a href="<?php the_sub_field('slide_url'); ?>" title="<?php the_sub_field('slide_title'); ?>" class="gallery-cell">
-			  		<figure>
-			  			<img class="gallery-cell-image" title="<?php the_sub_field('slide_title'); ?>" src="<?php the_sub_field('primary_image'); ?>" />
-			  		</figure>
+			  		<figure style="background-image:<?php the_sub_field('primary_image'); ?>;"></figure>
 			  		<figcaption <?php if( get_sub_field('colorscheme') ) { ?>class="dark"<?php } ?>>
 			  			<?php if( get_sub_field('slide_title') ): ?>
 			  				<span class="artist"><?php the_sub_field('slide_title'); ?></span>
