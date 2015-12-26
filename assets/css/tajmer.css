@@ -603,12 +603,22 @@ table img {
   display: inline-block;
 }
 
+
+.gallery-main figure {
+  display:block;
+  padding-bottom: 30%;
+  background-size:cover;
+  background-position: center center;
+  background-repeat; no-repeat;
+}
+
 .module.module-hero figcaption,
 .gallery-main figcaption {
   position: absolute;
-  top: 30%;
   right: 0;
   padding-right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .module.module-hero figcaption span,
