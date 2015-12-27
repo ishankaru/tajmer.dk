@@ -687,6 +687,7 @@ table img {
   width:80%;
 }
 
+
 .module.module-hero figcaption span,
 .gallery-main figcaption span {
   color: white;
@@ -814,11 +815,44 @@ article.item a:hover .thumbnail {
 }
 
 .module.module-hero {
-  height: 450px;
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
+  display: block;
+  padding-bottom: 80%;
+  background-size: cover;
+  background-position-x: 35%;
+}
+
+
+@media (min-width: 500px) {
+.module.module-hero {
+  display:block;
+  padding-bottom: 50%;
+  background-size:cover;
+  background-position-x: center center;
+  background-repeat; no-repeat;
+}
+}
+
+@media (min-width: 750px) {
+.module.module-hero {
+  display:block;
+  padding-bottom: 40%;
+  background-size:cover;
+  background-position-x: center center;
+  background-repeat; no-repeat;
+}
+}
+
+@media (min-width: 1100px) {
+.module.module-hero{
+  display:block;
+  padding-bottom: 30%;
+  background-size:cover;
+  background-position-x: center center;
+  background-repeat; no-repeat;
+}
 }
 
 .module.module-404 {
