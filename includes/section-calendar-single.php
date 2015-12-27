@@ -27,7 +27,7 @@
 							if($eventdate > $now) {
 						 ?>
 
-				    	<tr>
+				    	<tr class="<?php the_sub_field('status'); ?>">
 							<td>
 								<?php if( get_field('artist_calendar_image') ): ?>
 									<img src="<?php the_field('artist_calendar_image'); ?>" alt="<?php the_sub_field('title'); ?>">
