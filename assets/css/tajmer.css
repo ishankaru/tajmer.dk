@@ -978,7 +978,7 @@ aside .embed-responsive {
   cursor: pointer;
   color: black;
   margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
   display: block;
 }
 
@@ -1009,9 +1009,10 @@ aside .embed-responsive {
   transition: opacity 0.2s ease-in;
 }
 
+@media (min-width: 992px) {
 .module.module-artists article.main {
   padding: 0 2.5em;
-}
+}}
 
 .contact-icon {
   text-align: center;
