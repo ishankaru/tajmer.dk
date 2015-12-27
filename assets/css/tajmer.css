@@ -356,6 +356,11 @@ tr.sold_out .btn {
     border: #FF6A6A;
     opacity: 0.5;
 }
+tr.sold_out .btn:hover {
+    background: #FF6A6A!important;
+    border: #FF6A6A!important;
+    opacity: 0.4!important;
+}
 tr.release .btn {
 }
 tr.premiere .btn {}
