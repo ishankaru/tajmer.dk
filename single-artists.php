@@ -16,7 +16,26 @@
 		<div class="container">
 			<div class="row">
 
-				<aside class="col-md-3 col-md-push-6">
+				<article class="main col-md-6 col-md-pull-3">
+					<div class="main-content">
+						<?php include 'includes/section-breadcrumbs.php';?>
+						<h1><?php the_title(); ?></h1>
+					    
+					    <div class="categories">
+					    	<?php $cats = get_the_terms(get_the_ID(), 'type'); foreach($cats as $c) { ?> 
+					   			<a href="<?php echo get_home_url(); ?>/kategorier/<?php echo $c->slug; ?>" class="category" title="Se alle artister i kategorien <?php echo $c->name; ?>"><?php echo $c->name; ?></a>
+					    	<?php } ?>
+					    </div>
+					    <?php edit_post_link('Rediger artist', '<p>', '</p>'); ?>
+					    <?php if( get_field('intro') ): ?>
+					    	<p class="lead"><?php the_field('intro'); ?></p>
+					    <?php endif; ?>
+					    
+				    	<?php the_content(); ?>
+				    </div>
+			    </article>
+
+<aside class="col-md-3 col-md-push-6">
 					<a href="/artister/" class="btn btn-block btn-icon btn-info" title="Se alle artister hos Tajmer.dk"><i class="fa fa-arrow-circle-left"></i> Se alle artister</a>
 
 					<?php if( get_field('artist_portraits') ): while ( have_rows('artist_portraits') ) : the_row(); ?>
@@ -53,26 +72,7 @@
 						</div>
 					<?php endwhile; endif; ?>
 				</aside>
-
-				<article class="main col-md-6 col-md-pull-3">
-					<div class="main-content">
-						<?php include 'includes/section-breadcrumbs.php';?>
-						<h1><?php the_title(); ?></h1>
-					    
-					    <div class="categories">
-					    	<?php $cats = get_the_terms(get_the_ID(), 'type'); foreach($cats as $c) { ?> 
-					   			<a href="<?php echo get_home_url(); ?>/kategorier/<?php echo $c->slug; ?>" class="category" title="Se alle artister i kategorien <?php echo $c->name; ?>"><?php echo $c->name; ?></a>
-					    	<?php } ?>
-					    </div>
-					    <?php edit_post_link('Rediger artist', '<p>', '</p>'); ?>
-					    <?php if( get_field('intro') ): ?>
-					    	<p class="lead"><?php the_field('intro'); ?></p>
-					    <?php endif; ?>
-					    
-				    	<?php the_content(); ?>
-				    </div>
-			    </article>
-
+				
 			    <aside class="col-md-3">
 			    	<div class="form">
 			    		<a href="tel:<?php echo str_replace(' ', '', get_field('telephone', 'option')); ?>" title="Ring og book <?php the_title(); ?> på <?php the_field('telephone', options); ?>" class="contact-icon"> <i class="fa fa-phone"></i> +45 <?php the_field('telephone', options); ?></a>
