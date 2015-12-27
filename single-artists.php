@@ -16,7 +16,7 @@
 		<div class="container">
 			<div class="row">
 
-				<article class="main col-md-6 col-md-pull-3">
+				<article class="main col-md-6 col-md-push-3">
 					<div class="main-content">
 						<?php include 'includes/section-breadcrumbs.php';?>
 						<h1><?php the_title(); ?></h1>
@@ -35,7 +35,7 @@
 				    </div>
 			    </article>
 
-<aside class="col-md-3 col-md-push-6">
+<aside class="col-md-3 col-md-pull-6">
 					<a href="/artister/" class="btn btn-block btn-icon btn-info" title="Se alle artister hos Tajmer.dk"><i class="fa fa-arrow-circle-left"></i> Se alle artister</a>
 
 					<?php if( get_field('artist_portraits') ): while ( have_rows('artist_portraits') ) : the_row(); ?>
