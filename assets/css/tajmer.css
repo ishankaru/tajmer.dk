@@ -425,12 +425,27 @@ table img {
 }
 
 .module.module-related .gallery-cell {
-  width: 16.5%;
-  padding: 0.5em 1em;
+  width: 40%;
+  padding: 0.2em 0.4em;
   height: auto;
   display: block;
   color:black;
   text-align: right;
+}
+
+@media (min-width: 450px) {
+  .module.module-related .gallery-cell {width: 25%;} 
+}
+
+@media (min-width: 700px) {
+  .module.module-related .gallery-cell {width: 20%;padding: 0.5em 1em;} 
+}
+
+@media (min-width: 850px) {
+  .module.module-related .gallery-cell {width: 15%;} 
+}
+@media (min-width: 1200px) {
+  .module.module-related .gallery-cell {width: 12%;} 
 }
 
 .gallery-nav .gallery-cell {
@@ -777,9 +792,6 @@ article.item a:hover .thumbnail {
 }
 
 .module-related .thumbnail {
-  -webkit-filter: none!important;
-  -webkit-filter: none!important;
-  filter: none!important;
 }
 
 
