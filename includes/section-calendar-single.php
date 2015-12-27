@@ -43,6 +43,9 @@
 								<?php the_sub_field('location'); ?>, <?php the_sub_field('city'); ?>
 							</td>
 							<td>
+								<?php the_field('status'); ?>
+							</td>
+							<td>
 								<a href="<?php the_sub_field('url'); ?>" title="<?php the_sub_field('title'); ?>" class="btn btn-block btn-success"><?php the_sub_field('button_text'); ?></a>
 							</td>
 						</tr>
