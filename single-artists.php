@@ -16,13 +16,13 @@
 		<div class="container">
 			<div class="row">
 
-				<aside class="col-md-3">
+				<aside class="col-md-3 col-md-push-6">
 					<a href="/artister/" class="btn btn-block btn-icon btn-info" title="Se alle artister hos Tajmer.dk"><i class="fa fa-arrow-circle-left"></i> Se alle artister</a>
 
 					<?php if( get_field('artist_portraits') ): while ( have_rows('artist_portraits') ) : the_row(); ?>
-						<img src="<?php the_sub_field('image'); ?>" alt="<?php the_title(); ?>" class="portrait img-responsive">
+						<img src="<?php the_sub_field('image'); ?>" alt="<?php the_title(); ?>" class="hidden-xs hidden-sm portrait img-responsive">
 					<?php endwhile; else: ?>
-						<img src="http://placehold.it/400x700" alt="<?php the_title(); ?>" class="portrait img-responsive">
+						<img src="http://placehold.it/400x700" alt="<?php the_title(); ?>" class="hidden-xs hidden-sm portrait img-responsive">
 					<?php endif; ?>
 
 					<?php if( get_field('book_as') ): ?>
@@ -54,7 +54,7 @@
 					<?php endwhile; endif; ?>
 				</aside>
 
-				<article class="main col-md-6">
+				<article class="main col-md-6 col-md-pull-3">
 					<div class="main-content">
 						<?php include 'includes/section-breadcrumbs.php';?>
 						<h1><?php the_title(); ?></h1>
