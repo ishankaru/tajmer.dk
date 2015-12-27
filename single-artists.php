@@ -36,7 +36,7 @@
 			    </article>
 
 <aside class="col-md-3 col-md-pull-6">
-					<a href="/artister/" class="btn btn-block btn-icon btn-info" title="Se alle artister hos Tajmer.dk"><i class="fa fa-arrow-circle-left"></i> Se alle artister</a>
+					<a href="/artister/" class="btn btn-block btn-icon btn-info hidden-sm hidden-xs" title="Se alle artister hos Tajmer.dk"><i class="fa fa-arrow-circle-left"></i> Se alle artister</a>
 
 					<?php if( get_field('artist_portraits') ): while ( have_rows('artist_portraits') ) : the_row(); ?>
 						<img src="<?php the_sub_field('image'); ?>" alt="<?php the_title(); ?>" class="hidden-xs hidden-sm portrait img-responsive">
@@ -45,7 +45,7 @@
 					<?php endif; ?>
 
 					<?php if( get_field('book_as') ): ?>
-						<ul class="book-as">
+						<ul class="book-as hidden-sm hidden-xs">
 							<?php while ( have_rows('book_as') ) : the_row(); ?>
 								<li><i class="fa fa-check"></i><?php the_sub_field('booking_type'); ?></li>
 							<?php endwhile; ?>
@@ -67,7 +67,7 @@
 					<?php endif; ?>	
 
 					<?php if( get_field('artist_videos') ): while ( have_rows('artist_videos') ) : the_row(); ?>
-						<div class="embed-responsive embed-responsive-16by9">
+						<div class="embed-responsive embed-responsive-16by9  hidden-sm hidden-xs">
 						  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php the_sub_field('video_id'); ?>"></iframe>
 						</div>
 					<?php endwhile; endif; ?>
