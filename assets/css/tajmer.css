@@ -876,10 +876,11 @@ article.item a:hover .thumbnail {
 @media (min-width: 1100px) {
 .module.module-hero{
   display:block;
-  padding-bottom: 30%;
+  padding-bottom: 25%;
   background-size:cover;
   background-position-x: center center;
-  background-repeat; no-repeat;
+  background-repeat;
+  no-repeat;
 }
 }
 
