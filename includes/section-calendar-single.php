@@ -43,7 +43,13 @@
 								<?php the_sub_field('location'); ?>, <?php the_sub_field('city'); ?>
 							</td>
 							<td>
-								<?php the_sub_field('status'); ?>
+								<?php
+									$field = get_sub_field_object('status');
+									$value = get_sub_field('status');
+									$label = $field['choices'][ $value ];
+									echo $label; 
+								?>
+
 							</td>
 							<td>
 								<a href="<?php the_sub_field('url'); ?>" title="<?php the_sub_field('title'); ?>" class="btn btn-block btn-success"><?php the_sub_field('button_text'); ?></a>
