@@ -340,6 +340,29 @@ table small {
   border-top: none;
 }
 
+
+
+
+tr.available {}
+tr.sold_out {}
+tr.release {}
+tr.premiere {}
+tr.extra {}
+tr.few_tickets {}
+
+tr.available .btn {}
+tr.sold_out .btn {
+    background: #FF6A6A;
+    border: #FF6A6A;
+    opacity: 0.5;
+}
+tr.release .btn {
+}
+tr.premiere .btn {}
+tr.extra .btn {}
+tr.few_tickets .btn {}
+
+
 .module-boxes a {
   background: #000;
   color: white;
