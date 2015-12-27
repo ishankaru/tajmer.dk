@@ -53,7 +53,7 @@
 							</td>
 							<td>
 								<?php if(get_sub_field('status') == "sold_out") { ?>
-    									<a href="<?php the_sub_field('url'); ?>" title="<?php the_sub_field('title'); ?>" class="btn btn-block btn-success" disabled><?php the_sub_field('button_text'); ?></a>
+    									<span class="btn btn-block btn-success" disabled><?php the_sub_field('button_text'); ?></span>
     								<?php } else { ?>
     									<a href="<?php the_sub_field('url'); ?>" title="<?php the_sub_field('title'); ?>" class="btn btn-block btn-success"><?php the_sub_field('button_text'); ?></a>
     								<?php } ?>	
