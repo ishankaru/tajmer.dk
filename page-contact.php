@@ -30,6 +30,7 @@
 							<p><?php the_field('title'); ?></p>
 							<p><?php the_field('mail'); ?></p>
 							<p><?php the_field('phone'); ?></p>
+							<?php edit_post_link('Rediger medarbejdere', '<span>', '</span>'); ?>
 						</div>
 					<?php } wp_reset_postdata(); } ?>
 				</div>
