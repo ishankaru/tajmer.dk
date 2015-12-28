@@ -903,7 +903,6 @@ footer a {
 }
 
 .module.module-calendar {
-  padding-bottom: 0;
 }
 
 .module.module-calendar .more,
@@ -1146,6 +1145,7 @@ aside .embed-responsive {
 
 .single-calendar {
   border-top: 1px solid #EFEFEF;
+  padding-bottom: 3.5em!important;
 }
 
 .single-calendar h2 {
