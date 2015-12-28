@@ -54,15 +54,15 @@
 					
 					<?php if( get_field('artist_shows') ): ?>
 						<div class="row">
-							<?php while ( have_rows('artist_shows') ) : the_row(); ?>
+							<?php $i = 1; while ( have_rows('artist_shows') ) : the_row(); ?>
 								<div class="col-md-12">
-									<a href="#0" class="artist_show" data-toggle="modal" data-target="#myModal">
+									<a href="#0" class="artist_show" data-toggle="modal" data-target="#modal<?php echo $i; ?>">
 										<span class="pretitle"><?php the_sub_field('pre_title'); ?></span>
 										<span class="title"><?php the_sub_field('title'); ?></span>
 										Læs mere her <i class="fa fa-chevron-circle-right"></i>
 									</a>
 								</div>
-							<?php endwhile; ?>
+							<?php $i++; endwhile; ?>
 						</div>
 					<?php endif; ?>	
 
@@ -104,8 +104,8 @@
 	<?php endif; ?>	
 	
 	<?php if( get_field('artist_shows') ): ?>
-		<?php while ( have_rows('artist_shows') ) : the_row(); ?>
-			<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+		<?php $i = 1; while ( have_rows('artist_shows') ) : the_row(); ?>
+			<div id="#modal<?php echo $i; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="#modal<?php echo $i; ?>label" style="display: none;">
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -124,6 +124,6 @@
 					</div>
 				</div>
 			</div>
-		<?php endwhile; ?>	
+		<?php $i++; endwhile; ?>	
 	<?php endif; ?>	
 <?php get_footer(); ?>
