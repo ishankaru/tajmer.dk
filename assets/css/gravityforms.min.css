@@ -209,6 +209,11 @@ fieldset[disabled] .gform_button.active {
   padding: 0.4em;
 }
 
+.form-lg {
+  color:white;
+  padding: 1.2em 2em 1.6em 2em;
+}
+
 .form:after {
   content: "";
   display: block;
