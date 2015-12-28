@@ -32,7 +32,7 @@
 						get_sub_field('url'),
 						get_sub_field('button_text'),
 						get_sub_field('status'),
-						get_field('arist_calendar_image'));
+						get_field('artist_calendar_image'));
 				}
 			endwhile; 
 		endwhile; 
