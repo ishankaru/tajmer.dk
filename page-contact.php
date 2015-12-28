@@ -24,7 +24,7 @@
 					?>
 
 					<?php if( $posts ) { foreach( $posts as $post ) { setup_postdata( $post ); ?> 
-						<div class="col-xs-3">
+						<div class="col-xs-3 teammember">
 							<img src="<?php the_field('image'); ?>" class="img-responsive img-circle">
 							<h3><?php the_field('name'); ?></h3>
 							<p><?php the_field('title'); ?></p>
