@@ -23,7 +23,7 @@
 					?>
 
 					<?php if( $posts ) { foreach( $posts as $post ) { setup_postdata( $post ); ?> 
-						<div class="col-xs-4">
+						<div class="col-xs-4">1
 							<img src="<?php the_field('image'); ?>" class="img-circle">
 							<h3><?php the_field('name'); ?></h3>
 							<p><?php the_field('title'); ?></p>
