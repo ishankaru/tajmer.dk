@@ -25,7 +25,7 @@
 					<div class="box box-contactt">
 					
 							<a href="<?php echo get_home_url(); ?>/" title="Tajmer Booking &amp; Management">
-								<img src="<?php the_field('vlogo', options); ?>" alt="Tajmer Booking &amp; Management" class="img-responsive">
+								<img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/logo-contact-1.png" alt="Tajmer Booking &amp; Management" class="img-responsive">
 							</a>
 						
 							<address>
