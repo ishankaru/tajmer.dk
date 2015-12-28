@@ -20,10 +20,6 @@
 				<ul class="cd-secondary-nav is-hidden">
 					<li class="go-back"><a href="#0">Tilbage</a></li>
 					<li class="see-all"><a href="/artister/">Se alle artister</a></li>
-					<li>
-						<a href="/eksklusive-artister/">Eksklusive artister</a>
-						<p>Eksklusive artister hos Tajmer Booking & Management</p>
-					</li>
 					<li class="has-children">
 						<a href="/kategorier/stand-up/">Underholdning</a>
 						<ul class="is-hidden">
@@ -47,7 +43,14 @@
 							<li><a href="/kategorier/jazzlounge/">Jazz/Lounge</a></li>
 							<li><a href="/kategorier/klassisk_kirkekoncert/">Kirkekoncert</a></li>
 						</ul>
-					</li>	
+					</li>
+					<li>
+						<a href="/eksklusive-artister/">Eksklusive artister</a>
+						<p>Eksklusive artister hos Tajmer Booking & Management</p>
+					</li>
+					<li>
+						<?php gravity_form( 2, false, false, false, '', false, 10 ); ?>
+					</li>
 				</ul>
 			</li>
 			<li><a href="<?php echo get_home_url(); ?>/om-tajmer/">Om Tajmer</a></li>
