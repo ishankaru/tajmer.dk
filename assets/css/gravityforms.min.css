@@ -92,6 +92,7 @@ textarea.ginput_container textarea {
 
 .ginput_container textarea {
   height: auto;
+  max-height: 150px;
 }
 
 .gform_button {
