@@ -67,7 +67,7 @@
 					?>
 
 					<?php if( $posts ) { foreach( $posts as $post ) { setup_postdata( $post ); ?> 
-						<div class="col-xs-2 col-sm-4 col-md-3 teammember">
+						<div class="col-xs-6 col-sm-4 col-md-3 teammember">
 							<img src="<?php the_field('image'); ?>" class="img-responsive img-circle">
 							<h3><?php the_field('name'); ?></h3>
 							<p>
