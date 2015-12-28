@@ -49,7 +49,7 @@
 
 					<li class="has-children">
 						<a href="/eksklusive-artister/">Eksklusive artister</a>
-						
+						<p>Se Tajmers eksklusive artister her</p>
 					</li>	
 				</ul>
 			</li>
