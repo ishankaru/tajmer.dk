@@ -46,10 +46,13 @@
 					</li>
 					<li>
 						<a href="/eksklusive-artister/">Eksklusive artister</a>
-						<p>Eksklusive artister hos Tajmer Booking & Management</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a href="/kategorier/klassisk_kirkekoncert/">Se eksklusive arister</a></li>
 					</li>
 					<li>
-						<?php gravity_form( 2, false, false, false, '', false, 10 ); ?>
+						<a href="/forespoergsel/">Forspørg på artist</a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a href="/forespoergsel/">Forspørg på artist</a></li>
 					</li>
 				</ul>
 			</li>
