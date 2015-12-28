@@ -22,11 +22,9 @@
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2262.6017435396557!2d12.176714815918919!3d55.452175880474016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652f1ad50dcae11%3A0x826b9ebd6f720de5!2zU8O4bmRyZSBBbGxlIDE3LCA0NjAwIEvDuGdl!5e0!3m2!1sda!2sdk!4v1451325963623" width="600" height="350" allowfullscreen></iframe>
 				</div>
 				<div class="col-md-6">
-					<div class="box box-contactt">
-					
-							<a href="<?php echo get_home_url(); ?>/" title="Tajmer Booking &amp; Management">
-								<img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/logo-contact-1.png" alt="Tajmer Booking &amp; Management" class="img-responsive">
-							</a>
+					<div class="box box-contact">
+							
+							<img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/logo-contact-1.png" alt="Tajmer Booking &amp; Management" class="img-responsive">
 						
 							<address>
 								<h3><strong><?php the_field('name', options); ?></strong></h3>
