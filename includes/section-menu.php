@@ -29,6 +29,7 @@
 							<li><a href="/kategorier/foredrag/">Foredragsholder</a></li>
 							<li><a href="/kategorier/konfrenciers-vaerter/">Konferencier / værter</a></li>
 							<li><a href="/kategorier/entertainment/">Entertainment / Musical</a></li>
+							<li><a href="/kategorier/">Se alle kategorier</a></li>
 						</ul>
 					</li>
 					<li class="has-children">
@@ -42,6 +43,7 @@
 							<li><a href="/kategorier/djs/">DJs</a></li>
 							<li><a href="/kategorier/jazzlounge/">Jazz/Lounge</a></li>
 							<li><a href="/kategorier/klassisk_kirkekoncert/">Kirkekoncert</a></li>
+							<li><a href="/kategorier/">Se alle kategorier</a></li>
 						</ul>
 					</li>
 					<li>
