@@ -30,7 +30,8 @@
 						get_sub_field('location'),
 						get_sub_field('city'),
 						get_sub_field('url'),
-						get_sub_field('button_text'));
+						get_sub_field('button_text'),
+						get_sub_field('status'));
 				}
 			endwhile; 
 		endwhile; 
@@ -61,6 +62,9 @@
 							</td>
 							<td>
 								<?php echo $v[1] ?>, <?php echo $v[2]; ?>
+							</td>
+							<td>
+								<?php echo $v[5] ?>
 							</td>
 							<td>
 								<a href="<?php echo $v[3]; ?>" title="<?php  echo $v[0];; ?>" class="btn btn-block btn-success"><?php  echo $v[4]; ?></a>
