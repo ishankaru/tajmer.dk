@@ -713,12 +713,12 @@
   }
 
   .cd-primary-nav .cd-secondary-nav a {
-    height: 40px;
-    line-height: 40px;
+    height: 35px;
+    line-height: 35px;
     padding: 0 18% 0 0;
     color: #2e3233;
     border-bottom: none;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .cd-primary-nav .cd-secondary-nav a:hover {
