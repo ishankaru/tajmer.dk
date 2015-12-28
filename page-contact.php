@@ -9,7 +9,8 @@
  */
  get_header(); ?>
 
- <?php include 'includes/section-header.php';?>
+	<?php include 'includes/section-header.php';?>
+	<?php include 'includes/section-hero.php';?>
  
 	<section class="module module-standard">
 		<div class="container">
