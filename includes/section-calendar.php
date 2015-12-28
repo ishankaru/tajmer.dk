@@ -64,8 +64,11 @@
 								<?php echo $v[1] ?>, <?php echo $v[2]; ?>
 							</td>
 							<td>
-								<?php echo $v[5] ?>
-								
+								<?php if ($v[5] == "sold_out") { ?>
+									Udsolgt
+								<?php } else { ?>
+									Ledige Billetter
+								<?php } ?>
 							</td>
 							<td>
 								<?php if ($v[5] == "sold_out") { ?>
