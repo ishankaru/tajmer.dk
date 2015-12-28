@@ -21,8 +21,8 @@
 													
 						<div class="col-md-12">
 
-							<h1><?php the_field('title'); ?></h1>
-							<p class="lead"><?php the_field('intro'); ?></p>
+							<h2 class="h1"><img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/primary-icon.png?826ecb" class="img-icon" alt="#"> Comedy kalenderen</h2>
+							<p class="lead">Her kan du følge med i artister når de bevæger sig rundt omkring i landet</p>
 
 							<hr>
 
