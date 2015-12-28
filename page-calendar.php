@@ -47,7 +47,8 @@
 													get_sub_field('location'),
 													get_sub_field('city'),
 													get_sub_field('url'),
-													get_sub_field('button_text'));
+													get_sub_field('button_text'),
+													get_sub_field('status'));
 											}
 										endwhile; 
 									endwhile; 
@@ -60,7 +61,7 @@
 								<table class="table table-striped table-hover">
 									<tbody>
 										<?php foreach($calendar as $k => $v): ?>
-										    <tr>
+										   	<tr class="<?php echo $v[5] ?>">
 												<td>
 													<img src="<?php the_field('artist_calendar_image'); ?>" alt="<?php echo $v[0] ?>">
 												</td>
@@ -78,7 +79,18 @@
 													<?php echo $v[1] ?>, <?php echo $v[2]; ?>
 												</td>
 												<td>
-													<a href="<?php echo $v[3]; ?>" title="<?php  echo $v[0];; ?>" class="btn btn-block btn-success"><?php  echo $v[4]; ?></a>
+													<?php if ($v[5] == "sold_out") { ?>
+														Udsolgt
+													<?php } else { ?>
+														Ledige Billetter
+													<?php } ?>
+												</td>
+												<td>
+													<?php if ($v[5] == "sold_out") { ?>
+														<span class="btn btn-block btn-success" disabled><?php  echo $v[4]; ?></a>
+													<?php } else { ?>
+														<a href="<?php echo $v[3]; ?>" title="<?php  echo $v[0];; ?>" class="btn btn-block btn-success"><?php  echo $v[4]; ?></a>
+													<?php } ?>
 												</td>
 											</tr>
 										<?php endforeach;?>
