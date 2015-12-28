@@ -119,7 +119,7 @@
 							<?php the_sub_field('content'); ?>
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-success">Luk boksen</button>
+							<button type="button" class="btn btn-success" data-dismiss="modal" aria-label="Close">Luk boksen</button>
 						</div>
 					</div>
 				</div>
