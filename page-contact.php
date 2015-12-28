@@ -22,14 +22,22 @@
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2262.6017435396557!2d12.176714815918919!3d55.452175880474016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652f1ad50dcae11%3A0x826b9ebd6f720de5!2zU8O4bmRyZSBBbGxlIDE3LCA0NjAwIEvDuGdl!5e0!3m2!1sda!2sdk!4v1451325963623" width="600" height="350" allowfullscreen></iframe>
 				</div>
 				<div class="col-md-6">
-					<div class="contact-box">
-						<h2>Tajmer Booking &amp; Management</h2>
-						<span class="address">Søndre Allé 17</span>
-						<span class="city">4600 Køge</span>
-						<span class="vat">CVR-nr.2915 34 50</span>
-						<span class="phone">Tlf. +45 4615 37 00</span>
-						<span class="mail">Mail: tajmer@tajmer.dk</span>
-						<span class="facebook">Tajmer på Facebook</span>
+					<div class="row">
+						<div class="col-md-3">
+							<a href="<?php echo get_home_url(); ?>/" title="Tajmer Booking &amp; Management">
+								<img src="<?php the_field('vlogo', options); ?>" alt="Tajmer Booking &amp; Management" class="img-responsive">
+							</a>
+						</div>
+						<div class="col-md-9">
+							<address>
+								<span><strong><?php the_field('name', options); ?></strong></span>
+								<span><?php the_field('address', options); ?></span>
+								<span><?php the_field('zipcode', options); ?> <?php the_field('city', options); ?></span>
+								<span>Tlf. <a href="tel:<?php echo str_replace(' ', '', get_field('telephone', 'option')); ?>" title="Ring og book <?php the_title(); ?> på <?php the_field('telephone', options); ?>">+45 <?php the_field('telephone', options); ?></a></span>
+								<span><a href="mailto:<?php the_field('email', options); ?>" title="Send en mail til os"><?php the_field('email', options); ?></a></span>
+								<span>CVR: <?php the_field('vat_number', options); ?></span>
+							</address>
+						</div>
 					</div>
 				</div>				
 			</div>
