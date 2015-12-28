@@ -48,14 +48,14 @@
 					</li>
 					<li>
 						<a href="/eksklusive-artister/">Eksklusive artister</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<a href="/kategorier/klassisk_kirkekoncert/">Se eksklusive arister</a></li>
+						<p class="hidden-xs hidden-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a href="/kategorier/klassisk_kirkekoncert/" class="hidden-xs hidden-sm">Se eksklusive arister</a></li>
 					</li>
 					<li>
 						<a href="/forespoergsel/">Book en specifik artist</a>
-						<p>Beskriv dit arrangement og oplys gerne navn på den ønskede artist - enten på mail eller på telefon +45 46 15 37 00</p>
-						<p>Sammen finder vi den artist, der passer lige netop til jeres publikum, budget og arrangement</p>
-						<a href="/forespoergsel/">Forspørg på artist her</a></li>
+						<p class="hidden-xs hidden-sm">Beskriv dit arrangement og oplys gerne navn på den ønskede artist - enten på mail eller på telefon +45 46 15 37 00</p>
+						<p class="hidden-xs hidden-sm">Sammen finder vi den artist, der passer lige netop til jeres publikum, budget og arrangement</p>
+						<a href="/forespoergsel/" class="hidden-xs hidden-sm">Forspørg på artist her</a></li>
 					</li>
 				</ul>
 			</li>
