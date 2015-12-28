@@ -31,7 +31,8 @@
 						get_sub_field('city'),
 						get_sub_field('url'),
 						get_sub_field('button_text'),
-						get_sub_field('status'));
+						get_sub_field('status'),
+						get_field('arist_calendar_image'));
 				}
 			endwhile; 
 		endwhile; 
@@ -47,37 +48,37 @@
 				<tbody>
 					<?php $i = 0; foreach($calendar as $k => $v): $i++; ?>
 					    <tr class="<?php echo $v[5] ?>">
-							<td>
-								<img src="<?php the_field('artist_calendar_image'); ?>" alt="<?php echo $v[0] ?>">
-							</td>
-							<td>
-								<?php 
-									$dateformatstring = "d. F Y";
-									$unixtimestamp = $k;
-									echo date_i18n($dateformatstring, $unixtimestamp);
-								?>
-							</td>
-							<td>
-								<?php echo $v[0]; edit_post_link(' - Rediger event', '', ''); ?>
-							</td>
-							<td>
-								<?php echo $v[1] ?>, <?php echo $v[2]; ?>
-							</td>
-							<td>
-								<?php if ($v[5] == "sold_out") { ?>
-									Udsolgt
-								<?php } else { ?>
-									Ledige Billetter
-								<?php } ?>
-							</td>
-							<td>
-								<?php if ($v[5] == "sold_out") { ?>
-									<span class="btn btn-block btn-success" disabled><?php  echo $v[4]; ?></a>
-								<?php } else { ?>
-									<a href="<?php echo $v[3]; ?>" title="<?php  echo $v[0];; ?>" class="btn btn-block btn-success"><?php  echo $v[4]; ?></a>
-								<?php } ?>
-							</td>
-						</tr>
+												<td>
+													<img src="<?php echo $v[6] ?>" alt="<?php echo $v[0] ?>">
+												</td>
+												<td>
+													<?php 
+														$dateformatstring = "d. F Y";
+														$unixtimestamp = $k;
+														echo date_i18n($dateformatstring, $unixtimestamp);
+													?>
+												</td>
+												<td>
+													<?php echo $v[0]; ?>
+												</td>
+												<td>
+													<?php echo $v[1] ?>, <?php echo $v[2]; ?>
+												</td>
+												<td>
+													<?php if ($v[5] == "sold_out") { ?>
+														Udsolgt
+													<?php } else { ?>
+														Ledige Billetter
+													<?php } ?>
+												</td>
+												<td>
+													<?php if ($v[5] == "sold_out") { ?>
+														<span class="btn btn-block btn-success" disabled><?php  echo $v[4]; ?></a>
+													<?php } else { ?>
+														<a href="<?php echo $v[3]; ?>" title="<?php  echo $v[0];; ?>" class="btn btn-block btn-success"><?php  echo $v[4]; ?></a>
+													<?php } ?>
+												</td>
+											</tr>
 					<?php if($i==10) break; endforeach;?>
 				</tbody>
 			</table>
