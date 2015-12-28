@@ -15,7 +15,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1>Under udvikling</h1>
+					<img src="<?php the_field('image'); ?>" class="img-responsive img-circle">
+					<h3><?php the_field('name'); ?></h3>
+					<p>
+						<?php the_field('title'); ?><br>
+						<a href="mailto:<?php the_field('mail'); ?>"><?php the_field('mail'); ?></a><br>
+						<a href="tel:<?php the_field('phone'); ?>">+45 <?php the_field('phone'); ?></a><br>
+						<?php edit_post_link('Rediger', '', ''); ?>
+					</p>
 				</div>
 			</div>
 		</div>
