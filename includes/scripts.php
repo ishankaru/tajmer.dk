@@ -15,6 +15,7 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/isotope.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/flickity.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/readmore.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/bootstrap-modal.min.js"></script>
 
 <script type="text/javascript">
     function downloadJSAtOnload() {
