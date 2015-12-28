@@ -413,7 +413,7 @@ footer {
   color: rgba(255, 255, 255, 0.9);
 }
 
-.module.module-products,
+
 .module.module-process,
 .module.module-about {
   border-top: 1px solid #efefef;
@@ -903,7 +903,7 @@ footer a {
 }
 
 .module.module-calendar {
-  padding-bottom: 2.5em;
+  padding-bottom: 0;
 }
 
 .module.module-calendar .more,
