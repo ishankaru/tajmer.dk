@@ -23,8 +23,8 @@
 				</div>
 				<div class="col-md-6">
 					<div class="contact-box">
-						<h2>Tajmer Booking & Management</h2>
-						<span class="adress">Søndre Allé 17</span>
+						<h2>Tajmer Booking &amp; Management</h2>
+						<span class="address">Søndre Allé 17</span>
 						<span class="city">4600 Køge</span>
 						<span class="vat">CVR-nr.2915 34 50</span>
 						<span class="phone">Tlf. +45 4615 37 00</span>
