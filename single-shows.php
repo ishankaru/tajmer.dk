@@ -35,6 +35,25 @@
 			</div>
 		</section>
 	<?php endif; ?>
+	
+		<div class="row">
+			<div class="col-md-12">
+				<p class="h3">Tajmer anbefaler også:</p>
+			</div>
+						<?php 	
+							$posts = get_posts(array(
+								'numberposts'	=> 6,
+								'post_type'		=> 'shows'
+							))
+						?>
+
+						<?php if( $posts ) { foreach( $posts as $post ) { setup_postdata( $post ); ?> 
+							<div class="col-xs-4">
+								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php the_field('artist_calendar_image'); ?>" alt="#" class="img-responsive"></a>
+								<a href="<?php the_permalink(); ?>">Se Tourplan</a>
+							</div>
+						<?php } wp_reset_postdata(); } ?>
+					</div>
 
  <?php include 'includes/section-footer.php'; ?>
 
