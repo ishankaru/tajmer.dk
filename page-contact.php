@@ -26,6 +26,9 @@
 						<div class="col-xs-4">
 							<img src="<?php the_field('image'); ?>" class="img-circle">
 							<h3><?php the_field('name'); ?></h3>
+							<p><?php the_field('title'); ?></p>
+							<p><?php the_field('mail'); ?></p>
+							<p><?php the_field('phone'); ?></p>
 						</div>
 					<?php } wp_reset_postdata(); } ?>
 				</div>
