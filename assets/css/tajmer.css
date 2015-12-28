@@ -1288,3 +1288,8 @@ article.item a {
 
 .box-contact img {margin: 0 auto;}
 .box-contact {max-width:530px;margin:3em auto;text-align: center;}
+
+
+.modal-content {
+    border-radius: 0;
+}
