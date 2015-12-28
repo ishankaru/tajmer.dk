@@ -33,9 +33,9 @@
 					    
 				    	<?php the_content(); ?>
 				    </div>
-			    </article>
+			    	</article>
 
-<aside class="col-md-3 col-md-pull-6">
+				<aside class="col-md-3 col-md-pull-6">
 					<a href="/artister/" class="btn btn-block btn-icon btn-info hidden-sm hidden-xs" title="Se alle artister hos Tajmer.dk"><i class="fa fa-arrow-circle-left"></i> Se alle artister</a>
 
 					<?php if( get_field('artist_portraits') ): while ( have_rows('artist_portraits') ) : the_row(); ?>
@@ -56,11 +56,29 @@
 						<div class="row">
 							<?php while ( have_rows('artist_shows') ) : the_row(); ?>
 								<div class="col-md-12">
-									<a href="#" class="artist_show">
+									<a href="#0" class="artist_show" data-toggle="modal" data-target="#viewmodal">
 										<span class="pretitle"><?php the_sub_field('pre_title'); ?></span>
 										<span class="title"><?php the_sub_field('title'); ?></span>
 										Læs mere her <i class="fa fa-chevron-circle-right"></i>
 									</a>
+								</div>
+								
+								<div class="modal fade" id="viewmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+								  <div class="modal-dialog" role="document">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+								      </div>
+								      <div class="modal-body">
+								        ...
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								        <button type="button" class="btn btn-primary">Save changes</button>
+								      </div>
+								    </div>
+								  </div>
 								</div>
 							<?php endwhile; ?>
 						</div>
