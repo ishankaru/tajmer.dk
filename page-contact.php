@@ -16,6 +16,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
+					<img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/primary-icon.png?826ecb&amp;bb2f24" class="img-icon" alt="icon">
 					<h1>Kontakt Tajmer Booking &amp; Management</h1>
 				</div>
 				<div class="col-md-6">
