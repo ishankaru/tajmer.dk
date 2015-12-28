@@ -9,7 +9,7 @@
  */
  get_header(); ?>
 
- <?php include 'includes/section-header.php';?>
+ <?php include 'includes/section-header.php'; ?>
  <?php include 'includes/section-footer.php'; ?>
 
 <?php get_footer(); ?>
