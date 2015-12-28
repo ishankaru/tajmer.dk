@@ -1270,6 +1270,7 @@ article.item a {
 
 .teammember {text-align:center;margin-bottom:2em;}
 .teammember img {max-width:120px;margin:0 auto;}
+.teammember a {color:black;}
 
 
 .module-standard iframe {width:100%; border:none;margin:2em 0 0 1em;}
@@ -1278,10 +1279,3 @@ article.item a {
   margin-top:2em;
   margin-bottom:1em;
 }
-
-.contact-box {}
-.contact-box span {display:block;}
-.contact-box h2 {}
-.contact-box {}
-.contact-box {}
-.contact-box {}
