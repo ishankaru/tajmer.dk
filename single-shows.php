@@ -50,7 +50,7 @@
 						?>
 
 						<?php if( $posts ) { foreach( $posts as $post ) { setup_postdata( $post ); ?> 
-							<div class="col-xs-4">
+							<div class="col-xs-6 col-sm-4 col-md-2">
 								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php the_field('artist_calendar_image'); ?>" alt="#" class="img-responsive"></a>
 								<a href="<?php the_permalink(); ?>">Se Tourplan</a>
 							</div>
