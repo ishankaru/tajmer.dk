@@ -25,6 +25,16 @@
 			</div>
 		</div>
 	</section>
+	
+	<?php if( get_field('artist_calendar') ): ?>	
+		<section class="module module-calendar single-calendar">
+			<div class="container">
+				<div class="row">
+					<?php include 'includes/section-calendar-single.php';?>
+				</div>
+			</div>
+		</section>
+	<?php endif; ?>
 
  <?php include 'includes/section-footer.php'; ?>
 
