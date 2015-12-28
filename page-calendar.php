@@ -48,7 +48,8 @@
 													get_sub_field('city'),
 													get_sub_field('url'),
 													get_sub_field('button_text'),
-													get_sub_field('status'));
+													get_sub_field('status'),
+													get_field('artist_calendar_image'));
 											}
 										endwhile; 
 									endwhile; 
@@ -63,7 +64,7 @@
 										<?php foreach($calendar as $k => $v): ?>
 										   	<tr class="<?php echo $v[5] ?>">
 												<td>
-													<img src="<?php the_field('artist_calendar_image'); ?>" alt="<?php echo $v[0] ?>">
+													<img src="<?php echo $v[6] ?>" alt="<?php echo $v[0] ?>">
 												</td>
 												<td>
 													<?php 
