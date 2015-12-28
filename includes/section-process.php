@@ -14,12 +14,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="hidden-sm col-md-5">
-					<p class="h2"><?php the_field('client_title'); ?></p>
+					<p class="h2"><?php the_field('client_title', options); ?></p>
 					<hr>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="gallery clients js-flickity" data-flickity-options='{ "prevNextButtons": true, "pageDots": false, "lazyLoad": true, "wrapAround": true }'>
-								<?php while ( have_rows('clients_list') ) : the_row(); ?>
+								<?php while ( have_rows('clients_list', options) ) : the_row(); ?>
 							  		<div class="gallery-cell">
 									  	<img data-flickity-lazyload="<?php the_sub_field('logo'); ?>">
 										<span class="clientlogo"><?php the_sub_field('client_name'); ?></span>
