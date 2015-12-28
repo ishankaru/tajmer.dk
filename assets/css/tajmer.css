@@ -1082,6 +1082,7 @@ aside .embed-responsive {
   filter: alpha(opacity=80);
   -webkit-transition: opacity 0.2s ease-in;
   transition: opacity 0.2s ease-in;
+  margin-bottom: 0.75em;
 }
 
 @media (min-width: 992px) {
@@ -1221,6 +1222,8 @@ article.item a {
       font-size: 0.8em;
       margin-bottom: 1em;
       line-height: 1.6em;
+        -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
 }
 .artist_show:hover {
   text-decoration:none;
