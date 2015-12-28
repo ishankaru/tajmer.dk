@@ -31,9 +31,7 @@
 						get_sub_field('city'),
 						get_sub_field('url'),
 						get_sub_field('button_text'),
-						$field = get_sub_field_object('status'),
-						$value = get_sub_field('status'),
-						$label = $field['choices'][ $value ]);
+						get_sub_field('status'));
 				}
 			endwhile; 
 		endwhile; 
