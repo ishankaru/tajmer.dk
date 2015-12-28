@@ -105,7 +105,7 @@
 	
 	<?php if( get_field('artist_shows') ): ?>
 		<?php $i = 1; while ( have_rows('artist_shows') ) : the_row(); ?>
-			<div id="#modal<?php echo $i; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="#modal<?php echo $i; ?>label" style="display: none;">
+			<div id="modal<?php echo $i; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="#modal<?php echo $i; ?>label" style="display: none;">
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
