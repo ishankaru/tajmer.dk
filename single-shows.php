@@ -35,7 +35,9 @@
 			</div>
 		</section>
 	<?php endif; ?>
-	
+		
+		<section class="module module-related">
+			<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<p class="h3">Tajmer anbefaler også:</p>
@@ -53,7 +55,8 @@
 								<a href="<?php the_permalink(); ?>">Se Tourplan</a>
 							</div>
 						<?php } wp_reset_postdata(); } ?>
-					</div>
+					</div></div>
+					</section>
 
  <?php include 'includes/section-footer.php'; ?>
 
