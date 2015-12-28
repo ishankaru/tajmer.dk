@@ -46,7 +46,7 @@
 			<table class="table table-striped table-hover">
 				<tbody>
 					<?php $i = 0; foreach($calendar as $k => $v): $i++; ?>
-					    <tr>
+					    <tr class="<?php echo $v[5] ?>">
 							<td>
 								<img src="<?php the_field('artist_calendar_image'); ?>" alt="<?php echo $v[0] ?>">
 							</td>
