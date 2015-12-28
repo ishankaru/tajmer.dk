@@ -15,7 +15,19 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<?php the_content(); edit_post_link('Rediger side', '<p>', '</p>'); ?>
+					<?php 	
+						$posts = get_posts(array(
+							'post_type'	=> 'team',
+							'numberposts'	=> -1
+						))
+					?>
+
+					<?php if( $posts ) { foreach( $posts as $post ) { setup_postdata( $post ); ?> 
+						<div class="col-xs-4">
+							<img src="<?php the_field('image'); ?>" class="img-circle">
+							<h3><?php the_field('name'); ?></h3>
+						</div>
+					<?php } wp_reset_postdata(); } ?>
 				</div>
 			</div>
 		</div>
