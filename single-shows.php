@@ -26,18 +26,19 @@
 		</div>
 	</section>
 	
-	<?php if( get_field('artist_calendar') ): ?>	
-	<?php $post_object = get_field('artist'); if( $post_object ): $post = $post_object; setup_postdata( $post ); ?>
-
+	<?php if( get_field('artist_calendar') ): ?>
 		<section class="module module-calendar single-calendar">
 			<div class="container">
 				<div class="row">
-					<?php include 'includes/section-calendar-single.php';?>
+					<?php $post_object = get_field('artist'); if( $post_object ): $post = $post_object; setup_postdata( $post ); ?>
+						<?php include 'includes/section-calendar-single.php';?>
+					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+					<?php else: ?>
+						<?php include 'includes/section-calendar-single.php';?>
+					<?php endif; ?>
 				</div>
 			</div>
 		</section>
-		<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-		<?php endif; ?>
 	<?php endif; ?>
 		
 		<section class="module module-related">
