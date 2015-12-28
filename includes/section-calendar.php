@@ -14,7 +14,7 @@
 	$calendar = array(); 
 
 	query_posts(array(
-	    'post_type' => 'artists',
+	    'post_type' => array( 'artists', 'shows' ),
 	    'posts_per_page' => -1
 	));
 
