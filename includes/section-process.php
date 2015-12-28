@@ -14,37 +14,21 @@
 		<div class="container">
 			<div class="row">
 				<div class="hidden-sm col-md-5">
-					<p class="h2">Referencer</p>
+					<p class="h2"><?php the_field('client_title'); ?></p>
 					<hr>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="gallery clients js-flickity" data-flickity-options='{ "prevNextButtons": true, "pageDots": false, "lazyLoad": true, "wrapAround": true }'>
-							  <div class="gallery-cell">
-							  	<img data-flickity-lazyload="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg">
-								<span class="clientlogo">Tajmer Booking & Management</span>
-								<span class="testimonial">"Ord kan tryllebinde os, gøre os klogere, eftertænksomme eller få os til at grine." - Tenna Tajmer</span>
-							  </div>
-							  <div class="gallery-cell">
-							  	<img data-flickity-lazyload="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg">
-								<span class="clientlogo">Tajmer Booking & Management</span>
-								<span class="testimonial">"Ord kan tryllebinde os, gøre os klogere, eftertænksomme eller få os til at grine." - Tenna Tajmer</span>
-							  </div>
-							  <div class="gallery-cell">
-							  	<img data-flickity-lazyload="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg">
-								<span class="clientlogo">Tajmer Booking & Management</span>
-								<span class="testimonial">"Ord kan tryllebinde os, gøre os klogere, eftertænksomme eller få os til at grine." - Tenna Tajmer</span>
-							  </div>
-							  <div class="gallery-cell">
-							  	<img data-flickity-lazyload="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg">
-								<span class="clientlogo">Tajmer Booking & Management</span>
-								<span class="testimonial">"Ord kan tryllebinde os, gøre os klogere, eftertænksomme eller få os til at grine." - Tenna Tajmer</span>
-							  </div>
-							  <div class="gallery-cell">
-							  	<img data-flickity-lazyload="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/04/cropped-Logo_udenTBM.jpg">
-								<span class="clientlogo">Tajmer Booking & Management</span>
-								<span class="testimonial">"Ord kan tryllebinde os, gøre os klogere, eftertænksomme eller få os til at grine." - Tenna Tajmer</span>
-							  </div>
-							</div>	
+								<?php while ( have_rows('clients_list') ) : the_row(); ?>
+							  		<div class="gallery-cell">
+									  	<img data-flickity-lazyload="<?php the_sub_field('logo'); ?>">
+										<span class="clientlogo"><?php the_sub_field('client_name'); ?></span>
+										<?php if( get_sub_field('testimonial') ): ?>
+											<span class="testimonial"><?php the_sub_field('testimonial'); ?></span>
+										<?php endif; ?>
+									  </div>
+								<?php endwhile; ?>
+							</div>
 						</div>
 					</div>
 				</div>
