@@ -67,7 +67,7 @@
 	<section class="module module-products">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-5">
 					<h2><img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/primary-icon.png" class="img-icon" alt="#"> <?php the_field('shows_title'); ?></h2>
 					<div class="row">
 						<?php 	
@@ -85,7 +85,7 @@
 						<?php } wp_reset_postdata(); } ?>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-offset-1 col-md-5">
 					<h2 class="text-right"><?php the_field('on_demand_title'); ?> <img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/primary-icon.png" class="img-icon" alt="#"></h2>
 					<div class="row">
 						<?php 	
