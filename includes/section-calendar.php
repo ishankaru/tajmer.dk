@@ -67,11 +67,11 @@
 								<?php echo $v[5] ?>
 							</td>
 							<td>
-								<?php if ($v[5] = "sold_out") { ?>
+								<?php if ($v[5] == "sold_out") { ?>
 									<a href="<?php echo $v[3]; ?>" title="<?php  echo $v[0];; ?>" class="btn btn-block btn-success" disabled><?php  echo $v[4]; ?></a>
-								<?php } else ?>
+								<?php } else { ?>
 									<a href="<?php echo $v[3]; ?>" title="<?php  echo $v[0];; ?>" class="btn btn-block btn-success"><?php  echo $v[4]; ?></a>
-								<?php {} ?>
+								<?php } ?>
 							</td>
 						</tr>
 					<?php if($i==10) break; endforeach;?>
