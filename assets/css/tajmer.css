@@ -1280,5 +1280,5 @@ article.item a {
   margin-bottom:1em;
 }
 
-
-.box-contact {max-width:530px;margin:3em auto;}
+.box-contact img {margin: 0 auto;}
+.box-contact {max-width:530px;margin:3em auto;text-align: center;}
