@@ -1163,8 +1163,7 @@ article.item a {
   color: black;
 }
 
-.module.module-information {
-}
+.module.module-information {background: #F5F5F5;text-align: center;padding-top: 4em;padding-bottom: 3em;}
 .module.module-artists {
   padding:2.5em 0;
 }
@@ -1185,6 +1184,7 @@ article.item a {
 
 .module.module-about {
   text-align: center;
+  background: #F5F5F5;
 }
 
 .module.module-about img {
