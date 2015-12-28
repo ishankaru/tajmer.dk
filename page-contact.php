@@ -39,6 +39,19 @@
 			</div>
 		</div>
 	</section>
+	
+	<section class="module module-contact">
+	    <div class="container">
+	      <div class="row">
+	        <div class="col-md-12">
+	          <p class="h3"><?php the_field('request_title', options); ?></p>
+	          <div class="form">
+	            <?php gravity_form( 2, false, false, false, '', false, 10 ); ?>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	</section>
 
  <?php include 'includes/section-footer.php'; ?>
 
