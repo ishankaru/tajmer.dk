@@ -46,30 +46,11 @@
 						</ul>
 					</li>
 
-					<?php 	
-						$posts = get_posts(array(
-							'numberposts'	=> -1,
-							'post_type'		=> 'artists',
-							'meta_query' => array(
-								array(
-									'key' => 'exclusive',
-									'value' => '1',
-									'compare' => '=='
-								)
-							)
-						))
-					?>
+					
 
 					<li class="has-children">
 						<a href="/eksklusive-artister/">Eksklusive artister</a>
-						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Tilbage</a></li>
-							<li class="see-all"><a href="/eksklusive-artister/">Se alle eksklusive artister</a></li>
 						
-							<?php if( $posts ) { foreach( $posts as $post ) { setup_postdata( $post ); ?> 
-								<li><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></li>
-							<?php } wp_reset_postdata(); } ?>
-						</ul>
 					</li>	
 				</ul>
 			</li>
