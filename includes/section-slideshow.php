@@ -11,7 +11,7 @@
 
 <?php if( get_field('slideshow') ): ?> 
 	<section class="module module-slideshow">
-		<div class="gallery gallery-main js-flickity" data-flickity-options='{ "lazyLoad": true, "pageDots": false, "wrapAround": true, "prevNextButtons": false, "autoPlay": 3500, "pauseAutoPlayOnHover": false}'>
+		<div class="gallery gallery-main js-flickity" data-flickity-options='{ "lazyLoad": true, "pageDots": false, "wrapAround": true, "prevNextButtons": false}'>
 		  	<?php while ( have_rows('slideshow') ) : the_row(); ?>
 			  	<a href="<?php the_sub_field('slide_url'); ?>" title="<?php the_sub_field('slide_title'); ?>" class="gallery-cell">
 			  		<figure style="background-image: url('<?php the_sub_field('primary_image'); ?>');">
