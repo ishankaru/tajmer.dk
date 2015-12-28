@@ -44,7 +44,7 @@
 								<?php the_field('title'); ?><br>
 								<a href="mailto:<?php the_field('mail'); ?>"><?php the_field('mail'); ?></a><br>
 								<a href="tel:<?php the_field('phone'); ?>">+45 <?php the_field('phone'); ?></a><br>
-								<?php edit_post_link('Rediger medarbejder', '', ''); ?>
+								<?php edit_post_link('Rediger', '', ''); ?>
 							</p>
 						</div>
 					<?php } wp_reset_postdata(); } ?>
