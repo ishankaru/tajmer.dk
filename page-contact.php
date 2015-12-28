@@ -27,10 +27,12 @@
 						<div class="col-xs-3 teammember">
 							<img src="<?php the_field('image'); ?>" class="img-responsive img-circle">
 							<h3><?php the_field('name'); ?></h3>
-							<p><?php the_field('title'); ?></p>
-							<p><?php the_field('mail'); ?></p>
-							<p><?php the_field('phone'); ?></p>
-							<?php edit_post_link('Rediger medarbejdere', '<span>', '</span>'); ?>
+							<p>
+								<?php the_field('title'); ?><br>
+								<?php the_field('mail'); ?><br>
+								<?php the_field('phone'); ?><br>
+								<?php edit_post_link('Rediger medarbejdere', '', ''); ?>
+							</p>
 						</div>
 					<?php } wp_reset_postdata(); } ?>
 				</div>
