@@ -54,9 +54,6 @@
 					
 					<?php if( get_field('artist_shows') ): ?>
 						<div class="row">
-							<div class="col-md-12">
-								<p class="h3">Foredrag:</p>
-							</div>
 							<?php $i = 1; while ( have_rows('artist_shows') ) : the_row(); ?>
 								<div class="col-md-12">
 									<a href="#0" class="artist_show" data-toggle="modal" data-target="#modal<?php echo $i; ?>">
