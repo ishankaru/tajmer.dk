@@ -120,7 +120,7 @@
 							<h2><?php the_sub_field('title'); ?></h2>
 						</a>
 						<p><?php the_sub_field('description'); ?></p>
-						<a href="<?php the_sub_field('url'); ?>" title="<?php the_sub_field('title'); ?>">Læs mere</a>
+						<a href="<?php the_sub_field('url'); ?>" title="<?php the_sub_field('title'); ?>" class="btn btn-success">Læs mere</a>
 					</div>
 				<?php endwhile; endif; ?>											
 			</div>
