@@ -17,7 +17,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1>1<?php the_title(); ?></h1>
+					<h1><?php $terms->name ?>2</h1>
 					<div class="lead"><?php echo term_description( $term_id, $taxonomy ) ?></div>
 					<hr>
 				</div>
