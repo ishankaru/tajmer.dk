@@ -14,7 +14,7 @@
  	<?php 
  		global $post; 
  		$terms = get_the_terms($post->id, 'type'); 
- 		$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'type' ) ); ?>
+ 		$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxanomy' ) ); ?>
 
 	<section class="module module-artists">
 		<div class="container">
