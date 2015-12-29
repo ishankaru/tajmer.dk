@@ -11,13 +11,16 @@
 
  <?php include 'includes/section-header.php';?>
 
- 	<?php global $post; $terms = get_the_terms($post->id, 'type'); ?>
+ 	<?php 
+ 		global $post; 
+ 		$terms = get_the_terms($post->id, 'type'); 
+ 		$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'type' ) ); ?>
 
 	<section class="module module-artists">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1><?php $terms->name ?>2</h1>
+					<h1><?php echo $term->name; ?></h1>
 					<div class="lead"><?php echo term_description( $term_id, $taxonomy ) ?></div>
 					<hr>
 				</div>
