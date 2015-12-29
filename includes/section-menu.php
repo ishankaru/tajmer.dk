@@ -49,12 +49,12 @@
 					<li>
 						<a href="/eksklusive-artister/">Eksklusive artister</a>
 						<p class="visible-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<a href="/kategorier/klassisk_kirkekoncert/" class="btn btn-block btn-success visible-lg">Se eksklusive arister</a></li>
+						<a href="/kategorier/klassisk_kirkekoncert/" class="visible-lg">Se eksklusive arister</a></li>
 					</li>
 					<li>
 						<a href="/forespoergsel/">Book en specifik artist</a>
 						<p class="visible-lg">Beskriv dit arrangement og oplys gerne navn på den ønskede artist - enten på mail eller på telefon +45 46 15 37 00</p>
-						<a href="/forespoergsel/" class="btn btn-block btn-success visible-lg">Forspørg på artist her</a></li>
+						<a href="/forespoergsel/" class="visible-lg">Forspørg på artist her</a></li>
 					</li>
 				</ul>
 			</li>
