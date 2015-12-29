@@ -57,7 +57,12 @@
 							<?php $i = 1; while ( have_rows('artist_shows') ) : the_row(); ?>
 								<div class="col-md-12">
 									<a href="#0" class="artist_show" data-toggle="modal" data-target="#modal<?php echo $i; ?>">
-										<span class="title"><?php the_sub_field('title'); ?></span>
+										<span class="pretitle">
+											<?php the_sub_field('pre_title'); ?>
+										</span>
+										<span class="title">
+											<?php the_sub_field('title'); ?>
+										</span>
 										Læs mere her <i class="fa fa-chevron-circle-right"></i>
 									</a>
 								</div>
