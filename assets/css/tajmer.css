@@ -477,10 +477,6 @@ table img {
 
 .gallery-nav .gallery-cell {
   width: 35%;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  -webkit-filter: gray;
-  filter: gray;
   height: auto;
   display: block;
   text-align: right;
@@ -525,10 +521,6 @@ table img {
 
 .gallery-nav .gallery-cell:hover {
   cursor: pointer;
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-  -webkit-filter: none;
-  filter: none;
 }
 
 .gallery-cell {
@@ -803,19 +795,12 @@ table img {
   padding-bottom: 80%;
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-filter: grayscale(1);
-  filter: url(filters.svg#grayscale);
-  -webkit-filter: gray;
-  filter: gray;
 }
 article.item a:hover {
   text-decoration:none;
 }
 
 article.item a:hover .thumbnail {
-  -webkit-filter: grayscale(0);
-  -webkit-filter: none;
-  filter: none; 
 }
 
 .module-related .thumbnail {
