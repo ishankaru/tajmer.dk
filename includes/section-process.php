@@ -15,7 +15,6 @@
 			<div class="row">
 				<div class="col-md-12">
 					<p class="h2"><?php the_field('process_title', options); ?></p>
-					<hr>
 					<div class="row">
 						<div class="col-md-3">
 							<i class="fa fa-envelope-o"></i>
