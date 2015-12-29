@@ -18,19 +18,19 @@
 					<hr>
 					<div class="row">
 						<div class="col-md-3">
-							<i class="fa-li fa fa-envelope-o"></i>
+							<i class="fa fa-envelope-o"></i>
 							<span><?php the_field('process_one', options); ?></span>
 						</div>
 						<div class="col-md-3">
-							<i class="fa-li fa fa-comments-o"></i>
+							<i class="fa fa-comments-o"></i>
 							<span><?php the_field('process_two', options); ?></span>
 						</div>
 						<div class="col-md-3">
-							<i class="fa-li fa fa-file-text-o"></i>
+							<i class="fa fa-file-text-o"></i>
 							<span><?php the_field('process_three', options); ?></span>
 						</div>
 						<div class="col-md-3">
-							<i class="fa-li fa fa-thumbs-o-up"></i>
+							<i class="fa fa-thumbs-o-up"></i>
 							<span><?php the_field('process_four', options); ?></span>
 						</div>
 					</div>	
