@@ -20,7 +20,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1><?php $termtitle = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); echo $termtitle->name; ?> 1</h1>
+					<h1><?php $termtitle = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); echo $termtitle->name; ?></h1>
 					<div class="lead"><?php echo term_description( $term_id, $taxonomy ) ?></div>
 					<hr>
 				</div>
