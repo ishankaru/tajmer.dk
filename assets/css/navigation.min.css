@@ -576,18 +576,17 @@
     list-style: none;
   }
 
-  .cd-primary-nav > li > a {
-        /* main navigation buttons style */
-    position: relative;
-    display: inline-block;
-    height: 70px;
-    line-height: 70px;
-    padding: 0 10px;
-    color: #2e3233;
-    overflow: visible;
-    border-bottom: none;
-    -webkit-transition: color 0.3s, box-shadow 0.3s;
-    transition: color 0.3s, box-shadow 0.3s;
+  .cd-primary-nav > li > a {/* main navigation buttons style */
+        position: relative;
+        display: inline-block;
+        height: 70px;
+        line-height: 70px;
+        padding: 0 2px;
+        color: #2e3233;
+        overflow: visible;
+        border-bottom: none;
+        -webkit-transition: color 0.3s, box-shadow 0.3s;
+        transition: color 0.3s, box-shadow 0.3s;
   }
 
   .cd-primary-nav > li > a:hover {
