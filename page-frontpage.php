@@ -93,8 +93,8 @@
 
 						<?php if( $posts ) { foreach( $posts as $post ) { setup_postdata( $post ); ?> 
 							<div class="col-xs-4 pull-right">
-								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php the_field('cover_image'); ?>" alt="#" class="img-responsive"></a>
-								<a href="<?php the_permalink(); ?>">Se Tourplan</a>
+								<a href="<?php the_field('streaming_link'); ?>" title="<?php the_title(); ?>"><img src="<?php the_field('cover_image'); ?>" alt="#" class="img-responsive"></a>
+								<a href="<?php the_field('streaming_link'); ?>">Stream</a>
 							</div>
 						<?php } wp_reset_postdata(); } ?>
 					</div>
