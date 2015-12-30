@@ -1157,7 +1157,7 @@ article.item a {
   color: black;
 }
 
-.module.module-information {background: #F5F5F5;text-align: center;padding-top: 4em;padding-bottom: 3em;}
+.module.module-information {background: #F5F5F5;text-align: center;padding-top: 2em;padding-bottom: 3em;}
 .module.module-artists {
   padding:2.5em 0;
 }
@@ -1165,7 +1165,7 @@ article.item a {
   border-radius: 10em;
   max-width: 170px;
   width: 100%;
-  margin: 0 auto;
+  margin: 2em auto 0 auto;
 }
 
 .module.module-information h2 {
