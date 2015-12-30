@@ -92,9 +92,7 @@
 	<?php if( get_field('artist_calendar') ): ?>	
 		<section class="module module-calendar single-calendar">
 			<div class="container">
-				<div class="row">
-					<?php include 'includes/section-calendar-single.php';?>
-				</div>
+				<?php include 'includes/section-calendar-single.php';?>
 			</div>
 		</section>
 	<?php endif; ?>	
