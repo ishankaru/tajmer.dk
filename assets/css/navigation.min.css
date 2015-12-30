@@ -400,8 +400,6 @@
 .cd-primary-nav a,
 .cd-primary-nav ul a {
   display: block;
-  height: 50px;
-  line-height: 50px;
   padding: 0 20px;
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
@@ -712,7 +710,6 @@
   }
 
   .cd-primary-nav .cd-secondary-nav a {
-    height: 35px;
     line-height: 35px;
     padding: 0 18% 0 0;
     color: #2e3233;
