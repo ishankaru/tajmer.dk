@@ -49,12 +49,12 @@
 					<li>
 						<a href="/eksklusive-artister/">Eksklusive artister</a>
 						<p class="visible-lg">Tajmer Booking & Management præsenterer eksklusivt nogle af landets største komikere og foredragsholdere.</p>
-						<a href="/eksklusive-artister/" class="visible-lg">Se eksklusive arister</a></li>
+						<a href="/eksklusive-artister/" class="visible-lg">Se eksklusive artister</a></li>
 					</li>
 					<li>
 						<a href="/forespoergsel/">Book en specifik artist</a>
 						<p class="visible-lg">Beskriv dit arrangement og oplys gerne navn på den ønskede artist - enten på mail eller på telefon +45 46 15 37 00</p>
-						<a href="/forespoergsel/" class="visible-lg">Forspørg på artist her</a></li>
+						<a href="/forespoergsel/" class="visible-lg">Forspørge på artist her</a></li>
 					</li>
 				</ul>
 			</li>
