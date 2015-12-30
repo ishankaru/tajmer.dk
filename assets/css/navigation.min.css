@@ -414,6 +414,7 @@
   will-change: transform, opacity;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
+  line-height: 50px;
 }
 
 .cd-primary-nav.is-hidden,
