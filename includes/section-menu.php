@@ -49,7 +49,7 @@
 					<li>
 						<a href="/eksklusive-artister/">Eksklusive artister</a>
 						<p class="visible-lg">Tajmer Booking & Management præsenterer eksklusivt nogle af landets største komikere og foredragsholdere.</p>
-						<a href="/kategorier/klassisk_kirkekoncert/" class="visible-lg">Se eksklusive arister</a></li>
+						<a href="/eksklusive-artister/" class="visible-lg">Se eksklusive arister</a></li>
 					</li>
 					<li>
 						<a href="/forespoergsel/">Book en specifik artist</a>
