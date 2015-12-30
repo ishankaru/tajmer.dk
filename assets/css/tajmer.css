@@ -958,19 +958,31 @@ aside .embed-responsive {
   display: block;
   width: 2.3em;
   text-align: center;
+  position: relative;
 }
 
 .module.module-process .fa:after {
-  counter-increment: section;
-  content: counters(section, "i") " ";
   position: absolute;
-  top: 0.8em;
-  right: 2.5em;
+  top: -0em;
+  right: -0.25em;
   background: #E1CB94;
   border-radius: 5em;
   font-size: 0.5em;
   color: black;
   padding: 0.3em 0.5em;
+}
+
+.module.module-process .fa-envelope-o:after {
+  content: "1";
+}
+.module.module-process .fa-comments-o:after {
+  content: "2";
+}
+.module.module-process .fa-file-text-o:after {
+  content: "3";
+}
+.module.module-process .fa-thumbs-o-up:after {
+  content: "4";
 }
 
 .module.module-process li span {
