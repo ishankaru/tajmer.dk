@@ -48,7 +48,7 @@
 					</li>
 					<li>
 						<a href="/eksklusive-artister/">Eksklusive artister</a>
-						<p class="visible-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p class="visible-lg">Tajmer Booking & Management præsenterer eksklusivt nogle af landets største komikere og foredragsholdere.</p>
 						<a href="/kategorier/klassisk_kirkekoncert/" class="visible-lg">Se eksklusive arister</a></li>
 					</li>
 					<li>
