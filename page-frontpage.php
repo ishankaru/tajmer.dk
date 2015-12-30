@@ -82,7 +82,7 @@
 					</div>
 				</div>
 				<div class="col-md-offset-2 col-md-5">
-					<h2 class="text-right"><?php the_field('on_demand_title'); ?> <img src="http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/primary-icon.png" class="img-icon" alt="#"></h2>
+					<h2 class="text-right"><?php the_field('on_demand_title'); ?> <img src="<?php echo get_home_url(); ?>/administrator/wp-content/uploads/2015/12/primary-icon.png" class="img-icon" alt="#"></h2>
 					<div class="row">
 						<?php 	
 							$posts = get_posts(array(
