@@ -32,7 +32,7 @@
 			<?php endwhile; ?>
 		</div>
 
-		<div class="gallery gallery-nav js-flickity" data-flickity-options='{ "asNavFor": ".gallery-main", "contain": true, "pageDots": false,  "autoPlay": 3500, "pauseAutoPlayOnHover": false, "wrapAround": true, "cellAlign": left}'}'>
+		<div class="gallery gallery-nav js-flickity" data-flickity-options='{ "asNavFor": ".gallery-main", "contain": true, "pageDots": false,  "autoPlay": 3500, "pauseAutoPlayOnHover": false, "wrapAround": true, "cellAlign": left}'>
 			<?php while ( have_rows('slideshow') ) : the_row(); ?>
 				<div class="gallery-cell">
 					<figure class="gallery-cell-image" style="background-image:url('<?php the_sub_field('thumbnail_image'); ?>');"></figure>
