@@ -79,7 +79,7 @@
   position: absolute;
   top: 7px;
   left: 5%;
-  background: url('http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/tajmer-logo-xs.png');
+  background: url('http://tajmer.dk/administrator/wp-content/uploads/2015/12/tajmer-logo-xs.png');
   background-size: contain;
   display: block;
   height: 33px;
@@ -89,14 +89,14 @@
 
 @media (min-width: 265px) {
 .cd-logo {
-  background: url('http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/tajmer-logo-sm.png');
+  background: url('http://tajmer.dk/administrator/wp-content/uploads/2015/12/tajmer-logo-sm.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
 }
 @media (min-width: 600px) {
 .cd-logo {
-  background: url('http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/tajmer-booking-management-logo.png?566b6f');
+  background: url('http://tajmer.dk/administrator/wp-content/uploads/2015/12/tajmer-booking-management-logo.png?566b6f');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -104,7 +104,7 @@
 
 @media (min-width: 1170px) {
 .cd-logo {
-  background: url('http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/tajmer-booking-management-logo.png?566b6f');
+  background: url('http://tajmer.dk/administrator/wp-content/uploads/2015/12/tajmer-booking-management-logo.png?566b6f');
   background-repeat: no-repeat;
   background-size: contain;
   width: 25%;
@@ -114,7 +114,7 @@
 
 @media (min-width: 1270px) {
 .cd-logo {
-  background: url('http://tajmer.dk.linux95.unoeuro-server.com/administrator/wp-content/uploads/2015/12/tajmer-booking-management-logo.png?566b6f');
+  background: url('http://tajmer.dk/administrator/wp-content/uploads/2015/12/tajmer-booking-management-logo.png?566b6f');
   background-repeat: no-repeat;
   background-size: contain;
   height: 33px;
