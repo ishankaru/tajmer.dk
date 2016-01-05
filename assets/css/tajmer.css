@@ -19,7 +19,7 @@ body {
 *:before {
   box-sizing: border-box;
 }
-
+thumb
 /* ***************************************************************************
 *********************************** Links ***********************************
 *************************************************************************** */
@@ -795,6 +795,7 @@ table img {
   padding-bottom: 80%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 article.item a:hover {
   text-decoration:none;
