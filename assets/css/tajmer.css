@@ -14,6 +14,7 @@ body {
 }
 
 
+
 *,
 *:after,
 *:before {
@@ -25,7 +26,7 @@ thumb
 *************************************************************************** */
 
 a {
-  color: #E1CB94;
+  color: #E1CB94!important;
   text-decoration: none;
 }
 
