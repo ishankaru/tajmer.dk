@@ -37,7 +37,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<a href="<?php the_field('calendar_url'); ?>"></a><h2 class="h1"><img src="<?php echo get_home_url(); ?>/administrator/wp-content/uploads/2015/12/primary-icon.png" class="img-icon" alt="#"> <?php the_field('calendar_title'); ?></h2></a>
+					<a href="<?php the_field('calendar_url'); ?>">
+						<h2 class="h1"><img src="<?php echo get_home_url(); ?>/administrator/wp-content/uploads/2015/12/primary-icon.png" class="img-icon" alt="#"> <?php the_field('calendar_title'); ?></h2>
+					</a>
 					<div class="hidden-xs">
 						<p class="lead"><?php the_field('calender_intro'); ?></p>
 						<?php include 'includes/section-calendar.php';?>
