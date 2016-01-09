@@ -1274,6 +1274,8 @@ article.item a {
     margin: 0 auto;
     max-width: 350px;
 }
+
+
 .clients .gallery-cell img {
     width: auto;
     max-height: 150px;
@@ -1307,19 +1309,21 @@ article.item a {
 	width: 100%;
 }
 
-.row-calendar img {
-	height:auto;
-	max-width: 36px;
-}
-
 .row-calendar .btn {
 }
 .row-calendar:nth-child(2n) .event {background:#292929;}
 .row-calendar .event {
 	background: #434343;
 	vertical-align: middle;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .row-calendar .event {
 	padding-top: 6px;
 	padding-bottom: 6px;
+}
 }
 
 
@@ -1332,6 +1336,17 @@ article.item a {
     background: #FF6A6A!important;
     border: #FF6A6A!important;
     opacity: 0.4!important;
+}
+
+.row-calendar img {
+	height:auto;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+.row-calendar img {
+	max-width: 36px;
+}
 }
 
 
