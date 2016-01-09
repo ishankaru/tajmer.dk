@@ -1301,3 +1301,20 @@ article.item a {
 .modal-content {
     border-radius: 0;
 }
+
+.row-calendar {
+	color:white;
+}
+
+.row-calendar img {
+	width:100%;
+	height:auto;
+}
+
+.row-calendar .btn {
+	margin-bottom:1em;
+}
+
+.row-calendar .event {
+	background: #434343;
+}
