@@ -67,9 +67,9 @@
 				<img src="<?php echo $v[6] ?>" alt="<?php echo $v[0] ?>" class="img-responsive">
 			</div>
 
-			<div class="col-xs-9 col-sm-8">
+			<div class="col-xs-9 col-sm-9">
 				<div class="row">
-					<div class="col-xs-12 col-sm-3">
+					<div class="col-xs-12 col-sm-2">
 						<?php 
 							$dateformatstring = "d. F Y";
 							$unixtimestamp = $k;
@@ -79,7 +79,7 @@
 					<div class="col-xs-12 col-sm-3">
 						<?php echo $v[0]; ?>
 					</div>
-					<div class="col-xs-12 col-sm-3">
+					<div class="col-xs-12 col-sm-4">
 						<?php echo $v[1] ?>, <?php echo $v[2]; ?>
 					</div>	
 					<div class="col-xs-12 col-sm-3">
@@ -92,7 +92,7 @@
 				</div>
 			</div>
 			
-			<div class="col-xs-12 col-sm-3">
+			<div class="col-xs-12 col-sm-2">
 				<?php if ($v[5] == "sold_out") { ?>
 					<span class="btn btn-block btn-success" disabled><?php  echo $v[4]; ?></a>
 				<?php } else { ?>
