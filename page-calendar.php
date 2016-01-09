@@ -69,20 +69,20 @@
 
 			<div class="col-xs-9 col-sm-8">
 				<div class="row">
-					<div class="col-xs-12">
+					<div class="col-xs-12 col-sm-3">
 						<?php 
 							$dateformatstring = "d. F Y";
 							$unixtimestamp = $k;
 							echo date_i18n($dateformatstring, $unixtimestamp);
 						?>
 					</div>
-					<div class="col-xs-12">
+					<div class="col-xs-12 col-sm-3">
 						<?php echo $v[0]; ?>
 					</div>
-					<div class="col-xs-12">
+					<div class="col-xs-12 col-sm-3">
 						<?php echo $v[1] ?>, <?php echo $v[2]; ?>
 					</div>	
-					<div class="col-xs-12">
+					<div class="col-xs-12 col-sm-3">
 						<?php if ($v[5] == "sold_out") { ?>
 							Udsolgt
 						<?php } else { ?>
