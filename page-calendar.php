@@ -60,7 +60,9 @@
 
 							<?php foreach($calendar as $k => $v): ?>
 		<div class="row row-calendar <?php echo $v[5] ?>">
-			
+			<div class="col-md-12 event">
+				
+			<div class="row">
 			<div class="col-xs-3 col-sm-1">
 				<img src="<?php echo $v[6] ?>" alt="<?php echo $v[0] ?>" class="img-responsive">
 			</div>
@@ -96,6 +98,7 @@
 				<?php } else { ?>
 					<a href="<?php echo $v[3]; ?>" title="<?php  echo $v[0];; ?>" class="btn btn-block btn-success"><?php  echo $v[4]; ?></a>
 				<?php } ?>
+			</div></div>
 			</div>
 
 		</div>
