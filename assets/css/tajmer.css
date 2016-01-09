@@ -1306,7 +1306,6 @@ article.item a {
 
 .row-calendar {
 	color:white;
-	width: 100%;
 }
 
 .row-calendar .btn {
@@ -1317,6 +1316,7 @@ article.item a {
 	vertical-align: middle;
 	padding-top: 25px;
 	padding-bottom: 25px;
+	margin: 0;
 }
 
 @media (min-width: 768px) {
