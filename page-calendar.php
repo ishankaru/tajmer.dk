@@ -67,7 +67,7 @@
 				<img src="<?php echo $v[6] ?>" alt="<?php echo $v[0] ?>" class="img-responsive">
 			</div>
 
-			<div class="col-xs-9 col-sm-9">
+			<div class="col-xs-9 col-sm-11">
 				<div class="row">
 					<div class="col-xs-12 col-sm-2">
 						<?php 
@@ -88,17 +88,18 @@
 						<?php } else { ?>
 							Ledige Billetter
 						<?php } ?>
-					</div>						
+					</div>
+					<div class="col-xs-12">
+						<?php if ($v[5] == "sold_out") { ?>
+							<span class="btn btn-block btn-success" disabled><?php  echo $v[4]; ?></a>
+						<?php } else { ?>
+							<a href="<?php echo $v[3]; ?>" title="<?php  echo $v[0];; ?>" class="btn btn-block btn-success"><?php  echo $v[4]; ?></a>
+						<?php } ?>
+					</div>
 				</div>
 			</div>
 			
-			<div class="col-xs-12 col-sm-2">
-				<?php if ($v[5] == "sold_out") { ?>
-					<span class="btn btn-block btn-success" disabled><?php  echo $v[4]; ?></a>
-				<?php } else { ?>
-					<a href="<?php echo $v[3]; ?>" title="<?php  echo $v[0];; ?>" class="btn btn-block btn-success"><?php  echo $v[4]; ?></a>
-				<?php } ?>
-			</div></div>
+		</div>
 			</div>
 
 		</div>
