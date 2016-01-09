@@ -79,17 +79,17 @@
 					<div class="col-xs-12 col-sm-3">
 						<?php echo $v[0]; ?>
 					</div>
-					<div class="col-xs-12 col-sm-4">
+					<div class="col-xs-12 col-sm-3">
 						<?php echo $v[1] ?>, <?php echo $v[2]; ?>
 					</div>	
-					<div class="col-xs-12 col-sm-3">
+					<div class="col-xs-12 col-sm-2">
 						<?php if ($v[5] == "sold_out") { ?>
 							Udsolgt
 						<?php } else { ?>
 							Ledige Billetter
 						<?php } ?>
 					</div>
-					<div class="col-xs-12">
+					<div class="col-xs-12 col-sm-2">
 						<?php if ($v[5] == "sold_out") { ?>
 							<span class="btn btn-block btn-success" disabled><?php  echo $v[4]; ?></a>
 						<?php } else { ?>
