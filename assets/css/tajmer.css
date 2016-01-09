@@ -1304,17 +1304,34 @@ article.item a {
 
 .row-calendar {
 	color:white;
+	width: 100%;
 }
 
 .row-calendar img {
-	width:100%;
 	height:auto;
+	max-width: 36px;
 }
 
 .row-calendar .btn {
-	margin-bottom:1em;
 }
-
+.row-calendar:nth-child(2n) .event {background:#292929;}
 .row-calendar .event {
 	background: #434343;
+	vertical-align: middle;
+	padding-top: 6px;
+	padding-bottom: 6px;
 }
+
+
+.row-calendar.sold_out .btn {
+    background: #FF6A6A;
+    border: #FF6A6A;
+    opacity: 0.5;
+}
+.row-calendar.sold_out .btn:hover {
+    background: #FF6A6A!important;
+    border: #FF6A6A!important;
+    opacity: 0.4!important;
+}
+
+
