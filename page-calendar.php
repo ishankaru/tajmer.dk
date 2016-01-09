@@ -58,46 +58,48 @@
 								ksort($calendar); 
 							?>	
 
-							<div class="table-responsive">
-								<table class="table table-striped table-hover">
-									<tbody>
-										<?php foreach($calendar as $k => $v): ?>
-										   	<tr class="<?php echo $v[5] ?>">
-												<td>
-													<img src="<?php echo $v[6] ?>" alt="<?php echo $v[0] ?>">
-												</td>
-												<td>
-													<?php 
-														$dateformatstring = "d. F Y";
-														$unixtimestamp = $k;
-														echo date_i18n($dateformatstring, $unixtimestamp);
-													?>
-												</td>
-												<td>
-													<?php echo $v[0]; ?>
-												</td>
-												<td>
-													<?php echo $v[1] ?>, <?php echo $v[2]; ?>
-												</td>
-												<td>
-													<?php if ($v[5] == "sold_out") { ?>
-														Udsolgt
-													<?php } else { ?>
-														Ledige Billetter
-													<?php } ?>
-												</td>
-												<td>
-													<?php if ($v[5] == "sold_out") { ?>
-														<span class="btn btn-block btn-success" disabled><?php  echo $v[4]; ?></a>
-													<?php } else { ?>
-														<a href="<?php echo $v[3]; ?>" title="<?php  echo $v[0];; ?>" class="btn btn-block btn-success"><?php  echo $v[4]; ?></a>
-													<?php } ?>
-												</td>
-											</tr>
-										<?php endforeach;?>
-									</tbody>
-								</table>
-							</div>
+							<?php foreach($calendar as $k => $v): ?>
+		<div class="row row-calendar <?php echo $v[5] ?>">
+			
+			<div class="col-xs-2">
+				<img src="<?php echo $v[6] ?>" alt="<?php echo $v[0] ?>">
+			</div>
+
+			<div class="col-xs-10">
+				<div class="row">
+					<div class="col-xs-12">
+						<?php 
+							$dateformatstring = "d. F Y";
+							$unixtimestamp = $k;
+							echo date_i18n($dateformatstring, $unixtimestamp);
+						?>
+					</div>
+					<div class="col-xs-12">
+						<?php echo $v[0]; ?>
+					</div>
+					<div class="col-xs-12">
+						<?php echo $v[1] ?>, <?php echo $v[2]; ?>
+					</div>	
+					<div class="col-xs-12">
+						<?php if ($v[5] == "sold_out") { ?>
+							Udsolgt
+						<?php } else { ?>
+							Ledige Billetter
+						<?php } ?>
+					</div>						
+				</div>
+			</div>
+			
+			<div class="col-xs-12">
+				<?php if ($v[5] == "sold_out") { ?>
+					<span class="btn btn-block btn-success" disabled><?php  echo $v[4]; ?></a>
+				<?php } else { ?>
+					<a href="<?php echo $v[3]; ?>" title="<?php  echo $v[0];; ?>" class="btn btn-block btn-success"><?php  echo $v[4]; ?></a>
+				<?php } ?>
+			</div>
+
+		</div>
+	<?php endforeach;?>
 							
 						</div>
 					</div>						
