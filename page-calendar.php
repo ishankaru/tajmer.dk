@@ -25,6 +25,8 @@
 							<p class="lead"><?php the_field('intro'); ?></p>
 
 							<hr>
+						</div>
+					</div>
 
 							<?php 	
 								wp_reset_query(); 
