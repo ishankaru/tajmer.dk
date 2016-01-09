@@ -1327,6 +1327,14 @@ article.item a {
 }
 
 
+@media (max-width: 768px) {
+  .row-calendar .event { font-size: 0.8em}
+  .row-calendar .event .date {margin-bottom:0.25em;}
+  .row-calendar .event .name {font-size:1.25em; font-weight:bold;}
+  .row-calendar .event .location {font-style:italic;}
+  .row-calendar .event .status { font-style:italic;margin-bottom:1em;}
+}
+
 .row-calendar.sold_out .btn {
     background: #FF6A6A;
     border: #FF6A6A;
