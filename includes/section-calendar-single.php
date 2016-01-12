@@ -16,60 +16,62 @@
 		<h2>Kalender</h2>
 	</div>
 	<div class="col-md-12">
-		<div class="table-responsive container-calendar">
-			<table class="table table-striped table-hover">
-				<tbody>
-					<?php while ( have_rows('artist_calendar') ) : the_row(); ?>
+		<?php while ( have_rows('artist_calendar') ) : the_row(); ?>
 
-						<?php
+	<?php
 							$eventdate = new DateTime(get_sub_field('date'));
 							$now = new DateTime();
 							if($eventdate > $now) {
 						 ?>
 
-				    	<tr class="<?php the_sub_field('status'); ?>">
-							<td>
-								<?php if( get_field('artist_calendar_image') ): ?>
-									<img src="<?php the_field('artist_calendar_image'); ?>" alt="<?php the_sub_field('title'); ?>">
+		<div class="row row-calendar <?php the_sub_field('status'); ?>">
+			<div class="col-md-12">
+				
+			<div class="row event">
+			<div class="col-xs-3 col-sm-1">
+				<?php if( get_field('artist_calendar_image') ): ?>
+									<img src="<?php the_field('artist_calendar_image'); ?>" alt="<?php the_sub_field('title'); ?>" class="img-responsive">
 								<?php endif; ?>
-							</td>
-							<td>
-								<?php 
+			</div>
+
+			<div class="col-xs-9 col-sm-11">
+				<div class="row">
+					<div class="col-xs-12 col-sm-2 date">
+						<?php 
 									$dateformatstring = " d. F Y";
 									$unixtimestamp = strtotime(get_sub_field('date'));
 									echo date_i18n($dateformatstring, $unixtimestamp);
 								?>
-							</td>
-							<td>
-								<?php the_sub_field('title'); ?>
-							</td>
-							<td>
-								<?php the_sub_field('location'); ?>, <?php the_sub_field('city'); ?>
-							</td>
-							<td>
-								<?php
+					</div>
+					<div class="col-xs-12 col-sm-3 name">
+						<?php the_sub_field('title'); ?>
+					</div>
+					<div class="col-xs-12 col-sm-3 location">
+						<?php the_sub_field('location'); ?>, <?php the_sub_field('city'); ?>
+					</div>	
+					<div class="col-xs-12 col-sm-2 status">
+						<?php
 									$field = get_sub_field_object('status');
 									$value = get_sub_field('status');
 									$label = $field['choices'][ $value ];
 									echo $label; 
 								?>
-
-							</td>
-							<td>
-								<?php if(get_sub_field('status') == "sold_out") { ?>
+					</div>
+					<div class="col-xs-12 col-sm-2">
+						<?php if(get_sub_field('status') == "sold_out") { ?>
     									<span class="btn btn-block btn-success" disabled="disabled"><?php the_sub_field('button_text'); ?></span>
     								<?php } else { ?>
     									<a href="<?php the_sub_field('url'); ?>" title="<?php the_sub_field('title'); ?>" class="btn btn-block btn-success"><?php the_sub_field('button_text'); ?></a>
     								<?php } ?>	
-							</td>
-						</tr>
-
-						<?php } ?>
-
-					<?php endwhile; ?>
-				</tbody>
-			</table>
+					</div>
+				</div>
+			</div>
+			
 		</div>
+			</div>
+
+		</div>
+	<?php endwhile; ?>
 	</div>
 </div>
 				
