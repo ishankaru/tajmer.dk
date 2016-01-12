@@ -70,7 +70,8 @@
 		</div>
 			</div>
 
-		</div>
+		</div><?php } ?>
+
 	<?php endwhile; ?>
 	</div>
 </div>
