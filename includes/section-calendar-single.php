@@ -15,7 +15,7 @@
 	<div class="col-md-12">
 		<h2>Kalender</h2>
 	</div>
-	<div class="col-md-12">
+	<div class="col-md-12 container-calendar">
 		<?php while ( have_rows('artist_calendar') ) : the_row(); ?>
 
 	<?php
