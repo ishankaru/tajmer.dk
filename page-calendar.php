@@ -31,6 +31,9 @@
 							<?php 	
 								wp_reset_query(); 
 								$calendar = array(); 
+								$events = array(); //Store each event row array
+								$event_order = array(); // Store dates to sort and use to sort $events
+								$counter = 0; // Array index for both arrays above
 
 								query_posts(array(
 								    'post_type' => array( 'artists', 'shows' ),
@@ -44,20 +47,30 @@
 											$eventdate = new DateTime(get_sub_field('date'));
 											$now = new DateTime();
 											if($eventdate >= $now) {
-												$calendar[strtotime(get_sub_field('date'))] = array(
+												$event = array(
 													get_sub_field('title'),
 													get_sub_field('location'),
 													get_sub_field('city'),
 													get_sub_field('url'),
 													get_sub_field('button_text'),
 													get_sub_field('status'),
-													get_field('artist_calendar_image'));
+													get_field('artist_calendar_image'),
+													strtotime(get_sub_field('date'));
+										
+										$event_order[ $counter ] = strtotime(get_sub_field('date');
+										$events[ $counter ] = $event;
+										$counter++;
+										
 											}
 										endwhile; 
 									endwhile; 
 								endif;
 
-								ksort($calendar); 
+								array_multisort( $event_order, SORT_ASC, $events );
+								
+								foreach($events as $event )
+								$calendar[$event[7]]= $event;
+								//ksort($calendar); 
 							?>	
 
 							<?php foreach($calendar as $k => $v): ?>
